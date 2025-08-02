@@ -32,8 +32,11 @@ function CustomNavbar() {
             <Nav.Link as={Link} to="/" className="text-white px-3">
               Home
             </Nav.Link>
+            <Nav.Link as={Link} to="/" className="text-white px-3">
+              About Us
+            </Nav.Link>
             <NavDropdown
-              title="Services"
+              title="Our Services"
               id="services-dropdown"
               className="text-white px-3"
               menuVariant="dark"
@@ -49,13 +52,16 @@ function CustomNavbar() {
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link as={Link} to="/projects" className="text-white px-3">
-              Projects
+              Our Projects
             </Nav.Link>
             <Nav.Link as={Link} to="/about" className="text-white px-3">
-              About Us
+              Gallery
             </Nav.Link>
             <Nav.Link as={Link} to="/contact" className="text-white px-3">
               Contact
+            </Nav.Link>
+            <Nav.Link as={Link} to="/" className="text-white px-3">
+              Career
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

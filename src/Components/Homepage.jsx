@@ -1,4 +1,5 @@
 import React from "react";
+import StickyButtons from "./Sticky";
 
 const Homepage = () => {
   return (
@@ -24,7 +25,7 @@ const Homepage = () => {
                 <source src="/img/home-bg-video.mp4" type="video/mp4" />
               </video>
               <div className="carousel-caption text-start">
-                <h1>Your Renewable Energy Solutions Partner</h1>
+                <h1 className="display-1">Your Renewable Energy Solutions Partner</h1>
                 <p>India’s Leading Solar EPC & I&C Company for Sustainable Energy</p>
               </div>
             </div>
@@ -39,7 +40,7 @@ const Homepage = () => {
               style={{ height: "100vh", objectFit: "cover" }}
             />
             <div className="carousel-caption">
-              <h1>Modern Technology in <span>Sun Energy</span></h1>
+              <h1 className="display-1">Modern Technology in <span>Sun Energy</span></h1>
               <p>Empowering the future with sustainable innovation</p>
             </div>
           </div>
@@ -53,7 +54,7 @@ const Homepage = () => {
               style={{ height: "100vh", objectFit: "cover" }}
             />
             <div className="carousel-caption text-start">
-              <h1>Business Hand in Hand with New Technology</h1>
+              <h1 className="display-1">Business Hand in Hand with New Technology</h1>
               <p>Leading the green energy revolution for tomorrow</p>
             </div>
           </div>
@@ -66,6 +67,7 @@ const Homepage = () => {
           <button type="button" data-bs-target="#homepageCarousel" data-bs-slide-to="2" />
         </div>
       </div>
+      <StickyButtons></StickyButtons>
     </section>
   );
 };
