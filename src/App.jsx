@@ -1,36 +1,47 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Routes, Route } from 'react-router-dom'
 import AnnouncementBar from './Components/Announcement'
 import Navbar from './Components/Layout/Navbar'
-import Homepage from './Components/Homepage'
 import Footer from './Components/Layout/Footer'
+import Homepage from './Components/Homepage'
 import ServicesSection from './Components/Services'
 import AboutSection from './Components/About'
 import FeatureSection from './Components/Feature'
 import GallerySection from './Components/Gallery'
 import PartnersSection from './Components/Partners'
 import ContactMapSection from './Components/ContactMap'
+import Careers from './Components/Career'
+import ScrollToTop from './ScrollToTop'
+import PageLayout from './Components/Layout/PageLayout'
+import ContactUs from './Components/ContactUs'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-   <>
-   <AnnouncementBar></AnnouncementBar>
-   <Navbar></Navbar>
-   <Homepage></Homepage>
-   <ServicesSection></ServicesSection>
-   <AboutSection></AboutSection>
-   <FeatureSection></FeatureSection>
-   <GallerySection></GallerySection>
-   <PartnersSection></PartnersSection>
-   <ContactMapSection></ContactMapSection>
-   <Footer></Footer>
-   
-   </>
+    <>
+      <AnnouncementBar />
+      <PageLayout>
+ <ScrollToTop />
+      <Routes>
+        
+        <Route
+          path="/"
+          element={
+            <>
+              <Homepage />
+              <ServicesSection />
+              <AboutSection />
+              <FeatureSection />
+              <GallerySection />
+              <PartnersSection />
+              <ContactMapSection />
+            </>
+          }
+        />
+        <Route path="/career" element={<Careers />} />
+        <Route path="/contact" element={<ContactUs />} />
+      </Routes>
 
+    </PageLayout>
+    </>
   )
 }
 

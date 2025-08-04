@@ -1,21 +1,42 @@
-// src/Components/layout/Navbar.jsx
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import logo from '/img/logo.png'; // Put your logo in /public/img/logo.png
+import logo from '/img/logo.png';
+import "../../custom.css"; // Ensure this path is correct
 
 function CustomNavbar() {
+  const [theme, setTheme] = useState('dark');
+
+  useEffect(() => {
+    const matchDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+    const handleThemeChange = (e) => {
+      setTheme(e.matches ? 'dark' : 'light');
+    };
+
+    // Initial check
+    setTheme(matchDark.matches ? 'dark' : 'light');
+
+    // Listen for changes
+    matchDark.addEventListener('change', handleThemeChange);
+
+    return () => matchDark.removeEventListener('change', handleThemeChange);
+  }, []);
+
+  const isDark = theme === 'dark';
+
   return (
     <Navbar
       expand="lg"
-      bg="dark"
-      variant="dark"
+      bg={isDark ? 'dark' : 'light'}
+      variant={isDark ? 'dark' : 'light'}
       sticky="top"
       style={{
-        background: 'rgba(0,0,0,0.6)',
+        background: isDark ? 'rgba(0,0,0,0.6)' : 'rgba(255,255,255,0.8)',
         padding: '0.7rem 1rem',
         backdropFilter: 'blur(8px)',
         zIndex: '999',
+        transition: 'background 0.3s ease-in-out',
       }}
     >
       <Container>
@@ -29,17 +50,17 @@ function CustomNavbar() {
         <Navbar.Toggle aria-controls="main-navbar" />
         <Navbar.Collapse id="main-navbar">
           <Nav className="ms-auto text-uppercase fw-semibold">
-            <Nav.Link as={Link} to="/" className="text-white px-3">
+            <Nav.Link as={Link} to="/" className="px-3">
               Home
             </Nav.Link>
-            <Nav.Link as={Link} to="/" className="text-white px-3">
+            <Nav.Link as={Link} to="/" className="px-3">
               About Us
             </Nav.Link>
             <NavDropdown
               title="Our Services"
               id="services-dropdown"
-              className="text-white px-3"
-              menuVariant="dark"
+              className="px-3"
+              menuVariant={isDark ? 'dark' : 'light'}
             >
               <NavDropdown.Item as={Link} to="/solar">
                 Solar EPC
@@ -51,16 +72,16 @@ function CustomNavbar() {
                 Infrastructure
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link as={Link} to="/projects" className="text-white px-3">
+            <Nav.Link as={Link} to="/projects" className="px-3">
               Our Projects
             </Nav.Link>
-            <Nav.Link as={Link} to="/about" className="text-white px-3">
+            <Nav.Link as={Link} to="/about" className="px-3">
               Gallery
             </Nav.Link>
-            <Nav.Link as={Link} to="/contact" className="text-white px-3">
+            <Nav.Link as={Link} to="/contact" className="px-3">
               Contact
             </Nav.Link>
-            <Nav.Link as={Link} to="/" className="text-white px-3">
+            <Nav.Link as={Link} to="/career" className="px-3">
               Career
             </Nav.Link>
           </Nav>
