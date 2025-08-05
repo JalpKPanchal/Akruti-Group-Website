@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 const servicesData = [
   {
     id: 1,
-    img: '/img/1.jpg',
+    img: '/img/1.webp',
     category: 'Solar EPC',
     title: 'Sun Energy',
     desc: 'Comprehensive design and construction of utility-scale solar plants using advanced thin-film and civil engineering solutions.',
