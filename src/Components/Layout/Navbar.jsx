@@ -62,14 +62,14 @@ function CustomNavbar() {
               className="px-3"
               menuVariant={isDark ? 'dark' : 'light'}
             >
-              <NavDropdown.Item as={Link} to="/solar">
+              <NavDropdown.Item as={Link} to="/solarepc">
                 Solar EPC
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/ev">
-                EV Charging
+              <NavDropdown.Item as={Link} to="/windsolarhybrid">
+               Wind Solar Hybrid
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/infrastructure">
-                Infrastructure
+              <NavDropdown.Item as={Link} to="/solaric">
+                Solar I & C
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link as={Link} to="/projects" className="px-3">

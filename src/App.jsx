@@ -1,10 +1,4 @@
-<<<<<<< Updated upstream
 import { Routes, Route } from 'react-router-dom'
-=======
-import { useState } from 'react'
-
-import './App.css'
->>>>>>> Stashed changes
 import AnnouncementBar from './Components/Announcement'
 import Navbar from './Components/Layout/Navbar'
 import Footer from './Components/Layout/Footer'
@@ -19,6 +13,9 @@ import Careers from './Components/Career'
 import ScrollToTop from './ScrollToTop'
 import PageLayout from './Components/Layout/PageLayout'
 import ContactUs from './Components/ContactUs'
+import SolarEPC from './Components/SolarEPC'
+import WindSolarHybrid from './Components/WindSolarHybrid'
+import SolarIC from './Components/Solar ic'
 
 function App() {
   return (
@@ -44,6 +41,9 @@ function App() {
         />
         <Route path="/career" element={<Careers />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/solarepc" element={<SolarEPC />} />
+          <Route path="/windsolarhybrid" element={<WindSolarHybrid />} />
+            <Route path="/solaric" element={<SolarIC />} />
       </Routes>
 
     </PageLayout>
