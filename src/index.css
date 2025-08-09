@@ -29,7 +29,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif !important;
 
 
 }

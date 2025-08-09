@@ -1,73 +1,134 @@
 import React from "react";
 import StickyButtons from "./Sticky";
+import "../custom.css"; // <-- Import custom animations
+import { Link } from "react-router-dom";
 
 const Homepage = () => {
+  const slides = [
+    {
+      type: "video",
+      src: "/img/home-bg-video.mp4",
+      heading:
+        "India’s Emerging Solar EPC & IPP Company for Decarbonization & Renewable Energy Solutions",
+      text: "Transforming Energy Landscapes with Intelligent Solar Power Solutions & Battery Energy Storage Systems (BESS)",
+    },
+    {
+      type: "image",
+      src: "/img/promo-2.jpg",
+      heading: "Modern Technology in Sun Energy",
+      text: "Empowering the future with sustainable innovation",
+    },
+    {
+      type: "image",
+      src: "/img/promo-1.jpg",
+      heading: "Business Hand in Hand with New Technology",
+      text: "Leading the green energy revolution for tomorrow",
+    },
+  ];
+
   return (
     <section>
-      <div
+      <div 
         id="homepageCarousel"
         className="carousel slide carousel-fade"
         data-bs-ride="carousel"
         data-bs-interval="6000"
       >
-        <div className="carousel-inner">
-          {/* Slide 1: Video */}
-          <div className="carousel-item active">
-            <div className="position-relative" style={{ height: "100vh", overflow: "hidden" }}>
-              <video
-                className="w-100 h-100"
-                autoPlay
-                muted
-                loop
-                playsInline
-                style={{ objectFit: "cover" }}
+        <div className="carousel-inner" >
+          {slides.map((slide, index) => (
+            <div
+              key={index}
+              className={`carousel-item ${index === 0 ? "active" : ""}`}
+            >
+              <div
+                className="position-relative"
+                style={{ height: "100vh", overflow: "hidden" }}
               >
-                <source src="/img/home-bg-video.mp4" type="video/mp4" />
-              </video>
-              <div className="carousel-caption text-start">
-                <h1 className="display-1">Your Renewable Energy Solutions Partner</h1>
-                <p>India’s Leading Solar EPC & I&C Company for Sustainable Energy</p>
+                {/* Background video or image */}
+                {slide.type === "video" ? (
+                  <video
+                    className="w-100 h-100"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    style={{ objectFit: "cover" }}
+                  >
+                    <source src={slide.src} type="video/mp4" />
+                  </video>
+                ) : (
+                  <img
+                    src={slide.src}
+                    className="d-block w-100"
+                    alt={`Slide ${index + 1}`}
+                    style={{ height: "100vh", objectFit: "cover" }}
+                  />
+                )}
+
+                {/* Left side content with animation */}
+                <div
+                  className="left-panel d-flex align-items-center"
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    height: "100%",
+                    width: "50%",
+                    
+                    padding: "50px",
+                  }}
+                >
+                  <div className="text-white"  style={{background: "rgba(0, 0, 0, 0.12)",padding:"5px"}}>
+                    <h1 className="fw-bold mb-3" style={{ fontSize: "2.5rem" }}>
+                      {slide.heading}
+                    </h1>
+                    <p className="lead mb-4">{slide.text}</p>
+                    <div>
+                      <Link to="/about"
+                        
+                        className="btn btn-primary btn-lg me-3"
+                        style={{
+                          backgroundColor: "#007bff",
+                          border: "none",
+                          padding: "10px 25px",
+                          borderRadius: "30px",
+                        }}
+                      >
+                        Know More
+                      </Link>
+                      <Link to = "/contact"
+                        
+                        className="btn btn-outline-light btn-lg"
+                        style={{
+                          padding: "10px 25px",
+                          borderRadius: "30px",
+                        }}
+                      >
+                        Contact Us
+                      </Link>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-
-          {/* Slide 2: Image */}
-          <div className="carousel-item">
-            <img
-              src="/img/promo-2.jpg"
-              className="d-block w-100"
-              alt="Slide 2"
-              style={{ height: "100vh", objectFit: "cover" }}
-            />
-            <div className="carousel-caption">
-              <h1 className="display-1">Modern Technology in <span>Sun Energy</span></h1>
-              <p>Empowering the future with sustainable innovation</p>
-            </div>
-          </div>
-
-          {/* Slide 3: Image */}
-          <div className="carousel-item">
-            <img
-              src="/img/promo-1.jpg"
-              className="d-block w-100"
-              alt="Slide 3"
-              style={{ height: "100vh", objectFit: "cover" }}
-            />
-            <div className="carousel-caption text-start">
-              <h1 className="display-1">Business Hand in Hand with New Technology</h1>
-              <p>Leading the green energy revolution for tomorrow</p>
-            </div>
-          </div>
+          ))}
         </div>
 
         {/* Carousel indicators */}
         <div className="carousel-indicators">
-          <button type="button" data-bs-target="#homepageCarousel" data-bs-slide-to="0" className="active" />
-          <button type="button" data-bs-target="#homepageCarousel" data-bs-slide-to="1" />
-          <button type="button" data-bs-target="#homepageCarousel" data-bs-slide-to="2" />
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              type="button"
+              data-bs-target="#homepageCarousel"
+              data-bs-slide-to={index}
+              className={index === 0 ? "active" : ""}
+            />
+          ))}
         </div>
       </div>
-      <StickyButtons></StickyButtons>
+
+      <StickyButtons />
     </section>
   );
 };
