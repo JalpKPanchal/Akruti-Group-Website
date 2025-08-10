@@ -15,6 +15,7 @@ import '../../custom.css';
 
 const Footer = () => {
   return (
+    <>
     <footer className="bg-dark text-light pt-5">
       <Container>
         <Row className="gy-4">
@@ -93,6 +94,7 @@ const Footer = () => {
         </div>
       </Container>
     </footer>
+    </>
   );
 };
 

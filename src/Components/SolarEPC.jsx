@@ -10,6 +10,7 @@ import pdfBg from '/img/cases.jpg';
 
 const SolarEPC = () => {
   return (
+    <>
     <main className="main">
       {/* Promo Primary */}
       <section className="promo-primary">
@@ -99,6 +100,7 @@ const SolarEPC = () => {
         </div>
       </section>
     </main>
+    </>
   );
 };
 

@@ -9,6 +9,7 @@ import pdfBg from '/img/solar-ic-bg.jpg';
 
 const SolarIC = () => {
   return (
+    <>
     <main className="main">
       {/* Banner Section */}
       <section className="promo-primary">
@@ -88,6 +89,7 @@ const SolarIC = () => {
         </div>
       </section>
     </main>
+    </>
   );
 };
 

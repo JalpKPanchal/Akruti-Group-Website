@@ -53,6 +53,7 @@ const ContactUs = () => {
   };
 
   return (
+    <>
     <div className="contact-page">
       {/* Hero Banner */}
       <section className="contact-hero text-center text-white d-flex flex-column justify-content-center align-items-center">
@@ -155,6 +156,7 @@ const ContactUs = () => {
         </Row>
       </Container>
     </div>
+    </>
   );
 };
 

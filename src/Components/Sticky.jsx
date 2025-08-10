@@ -3,6 +3,7 @@ import { FaWhatsapp, FaComments } from 'react-icons/fa';
 
 export default function StickyButtons() {
   return (
+    <>
     <div className="sticky-buttons">
       {/* WhatsApp Button */}
       <a
@@ -20,5 +21,6 @@ export default function StickyButtons() {
         <FaComments />
       </button>
     </div>
+    </>
   );
 }

@@ -27,6 +27,7 @@ const Homepage = () => {
   ];
 
   return (
+    <>
     <section>
       <div 
         id="homepageCarousel"
@@ -130,6 +131,7 @@ const Homepage = () => {
 
       <StickyButtons />
     </section>
+    </>
   );
 };
 

@@ -19,6 +19,7 @@ function CustomNavbar() {
   }, []);
 
   return (
+    <>
     <Navbar expand="lg" sticky="top" className="solar-navbar">
       <Container>
         <a href="/">
@@ -46,13 +47,14 @@ function CustomNavbar() {
             </NavDropdown>
 
             <Nav.Link as={Link} to="/projects" className="px-3">Our Projects</Nav.Link>
-            <Nav.Link as={Link} to="/gallery" className="px-3">Gallery</Nav.Link>
+            <Nav.Link as={Link} to="/gallerypage" className="px-3">Gallery</Nav.Link>
             <Nav.Link as={Link} to="/contact" className="px-3">Contact</Nav.Link>
             <Nav.Link as={Link} to="/career" className="px-3">Career</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </>
   );
 }
 

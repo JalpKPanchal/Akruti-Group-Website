@@ -47,6 +47,7 @@ export default function ServicesSection() {
   };
 
   return (
+    <>
     <section className="py-5 bg-light">
       <div className="container">
 
@@ -108,5 +109,6 @@ export default function ServicesSection() {
 
       </div>
     </section>
+    </>
   );
 }

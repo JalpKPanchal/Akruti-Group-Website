@@ -43,6 +43,7 @@ const features = [
 
 export default function FeatureSection() {
   return (
+    <>
     <section className="py-5 features section bg-white">
       <div className="container">
         {/* Header */}
@@ -80,5 +81,6 @@ export default function FeatureSection() {
         </div>
       </div>
     </section>
+    </>
   );
 }

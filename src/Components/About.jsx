@@ -40,6 +40,7 @@ const AboutSection = () => {
   }, []);
 
   return (
+    <>
     <section className="py-5 bg-white about-welcome about-welcome--style-3">
       <div className="container">
         <div className="row">
@@ -101,6 +102,7 @@ const AboutSection = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 

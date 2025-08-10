@@ -3,6 +3,7 @@ import "../custom.css"; // Make sure this exists
 
 export default function ContactMapSection() {
   return (
+    <>
     <section className="section py-5 bg-light border-top">
       <div className="container">
         <div className="row align-items-stretch">
@@ -79,5 +80,6 @@ export default function ContactMapSection() {
         </div>
       </div>
     </section>
+    </>
   );
 }

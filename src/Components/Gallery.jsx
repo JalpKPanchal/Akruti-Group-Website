@@ -15,7 +15,7 @@ export default function GallerySection() {
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (
-    <section className="section main-gallery main-gallery--style-3 no-padding-bottom">
+    <>    <section className="section main-gallery main-gallery--style-3 no-padding-bottom">
       <div className="container">
         {/* Heading Row */}
         <div className="row align-items-center mb-4">
@@ -74,20 +74,25 @@ export default function GallerySection() {
       </div>
 
       {/* Lightbox */}
-      {selectedImage && (
-        <div className="lightbox" onClick={() => setSelectedImage(null)}>
-          <span
-            className="lightbox-close"
-            onClick={(e) => {
-              e.stopPropagation();
-              setSelectedImage(null);
-            }}
-          >
-            &times;
-          </span>
-          <img src={selectedImage} alt="Enlarged view" />
-        </div>
-      )}
+   {selectedImage && (
+  <div className="lightbox" onClick={() => setSelectedImage(null)}>
+    <div
+      className="lightbox-content"
+      onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside
+    >
+      <span
+        className="lightbox-close"
+        onClick={() => setSelectedImage(null)}
+      >
+        &times;
+      </span>
+      <img src={selectedImage} alt="Enlarged view" />
+    </div>
+  </div>
+)}
+
     </section>
+    </>
+
   );
 }

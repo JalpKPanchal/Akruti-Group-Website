@@ -62,6 +62,7 @@ bottomSwiper.setTranslate(-bottomPos); // use negative for reverse
   const tripledBottomRow = [...bottomRow, ...bottomRow, ...bottomRow];
 
   return (
+    <>
     <section className="section brands py-5 bg-light">
       <div className="container">
         <div className="row mb-4">
@@ -115,5 +116,6 @@ bottomSwiper.setTranslate(-bottomPos); // use negative for reverse
         </Swiper>
       </div>
     </section>
+    </>
   );
 }

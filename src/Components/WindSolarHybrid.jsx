@@ -9,6 +9,7 @@ import pdfBg from '/img/windfirst.jpg';
 
 const WindSolarHybrid = () => {
   return (
+    <>
     <main className="main">
       {/* Promo Section */}
       <section className="promo-primary">
@@ -88,6 +89,7 @@ const WindSolarHybrid = () => {
         </div>
       </section>
     </main>
+    </>
   );
 };
 

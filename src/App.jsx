@@ -21,6 +21,7 @@ import ContactUs from './Components/ContactUs'
 import SolarEPC from './Components/SolarEPC'
 import WindSolarHybrid from './Components/WindSolarHybrid'
 import SolarIC from './Components/Solar ic'
+import GalleryPage from './Components/GalleryPage'
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
         <Route path="/solarepc" element={<SolarEPC />} />
           <Route path="/windsolarhybrid" element={<WindSolarHybrid />} />
             <Route path="/solaric" element={<SolarIC />} />
+            <Route path="/gallerypage" element={<GalleryPage />} />
       </Routes>
 
     </PageLayout>

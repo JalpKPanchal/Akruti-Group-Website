@@ -18,6 +18,7 @@ export default function AnnouncementBar() {
   }, []);
 
   return (
+    <>
     <div className="bg-success text-white py-4 text-center">
       <div
         className="transition"
@@ -29,5 +30,6 @@ export default function AnnouncementBar() {
         <strong>{messages[currentMsgIndex]}</strong>
       </div>
     </div>
+    </>
   );
 }
