@@ -43,6 +43,7 @@ function App() {
               <PartnersSection />
               <ContactMapSection />
             </>
+            
           }
         />
         <Route path="/career" element={<Careers />} />

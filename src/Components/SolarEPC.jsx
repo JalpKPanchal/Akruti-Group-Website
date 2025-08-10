@@ -12,7 +12,7 @@ const SolarEPC = () => {
   return (
     <>
     <main className="main">
-      {/* Promo Primary */}
+      {/* Promo Primary test */}
       <section className="promo-primary">
         <div className="overlay"></div>
         <picture>
