@@ -50,7 +50,8 @@ function App() {
         <Route path="/solarepc" element={<SolarEPC />} />
           <Route path="/windsolarhybrid" element={<WindSolarHybrid />} />
             <Route path="/solaric" element={<SolarIC />} />
-            <Route path="/gallerypage" element={<GalleryPage />} />
+            <Route path="/gallerypage" element={<GalleryPage />} /> 
+            {/* //gallerypage done */}
       </Routes>
 
     </PageLayout>
