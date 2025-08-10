@@ -53,6 +53,7 @@ function App() {
             <Route path="/gallerypage" element={<GalleryPage />} /> 
             {/* //gallerypage done */}
       </Routes>
+      {/* jalp */}
 
     </PageLayout>
     </>
