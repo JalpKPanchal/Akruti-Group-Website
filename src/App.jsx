@@ -1,10 +1,7 @@
-<<<<<<< Updated upstream
 import { Routes, Route } from 'react-router-dom'
-=======
 import { useState } from 'react'
 
 import './App.css'
->>>>>>> Stashed changes
 import AnnouncementBar from './Components/Announcement'
 import Navbar from './Components/Layout/Navbar'
 import Footer from './Components/Layout/Footer'
