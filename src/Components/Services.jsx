@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import '../custom.css';
 
 const servicesData = [
   {
@@ -9,7 +10,7 @@ const servicesData = [
     category: 'Solar EPC',
     title: 'Sun Energy',
     desc: 'Comprehensive design and construction of utility-scale solar plants using advanced thin-film and civil engineering solutions.',
-    link: '/services/solar-epc',
+    link: '/solarepc',
   },
   {
     id: 2,
@@ -17,51 +18,59 @@ const servicesData = [
     category: 'Wind Power',
     title: 'Wind Energy',
     desc: 'Expert advisory services across all stages of wind energy planning and project lifecycle execution.',
-    link: '/services/wind-power',
+    link: '/windsolarhybrid',
   },
   {
     id: 3,
     img: '/img/serv-in-bg-3.jpg',
     category: 'Solar I & C',
     title: 'Solar I & C',
-    desc: 'End‑to‑end project management ensuring on‑time, on‑budget delivery with high standards.',
-    link: '/services/solar-ic',
+    desc: 'End-to-end project management ensuring on-time, on-budget delivery with high standards.',
+    link: '/solaric',
   },
 ];
 
 export default function ServicesSection() {
+  const servicesRef = useRef(null);
+
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
-    AOS.refresh();
+    AOS.init({ duration: 800, once: true });
   }, []);
+
+  const scrollToServices = () => {
+    const element = servicesRef.current;
+    if (element) {
+      const yOffset = -80; // space from top
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  };
 
   return (
     <section className="py-5 bg-light">
       <div className="container">
-        {/* Header Section */}
+
+        {/* Header */}
         <div className="row align-items-center mb-5">
-          <div className="col-lg-7">
-            <div className="d-flex flex-column flex-md-row align-items-start align-items-md-center">
-              <div className="me-md-4">
-                <h3 className="h3 fw-bold mb-2">Services</h3>
-                <p className="fs-4 m-0">
-                  Welcome to Great <br /> Akruti Group
-                </p>
-              </div>
-              <div className="mt-3 mt-md-0">
-                <img
-                  src="/img/logo_short.png"
-                  alt="Akruti Logo"
-                  style={{ maxWidth: '130px', height: '90px' }}
-                />
-              </div>
+          <div className="col-lg-7 d-flex align-items-center">
+            <div className="me-md-4">
+              <h1 className="h3 fw-bold mb-2" style={{ fontSize: '50px' }}>Services</h1>
+              <p className="fs-4 m-0">Welcome to Great <br /> Akruti Group</p>
             </div>
+            <img
+              src="/img/logo_short.png"
+              alt="Akruti Logo"
+              className="ms-3"
+              style={{ maxWidth: '130px', height: '90px' }}
+            />
           </div>
-          <div className="col-lg-4 text-lg-end mt-2 mt-lg-1">
+          <div className="col-lg-4 text-lg-end">
             <p>
               Our mission is to lead the shift towards sustainable, dependable, and cost-effective energy systems.
             </p>
-            <a href="/services" className="btn btn-outline-primary">All Services</a>
+            <button onClick={scrollToServices} className="btn btn-outline-primary">
+              All Services
+            </button>
           </div>
         </div>
 
@@ -72,35 +81,31 @@ export default function ServicesSection() {
           </span>
         </div>
 
-        {/* Service Cards */}
-        <div className="row g-4">
+        {/* Cards */}
+        <div className="row g-4" ref={servicesRef}>
           {servicesData.map((service) => (
-            <div className="col-md-6 col-lg-4" key={service.id}>
-              <div className="card h-100 shadow-sm">
-                <img src={service.img} className="card-img-top" alt={service.category} />
-                <div className="card-body d-flex flex-column">
-                  <h6 className="text-muted">{service.category}</h6>
-                  <h4 className="card-title mt-2">
-                    <a href={service.link} className="text-decoration-none text-dark">
-                      {service.title} <i className="bi bi-chevron-right ms-1"></i>
+            <div className="col-md-6 col-lg-4" key={service.id} data-aos="fade-up">
+              <div className="service-card h-100">
+                <div className="service-img-wrapper">
+                  <img src={service.img} alt={service.category} className="service-img" />
+                  <span className="service-tag">{service.category}</span>
+                </div>
+                <div className="p-4 d-flex flex-column">
+                  <h4 className="fw-bold mb-2">
+                    <a href={service.link} className="text-dark text-decoration-none hover-primary">
+                      {service.title} <i className="bi bi-arrow-right"></i>
                     </a>
                   </h4>
-
-                  {/* Animated section */}
-                  <div data-aos="fade-up" data-aos-delay="300">
-                    <p className="card-text mt-2">{service.desc}</p>
-                    <div className="mt-3">
-                      <a href={service.link} className="btn btn-primary btn-sm">
-                        Explore more
-                      </a>
-                    </div>
-                  </div>
-
+                  <p className="text-muted flex-grow-1">{service.desc}</p>
+                  <a href={service.link} className="btn btn-primary mt-3 align-self-start">
+                    Explore More
+                  </a>
                 </div>
               </div>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );

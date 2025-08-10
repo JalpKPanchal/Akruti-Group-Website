@@ -1,5 +1,6 @@
 import React from 'react';
 // import '../styles.min.css'; // Your uploaded global CSS
+import '../custom.css'; // Your custom CSS
 
 const features = [
   {
@@ -48,7 +49,7 @@ export default function FeatureSection() {
         <div className="row mb-4">
           <div className="col-12">
             <div className="heading primary-heading text-center">
-              <h3 className="title">Features</h3>
+              <h2 className="title">Features</h2>
               <h5 className="subtitle">
                 <span>Explore Our </span>
                 <span>Features</span>

@@ -1,84 +1,62 @@
-import React from 'react';
-import '../custom.css'; // Make sure your custom styles are imported here
+import React, { useState } from 'react';
+import '../custom.css';
+import { Link } from 'react-router-dom';
 
 const galleryData = [
-  {
-    id: 1,
-    img: '/gallery/1.webp',
-    label: 'Solar Projects',
-  },
-  {
-    id: 2,
-    img: '/gallery/4.webp',
-    label: 'Windmill Station',
-  },
-  {
-    id: 3,
-    img: '/gallery/5.webp',
-    label: 'Electricity Station',
-  },
-  {
-    id: 4,
-    img: '/gallery/15.webp',
-    label: 'Renewable Energy Station',
-  },
-  {
-    id: 5,
-    img: '/gallery/2.webp',
-    label: 'Solar Field',
-    colSize: 'col-xl-6 col-md-6',
-  },
-  {
-    id: 6,
-    img: '/gallery/8.webp',
-    label: 'Renewable Energy Station',
-    colSize: 'col-xl-6 col-md-6',
-  },
+  { id: 1, img: '/gallery/1.webp', label: 'Solar Projects' },
+  { id: 2, img: '/gallery/4.webp', label: 'Windmill Station' },
+  { id: 3, img: '/gallery/5.webp', label: 'Electricity Station' },
+  { id: 4, img: '/gallery/15.webp', label: 'Renewable Energy Station' },
+  { id: 5, img: '/gallery/2.webp', label: 'Solar Field', wide: true },
+  { id: 6, img: '/gallery/8.webp', label: 'Renewable Energy Station', wide: true },
 ];
 
 export default function GallerySection() {
+  const [selectedImage, setSelectedImage] = useState(null);
+
   return (
     <section className="section main-gallery main-gallery--style-3 no-padding-bottom">
       <div className="container">
-        <div className="row align-items-end mb-4">
-          <div className="col-lg-9">
+        {/* Heading Row */}
+        <div className="row align-items-center mb-4">
+          {/* Left Column */}
+          <div className="col-lg-6">
             <div className="heading primary-heading">
-              <h3 className="title">Watch</h3>
+              <h2 className="title">Watch</h2>
               <h5 className="subtitle">
                 <span>Our</span> <span>Gallery</span>
               </h5>
-              <p>
-                Our innovative technologies, clear focus on the needs of our clients, and 1,210 dedicated employees, we energize society. Let’s make tomorrow different today!
-              </p>
             </div>
           </div>
-          <div className="col-lg-3 text-end">
-            <a className="button button--transparent" href="#">
-              <span>Discover</span>
-            </a>
+
+          {/* Right Column */}
+          <div className="col-lg-6 text-lg-start">
+            <p className="description">
+              Our innovative technologies, clear focus on the needs of our clients,
+              and 1,210 dedicated employees energize society. Let’s make tomorrow
+              different today!
+            </p>
+            <Link to="/gallery" className="button button--transparent">
+           <button className="discover-btn">Discover</button>
+           </Link>
           </div>
         </div>
       </div>
 
       {/* Gallery Grid */}
       <div className="gallery row gx-0">
-        {galleryData.map((item, index) => (
+        {galleryData.map((item) => (
           <div
-            key={index}
-            className={`gallery-item ${
-              item.wide ? 'col-xl-6 col-md-6' : 'col-xl-3 col-md-6'
-            }`}
+            key={item.id}
+            className={`gallery-item ${item.wide ? 'col-xl-6 col-md-6' : 'col-xl-3 col-md-6'}`}
+            onClick={() => setSelectedImage(item.img)}
           >
-            <a
-              className="gallery-link"
-              href={item.img}
-              data-fancybox="main-gallery"
-            >
+            <div className="gallery-link">
               <div className="overlay"></div>
-              <img className="img-bg" src={item.img} alt={item.title} />
-            </a>
+              <img className="img-bg" src={item.img} alt={item.label} />
+            </div>
             <div className="description">
-              <span>{item.title}</span>
+              <span>{item.label}</span>
             </div>
           </div>
         ))}
@@ -94,6 +72,22 @@ export default function GallerySection() {
           </div>
         </div>
       </div>
+
+      {/* Lightbox */}
+      {selectedImage && (
+        <div className="lightbox" onClick={() => setSelectedImage(null)}>
+          <span
+            className="lightbox-close"
+            onClick={(e) => {
+              e.stopPropagation();
+              setSelectedImage(null);
+            }}
+          >
+            &times;
+          </span>
+          <img src={selectedImage} alt="Enlarged view" />
+        </div>
+      )}
     </section>
   );
 }
