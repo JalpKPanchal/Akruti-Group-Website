@@ -89,6 +89,7 @@ const WindSolarHybrid = () => {
         </div>
       </section>
     </main>
+    {/* text */}
     </>
   );
 };
