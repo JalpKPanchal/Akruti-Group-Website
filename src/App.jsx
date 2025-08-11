@@ -22,6 +22,7 @@ import SolarEPC from './Components/SolarEPC'
 import WindSolarHybrid from './Components/WindSolarHybrid'
 import SolarIC from './Components/Solar ic'
 import GalleryPage from './Components/GalleryPage'
+import Projects from './Components/Our Projects'
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
               <PartnersSection />
               <ContactMapSection />
             </>
+            
           }
         />
         <Route path="/career" element={<Careers />} />
@@ -50,7 +52,9 @@ function App() {
         <Route path="/solarepc" element={<SolarEPC />} />
           <Route path="/windsolarhybrid" element={<WindSolarHybrid />} />
             <Route path="/solaric" element={<SolarIC />} />
-            <Route path="/gallerypage" element={<GalleryPage />} />
+            <Route path="/gallerypage" element={<GalleryPage />} /> 
+            <Route path="/ourprojects" element={<Projects />} /> 
+            {/* //gallerypage done */}
       </Routes>
 
     </PageLayout>
