@@ -53,7 +53,8 @@ function App() {
           <Route path="/windsolarhybrid" element={<WindSolarHybrid />} />
             <Route path="/solaric" element={<SolarIC />} />
             <Route path="/gallerypage" element={<GalleryPage />} /> 
-            <Route path="/ourprojects" element={<Projects />} /> 
+            <Route path="/projects" element={<Projects />} /> 
+        <Route path="/about" element={<AboutSection />} />
             {/* //gallerypage done */}
       </Routes>
 

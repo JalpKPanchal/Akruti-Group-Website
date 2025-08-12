@@ -1,0 +1,206 @@
+/* ========== About Us Page CSS ========== */
+
+.aboutus-page {
+  background: #f8fafc;
+  color: #232c3d;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  min-height: 100vh;
+}
+
+/* HERO SECTION */
+.au-hero {
+  background: linear-gradient(100deg, #13203a 70%, #247c7c 100%);
+  color: #fff;
+  padding: 72px 0 48px 0;
+  border-radius: 0 0 36px 36px;
+  box-shadow: 0 8px 32px 0 rgba(32,47,65,0.15);
+  text-align: center;
+}
+.au-hero-content {
+  max-width: 800px;
+}
+.au-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  line-height: 1.13;
+  margin-bottom: 12px;
+}
+.au-title-highlight {
+  color: #ffe156;
+  background: linear-gradient(90deg,#1b9b65 20%, #ffe156 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.au-hero-desc {
+  font-size: 1.23rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+/* SECTION WRAPPER */
+.au-section {
+  margin: 56px 0 36px 0;
+}
+
+/* WHO WE ARE */
+.au-heading {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #247c7c;
+  margin-bottom: 18px;
+}
+.au-desc {
+  font-size: 1.08rem;
+  color: #232c3d;
+}
+.au-img {
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(32,47,65,0.09);
+  max-width: 100%;
+  height: auto;
+}
+
+/* MISSION & VISION */
+.au-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 28px 24px;
+  min-height: 160px;
+  box-shadow: 0 2px 8px 0 rgba(32,47,65,0.05);
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.au-card-title {
+  font-weight: 700;
+  color: #26409a;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
+.mission-card {
+  border-left: 6px solid #1b9b65;
+}
+.vision-card {
+  border-left: 6px solid #ffe156;
+}
+
+/* CORE VALUES */
+.au-value-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px 18px 18px 18px;
+  box-shadow: 0 2px 8px 0 rgba(32,47,65,0.11);
+  text-align: center;
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+.au-value-card:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 8px 24px 0 rgba(32,47,65,0.13);
+}
+.au-value-icon {
+  width: 52px;
+  height: 52px;
+  line-height: 52px;
+  margin: 0 auto 10px auto;
+  font-size: 2.1rem;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bg-primary { background: #247c7c; }
+.bg-success { background: #1b9b65; }
+.bg-warning { background: #ffe156; color: #26409a; }
+.au-value-title {
+  font-weight: 700;
+  font-size: 1.13rem;
+  color: #26409a;
+  margin-bottom: 6px;
+}
+
+/* JOURNEY TIMELINE */
+.au-timeline {
+  border-left: 4px solid #247c7c;
+  padding-left: 22px;
+  margin-top: 18px;
+  max-width: 650px;
+}
+.au-timeline-item {
+  position: relative;
+  margin-bottom: 24px;
+  font-size: 1.07rem;
+}
+.au-timeline-dot {
+  position: absolute;
+  left: -32px;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  background: #ffe156;
+  border: 3px solid #247c7c;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* LEADERSHIP */
+.au-leader-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px 0 rgba(32,47,65,0.09);
+  padding: 28px 14px 18px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.au-leader-img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border: 3px solid #ffe156;
+}
+.au-leader-name {
+  font-weight: 700;
+  font-size: 1.13rem;
+  color: #247c7c;
+  margin-bottom: 2px;
+}
+.au-leader-role {
+  color: #26409a;
+  font-size: 0.99rem;
+  margin-bottom: 6px;
+}
+.au-leader-bio {
+  font-size: 0.97rem;
+  color: #232c3d;
+}
+
+/* ANIMATION DELAYS */
+[data-aos][data-aos][data-aos-delay="80"]   { transition-delay: 0.08s; }
+[data-aos][data-aos][data-aos-delay="100"]  { transition-delay: 0.1s; }
+[data-aos][data-aos][data-aos-delay="140"]  { transition-delay: 0.14s; }
+[data-aos][data-aos][data-aos-delay="180"]  { transition-delay: 0.18s; }
+[data-aos][data-aos][data-aos-delay="220"]  { transition-delay: 0.22s; }
+[data-aos][data-aos][data-aos-delay="260"]  { transition-delay: 0.26s; }
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 991.98px) {
+  .au-section, .container { padding-left: 18px !important; padding-right: 18px !important; }
+  .au-img { margin-bottom: 18px; }
+  .au-timeline { max-width: 100%; }
+}
+@media (max-width: 767.98px) {
+  .au-hero { padding: 38px 0 18px 0; border-radius: 0 0 16px 16px; }
+  .au-title, .au-heading { font-size: 1.37rem; }
+  .au-section { margin: 28px 0 18px 0; }
+  .au-card, .au-value-card, .au-leader-card { padding: 18px 6px; }
+  .au-timeline-dot { width: 15px; height: 15px; left: -22px; }
+}
+@media (max-width: 575.98px) {
+  .au-img { border-radius: 10px; }
+  .au-leader-img { width: 48px; height: 48px; }
+}

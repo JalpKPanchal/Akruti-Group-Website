@@ -1,109 +1,209 @@
-import React, { useState, useEffect } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../custom.css'; // Keep your CSS here
+import React, { useEffect } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "../aboutus.css";
 
-const AboutSection = () => {
-  const [counts, setCounts] = useState({
-    projects: 0,
-    employees: 0,
-    established: 0,
-  });
-
-  // Animate counting on load
+export default function About() {
   useEffect(() => {
-    const targets = { projects: 650, employees: 100, established: 2001 };
-    const duration = 2000; // ms
-    const steps = 60;
-    const intervalTime = duration / steps;
-    let currentStep = 0;
-
-    const interval = setInterval(() => {
-      currentStep++;
-      setCounts({
-        projects: Math.min(
-          Math.floor((targets.projects / steps) * currentStep),
-          targets.projects
-        ),
-        employees: Math.min(
-          Math.floor((targets.employees / steps) * currentStep),
-          targets.employees
-        ),
-        established: Math.min(
-          Math.floor((targets.established / steps) * currentStep),
-          targets.established
-        ),
-      });
-      if (currentStep >= steps) clearInterval(interval);
-    }, intervalTime);
-
-    return () => clearInterval(interval);
+    AOS.init({ duration: 800, once: true, offset: 120, easing: "ease-in-out" });
   }, []);
 
   return (
-    <>
-    <section className="py-5 bg-white about-welcome about-welcome--style-3">
-      <div className="container">
-        <div className="row">
-          {/* Left heading section */}
-          <div className="col-xl-4 mb-4 mb-xl-0">
-            <div className="heading primary-heading">
-              <h2 className="title" style={{fontSize:"50px",fontWeight:"700"}}>About</h2>
-              <h5 className="subtitle">
-                <span>Welcome to Our</span> <br />
-                <span>Akruti Group</span>
-              </h5>
+    <main className="aboutus-page">
+      {/* HERO */}
+      <section className="au-hero" data-aos="fade-up" data-aos-delay="80">
+        <div className="container au-hero-content">
+          <h1 className="au-title" data-aos="fade-up" data-aos-delay="140">
+            About{" "}
+            <span className="au-title-highlight">Akruti Green Energy</span>
+          </h1>
+          <p className="au-hero-desc" data-aos="fade-up" data-aos-delay="200">
+            Empowering a sustainable future through innovative renewable energy
+            solutions.
+          </p>
+        </div>
+      </section>
+
+      {/* WHO WE ARE */}
+      <section
+        className="container au-section"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        <div className="row align-items-center">
+          <div className="col-lg-6 mb-4 mb-lg-0">
+            <img
+              className="au-img"
+              src="https://cdn.prod.website-files.com/64dbc131328758d2f8cb2f35/677e447ad95eaf411325e7fb_What%20Makes%20Prozeal%20the%20Ideal%20Partner%20for%20Wind%20Solar%20Hybrid%20Solutions.jpg"
+              alt="Prozeal Team"
+              loading="lazy"
+            />
+          </div>
+          <div className="col-lg-6">
+            <h2 className="au-heading">Who We Are</h2>
+            <p className="au-desc">
+              Prozeal Green Energy Limited is a leading renewable energy
+              company, dedicated to delivering cutting-edge solar, wind, and
+              hybrid solutions across India. With a passion for sustainability
+              and innovation, we empower industries, communities, and
+              governments to transition toward clean, reliable, and
+              cost-effective energy.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* MISSION & VISION */}
+      <section
+        className="container au-section"
+        data-aos="fade-up"
+        data-aos-delay="140"
+      >
+        <div className="row align-items-stretch">
+          <div className="col-md-6 mb-4 mb-md-0">
+            <div className="au-card mission-card">
+              <h3 className="au-card-title">Our Mission</h3>
+              <p>
+                To accelerate the adoption of renewable energy and enable a
+                greener planet by providing innovative, reliable, and integrated
+                solutions that deliver exceptional value to our clients and
+                partners.
+              </p>
             </div>
           </div>
-
-          {/* Right description */}
-          <div className="col-xl-7 offset-xl-1">
-            <div className="description" style={{fontSize:"18px",fontWeight:"500"}}>
+          <div className="col-md-6">
+            <div className="au-card vision-card">
+              <h3 className="au-card-title">Our Vision</h3>
               <p>
-                The increasing growth of Solar energy has underscored the need
-                for additional capacity across the solar value chain in recent years.
-                However, the substantial financial investment needed to initiate and scale
-                up Mega projects for potential growth for a better tomorrow.
+                To be the most trusted energy partner in propelling India’s
+                transition to a sustainable and carbon-neutral future.
               </p>
-              <p>
-                Taken together, these elements present significant challenges to
-                sustainable EPC projects and expansion plans for the green revolution.
-              </p>
-              <a href="#" className="btn btn-outline-primary">
-                More about
-              </a>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* Counter Section */}
-      <div className="counter-block counter--text-lower counter--is-blue py-5 mt-4">
-        <div className="container">
-          <div className="row text-center g-4">
-            <div className="col-sm-4">
-              <div className="counter-card">
-                <span className="display-4 fw-bold">{counts.projects}+</span>
-                <p className="description mt-2">Mega Projects Completed In Last 5 Years</p>
-              </div>
+      {/* CORE VALUES */}
+      <section
+        className="container au-section"
+        data-aos="fade-up"
+        data-aos-delay="180"
+      >
+        <h2 className="au-heading text-center mb-4">Our Core Values</h2>
+        <div className="row justify-content-center">
+          <div className="col-md-4 mb-4">
+            <div className="au-value-card">
+              <div className="au-value-icon bg-primary">🌱</div>
+              <h4 className="au-value-title">Sustainability</h4>
+              <p>
+                Committed to environment-friendly solutions and responsible
+                business practices.
+              </p>
             </div>
-            <div className="col-sm-4">
-              <div className="counter-card">
-                <span className="display-4 fw-bold">{counts.employees}+</span>
-                <p className="description mt-2">Qualified Employees & Workers With Us</p>
-              </div>
+          </div>
+          <div className="col-md-4 mb-4">
+            <div className="au-value-card">
+              <div className="au-value-icon bg-success">💡</div>
+              <h4 className="au-value-title">Innovation</h4>
+              <p>
+                Constantly pushing boundaries to develop advanced and efficient
+                energy technologies.
+              </p>
             </div>
-            <div className="col-sm-4">
-              <div className="counter-card">
-                <span className="display-4 fw-bold">{counts.established}</span>
-                <p className="description mt-2">Company Established</p>
-              </div>
+          </div>
+          <div className="col-md-4 mb-4">
+            <div className="au-value-card">
+              <div className="au-value-icon bg-warning">🤝</div>
+              <h4 className="au-value-title">Integrity</h4>
+              <p>
+                Building trust through transparency, dependability, and ethical
+                standards.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    </>
+      </section>
+
+      {/* JOURNEY */}
+      <section
+        className="container au-section"
+        data-aos="fade-up"
+        data-aos-delay="220"
+      >
+        <h2 className="au-heading mb-4">Our Journey</h2>
+        <div className="au-timeline">
+          <div className="au-timeline-item">
+            <div className="au-timeline-dot"></div>
+            <div>
+              <strong>2015</strong> – Prozeal Green Energy is founded with a
+              vision to transform India’s energy landscape.
+            </div>
+          </div>
+          <div className="au-timeline-item">
+            <div className="au-timeline-dot"></div>
+            <div>
+              <strong>2017</strong> – Commissioned our first large-scale solar
+              park in Gujarat.
+            </div>
+          </div>
+          <div className="au-timeline-item">
+            <div className="au-timeline-dot"></div>
+            <div>
+              <strong>2020</strong> – Launched hybrid wind-solar solutions for
+              industrial and commercial clients.
+            </div>
+          </div>
+          <div className="au-timeline-item">
+            <div className="au-timeline-dot"></div>
+            <div>
+              <strong>2024</strong> – Reached 1 GW in total renewable energy
+              installations across India.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* LEADERSHIP */}
+      <section
+        className="container au-section"
+        data-aos="fade-up"
+        data-aos-delay="260"
+      >
+        <h2 className="au-heading text-center mb-4">Leadership Team</h2>
+        <div className="row justify-content-center">
+          <div className="col-md-4 mb-4">
+            <div className="au-leader-card text-center">
+              <img
+                className="au-leader-img"
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="CEO"
+              />
+              <h5 className="au-leader-name">Rahul Sharma</h5>
+              <p className="au-leader-role">CEO & Co-Founder</p>
+              <p className="au-leader-bio">
+                Rahul brings 15+ years of renewable energy expertise,
+                spearheading Prozeal’s growth and innovative strategy.
+              </p>
+            </div>
+          </div>
+          <div className="col-md-4 mb-4">
+            <div className="au-leader-card text-center">
+              <img
+                className="au-leader-img"
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt="CTO"
+              />
+              <h5 className="au-leader-name">Priya Nair</h5>
+              <p className="au-leader-role">CTO & Co-Founder</p>
+              <p className="au-leader-bio">
+                Priya leads the technical team, developing advanced solutions
+                for India's evolving energy needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   );
-};
-
-export default AboutSection;
+}

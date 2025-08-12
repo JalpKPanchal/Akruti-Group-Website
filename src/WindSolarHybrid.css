@@ -1,0 +1,499 @@
+/* ========== Wind Solar Hybrid Dedicated CSS ========== */
+
+/* General Layout */
+.solarwind-page {
+  background: #fafbfc;
+  color: #232c3d;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  min-height: 100vh;
+}
+
+/* ========== HERO SECTION ========== */
+.black_hero {
+  background: linear-gradient(110deg, #13203a 70%, #247c7c 100%);
+  color: #fff;
+  padding: 72px 0 38px 0;
+  border-radius: 0 0 36px 36px;
+  box-shadow: 0 8px 32px 0 rgba(32,47,65,0.15);
+}
+
+.hero-careear {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: 0;
+  padding: 18px 0 24px 0;
+}
+
+.career-headings {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  text-align: left;
+  line-height: 1.17;
+  letter-spacing: -1px;
+}
+
+.career-headings.text-align-right {
+  text-align: right;
+}
+
+.career-span-2 {
+  color: #ffe156;
+  background: linear-gradient(90deg,#1b9b65 20%, #ffe156 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+.career_content {
+  margin-top: 18px;
+  font-size: 1.13rem;
+  font-weight: 400;
+}
+
+/* ========== ABOUT SECTION ========== */
+.careers-about {
+  margin: 56px 0 44px 0;
+  gap: 16px;
+}
+
+.ca-content {
+  padding: 18px 12px;
+}
+
+._1-heading {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+  color: #26409a;
+}
+
+.ca-text-wrapper .paragraph-16px {
+  color: #232c3d;
+  font-size: 1.04rem;
+}
+
+.ca-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.career_img {
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(32,47,65,0.07);
+  max-width: 100%;
+  height: auto;
+}
+
+/* ========== EXPERT EPC SOLUTIONS ========== */
+.section-7 {
+  background: #f6fafc;
+  padding: 48px 0 32px 0;
+  margin-bottom: 18px;
+  border-radius: 24px;
+}
+
+.c3a-text-content {
+  padding: 12px 16px 12px 0;
+}
+
+.c3a-text-wrapper .paragraph-18px {
+  color: #253050;
+  font-size: 1.09rem;
+  margin-bottom: 10px;
+}
+
+.c3a-content {
+  padding: 12px;
+}
+
+.c3a-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 18px 24px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px 0 rgba(32,47,65,0.09);
+}
+
+.c3a-wrapper {
+  gap: 14px;
+  margin-bottom: 6px;
+}
+
+.c3a-circle {
+  background: #26409a;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c3a-circle img {
+  width: 16px;
+  height: 16px;
+}
+
+/* ========== PROCESS / PROGRAM SECTION ========== */
+.section_program {
+  background: #fff;
+  padding: 44px 0 20px 0;
+}
+
+.program_wrap {
+  gap: 18px;
+}
+
+.program_left-box {
+  padding: 8px 16px 8px 0;
+}
+
+.title_left {
+  color: #247c7c;
+}
+
+.program_right-box {
+  padding: 8px 0 8px 16px;
+}
+
+.program_content-box {
+  background: #f2f6f8;
+  border-radius: 14px;
+  margin-bottom: 14px;
+  padding: 14px 18px;
+  box-shadow: 0 2px 8px 0 rgba(32,47,65,0.05);
+}
+
+.program_name {
+  font-weight: 700;
+  color: #26409a;
+  margin-bottom: 2px;
+}
+
+.text-size-regular-2 {
+  font-size: 1.01rem;
+  color: #535e6c;
+}
+
+/* ========== WHY WIND SOLAR HYBRID ========== */
+.process_section {
+  background: #eef3f9;
+  padding: 46px 0 16px 0;
+  border-radius: 24px;
+}
+
+.title_center {
+  color: #247c7c;
+  text-align: center;
+  font-weight: 800;
+  font-size: 2.1rem;
+}
+
+.process {
+  margin-top: 18px;
+  position: relative;
+}
+
+.process_card,
+.process_card_02 {
+  background: #fff;
+  border-radius: 16px;
+  margin-bottom: 28px;
+  box-shadow: 0 2px 8px 0 rgba(32,47,65,0.10);
+  padding: 22px 12px;
+  align-items: center;
+  gap: 6px;
+}
+
+.process_card_02 {
+  flex-direction: row-reverse;
+}
+
+.process_details {
+  padding: 6px 10px 6px 0;
+}
+
+.centre_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.centre_icon_wrap {
+  background: #26409a;
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centre_step {
+  font-weight: 700;
+}
+
+.process_image_wrap {
+  padding: 6px;
+}
+
+.image-40, .process_image {
+  max-width: 120px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px 0 rgba(32,47,65,0.08);
+}
+
+/* Dashed vertical line between steps for desktop */
+.process_line {
+  position: absolute;
+  left: 50%;
+  top: 70px;
+  width: 3px;
+  background: repeating-linear-gradient(to bottom,#247c7c 0 10px,transparent 10px 20px);
+  height: calc(100% - 140px);
+  z-index: 0;
+  transform: translateX(-50%);
+  border-radius: 2px;
+  opacity: 0.12;
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .process_line {
+    display: block;
+  }
+}
+
+/* ========== WHY PROZEAL ========== */
+.reverse_careers {
+  flex-direction: row-reverse;
+}
+
+.ca-bedge {
+  background: #26409a;
+  color: #fff;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 5px 18px;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.text-7 {
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+}
+
+/* ========== SCROLL / FULL-PAGE BLOCKS ========== */
+.full-page-wrapper {
+  margin: 56px 0 36px 0;
+}
+
+.s-scroll {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: stretch;
+  margin-bottom: 32px;
+}
+
+.s-scroll-box-wrapper {
+  background: #fff;
+  border-radius: 18px;
+  padding: 24px 36px 24px 24px;
+  box-shadow: 0 2px 8px 0 rgba(32,47,65,0.09);
+  flex: 1 1 340px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.s-scroll-box-wrapper.img {
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  min-width: 320px;
+  min-height: 220px;
+  display: flex;
+  align-items: stretch;
+}
+
+.img-wrapper {
+  width: 100%;
+  height: 220px;
+  border-radius: 18px;
+  background-size: cover;
+  background-position: center;
+}
+
+.img-wrapper.ws1 {
+  background-image: url("https://cdn.prod.website-files.com/64dbc131328758d2f8cb2f35/676be2c74376fcc55acfadb9_istockphoto-1319945353-612x612.jpg");
+}
+.img-wrapper.ws2 {
+  background-image: url("https://cdn.prod.website-files.com/64dbc131328758d2f8cb2f35/677d127a6cac65f16ea74aba_Increased%20Energy%20Yield.webp");
+}
+.img-wrapper.ws3 {
+  background-image: url("https://cdn.prod.website-files.com/64dbc131328758d2f8cb2f35/677e447ad95eaf411325e7fb_What%20Makes%20Prozeal%20the%20Ideal%20Partner%20for%20Wind%20Solar%20Hybrid%20Solutions.jpg");
+}
+
+.img-transition-wrapper {
+  display: none;
+}
+
+/* ========== TESTIMONIALS ========== */
+.section-5 {
+  padding: 40px 0 18px 0;
+}
+
+.w-layout-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px 0 rgba(32,47,65,0.07);
+  padding: 22px 18px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.avatar-image {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 18px;
+  border: 2px solid #ffe156;
+}
+
+.fw-bold {
+  font-weight: 700;
+  font-size: 1.07rem;
+  color: #247c7c;
+}
+
+.mt-2 {
+  margin-top: 0.42rem;
+}
+
+.mt-3 {
+  margin-top: 1.1rem;
+}
+
+/* ========== APPLY CTA ========== */
+.apply_now_cta {
+  background: linear-gradient(90deg, #1b9b65 25%, #26409a 90%);
+  border-radius: 20px;
+  box-shadow: 0 2px 8px 0 rgba(32,47,65,0.10);
+  padding: 28px 36px;
+  margin-bottom: 42px;
+}
+
+.center-content-vertically {
+  gap: 12px;
+}
+
+.text-size-large-2 {
+  font-size: 1.23rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.text-color-grey {
+  color: #e6e9ed;
+}
+
+.button-5 {
+  background: #ffe156;
+  border: none;
+  color: #26409a;
+  font-weight: 700;
+  font-size: 1.03rem;
+  border-radius: 8px;
+  padding: 14px 34px;
+  text-decoration: none !important;
+  transition: box-shadow 0.25s, transform 0.22s;
+  box-shadow: 0 2px 8px 0 rgba(32,47,65,0.08);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button-5:hover {
+  background: #ffde3c;
+  box-shadow: 0 4px 16px 0 rgba(32,47,65,0.14);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.paragraph-14px.white._2 {
+  color: #26409a;
+  font-size: 1.01rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+/* ========== ANIMATION OVERRIDES / CUSTOM AOS ========== */
+[data-aos] {
+  transition-property: opacity, transform;
+  will-change: opacity, transform;
+}
+
+[data-aos][data-aos][data-aos-delay="80"]     { transition-delay: 0.08s; }
+[data-aos][data-aos][data-aos-delay="100"]    { transition-delay: 0.1s; }
+[data-aos][data-aos][data-aos-delay="120"]    { transition-delay: 0.12s; }
+[data-aos][data-aos][data-aos-delay="140"]    { transition-delay: 0.14s; }
+[data-aos][data-aos][data-aos-delay="200"]    { transition-delay: 0.2s; }
+[data-aos][data-aos][data-aos-delay="220"]    { transition-delay: 0.22s; }
+[data-aos][data-aos][data-aos-delay="240"]    { transition-delay: 0.24s; }
+[data-aos][data-aos][data-aos-delay="260"]    { transition-delay: 0.26s; }
+[data-aos][data-aos][data-aos-delay="320"]    { transition-delay: 0.32s; }
+[data-aos][data-aos][data-aos-delay="380"]    { transition-delay: 0.38s; }
+[data-aos][data-aos][data-aos-delay="420"]    { transition-delay: 0.42s; }
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 991.98px) {
+  .normal_leptop_container, .container {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+  .hero-careear {
+    padding-left: 0;
+  }
+  .ca-content, .ca-images {
+    padding: 0 8px;
+  }
+  .s-scroll-box-wrapper {
+    padding: 18px 10px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .black_hero { padding: 42px 0 22px 0; border-radius: 0 0 20px 20px; }
+  .hero-careear { max-width: 100%; }
+  .career-headings, ._1-heading, .title_center { font-size: 1.37rem; }
+  .process_card, .process_card_02 { flex-direction: column !important; }
+  .process_line { display: none !important; }
+  .section-7, .section_program, .process_section, .full-page-wrapper, .section-5, .apply_now_cta {
+    padding-left: 6px; padding-right: 6px; border-radius: 10px;
+  }
+  .s-scroll-box-wrapper { min-width: 0; }
+  .img-wrapper { height: 120px; }
+}
+
+@media (max-width: 575.98px) {
+  .apply_now_cta { padding: 16px 6px; }
+  .ca-bedge { font-size: 0.95rem; }
+  .career_img { border-radius: 10px; }
+  .testimonial-card { padding: 14px 8px; }
+  .avatar-image { width: 40px; height: 40px; }
+}

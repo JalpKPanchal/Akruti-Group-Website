@@ -46,11 +46,11 @@ function CustomNavbar() {
               <NavDropdown.Item as={Link} to="/solaric">Solar I & C</NavDropdown.Item>
             </NavDropdown>
 
-<<<<<<< HEAD
+
             <Nav.Link as={Link} to="/projects" className="px-3">Projects</Nav.Link>
-=======
+
             <Nav.Link as={Link} to="/ourprojects" className="px-3">Our Projects</Nav.Link>
->>>>>>> 1b3a48d7da0d47447a24e9e6e21ef2cabe749487
+
             <Nav.Link as={Link} to="/gallerypage" className="px-3">Gallery</Nav.Link>
             <Nav.Link as={Link} to="/contact" className="px-3">Contact</Nav.Link>
             <Nav.Link as={Link} to="/career" className="px-3">Career</Nav.Link>

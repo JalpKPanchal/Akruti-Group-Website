@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "../custom.css";
+import "../WindSolarHybrid.css";
 import { Link } from "react-router-dom";
 
 export default function SolarWind() {
@@ -201,7 +201,7 @@ export default function SolarWind() {
       <section className="container normal_leptop_container">
         <div className="careers-about reverse_careers d-flex align-items-center flex-wrap">
           <div className="ca-content col-lg-6" data-aos="fade-right" data-aos-delay="120">
-            <div className="ca-bedge"><div className="text-7">Why Prozeal?</div></div>
+            <div className="ca-bedge"><div className="text-7">Why Akruti?</div></div>
             <h2 className="_1-heading">What Makes Prozeal the Ideal Partner for <br /><strong>Wind Solar Hybrid Solutions?</strong></h2>
             <div className="ca-text-wrapper">
               <div className="paragraph-16px">
