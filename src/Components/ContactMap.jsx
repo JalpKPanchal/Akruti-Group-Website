@@ -12,6 +12,7 @@ export default function ContactMapSection() {
               <div>
                 <h3 className="fw-bold mb-4">
                   Get in <span className="text-primary">Touch</span>
+                  {/* akruti group */}
                 </h3>
                 <form className="contact-form">
                   <div className="row">
