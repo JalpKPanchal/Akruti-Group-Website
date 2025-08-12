@@ -42,8 +42,8 @@ const Homepage = () => {
                 className={`carousel-item ${index === 0 ? "active" : ""}`}
               >
                 <div
-                  className="position-relative"
-                  style={{ height: "100vh", overflow: "hidden" }}
+                  className="position"
+                
                 >
                   {/* Background video or image */}
                   {slide.type === "video" ? (

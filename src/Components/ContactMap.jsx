@@ -3,7 +3,6 @@ import "../custom.css"; // Make sure this exists
 
 export default function ContactMapSection() {
   return (
-    <>
     <section className="section py-5 bg-light border-top">
       <div className="container">
         <div className="row align-items-stretch">
@@ -13,6 +12,7 @@ export default function ContactMapSection() {
               <div>
                 <h3 className="fw-bold mb-4">
                   Get in <span className="text-primary">Touch</span>
+                  {/* akruti group */}
                 </h3>
                 <form className="contact-form">
                   <div className="row">
@@ -80,6 +80,5 @@ export default function ContactMapSection() {
         </div>
       </div>
     </section>
-    </>
   );
 }

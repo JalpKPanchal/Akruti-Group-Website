@@ -3,7 +3,7 @@
 .aboutus-page {
   background: #f8fafc;
   color: #232c3d;
-  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  /* font-family: "Inter", "Segoe UI", Arial, sans-serif; */
   min-height: 100vh;
 }
 
@@ -39,9 +39,9 @@
 }
 
 /* SECTION WRAPPER */
-.au-section {
-  margin: 56px 0 36px 0;
-}
+/* .au-section {
+  margin: 56px 0 2px 0;
+} */
 
 /* WHO WE ARE */
 .au-heading {

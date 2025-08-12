@@ -64,52 +64,125 @@
 
 
 /* HOMEPAGE */
-/* Slide-in animation for left panel */
+/* Left panel animation */
+/* HOMEPAGE */
+/* Fullscreen text panel over background */
 .left-panel {
-  animation: slideInLeft 1s ease forwards;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; /* now full screen width */
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* center horizontally */
+  text-align: center; /* center text inside */
+  animation: fadeInUp 1s ease forwards;
   opacity: 0;
+  z-index: 2;
 }
 
+/* Animation */
 .carousel-item.active .left-panel {
-  animation: slideInLeft 1s ease forwards;
+  animation: fadeInUp 1s ease forwards;
 }
 
-@keyframes slideInLeft {
+@keyframes fadeInUp {
   0% {
-    transform: translateX(-50px);
+    transform: translateY(20px);
     opacity: 0;
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
 
-/* Default stays as you have for desktop */
+/* Background media */
+.carousel-item video,
+.carousel-item img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
 
-/* For mobile screens */
-@media (max-width: 768px) {
-  .left-panel {
-    width: 100% !important; /* Take full screen width */
-    padding: 20px !important; /* Smaller padding */
-    justify-content: center !important; /* Center horizontally */
-    text-align: center; /* Center text inside */
-  }
+/* Text styling */
+.left-panel h1 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  word-break: break-word;
+}
 
-  .left-panel .btn {
-    margin: 5px; /* Space between buttons */
-  }
+.left-panel p {
+  font-size: 1.2rem;
+  word-break: break-word;
+  margin-bottom: 1.5rem;
+}
 
+/* Semi-transparent background for readability */
+.left-panel .text-white {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 20px 30px;
+  border-radius: 8px;
+  max-width: 90%;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
   .left-panel h1 {
-    font-size: 1.6rem !important; /* Adjust heading size for mobile */
+    font-size: 2.2rem;
   }
-
   .left-panel p {
-    font-size: 1rem !important; /* Adjust paragraph size */
+    font-size: 1.1rem;
   }
 }
 
+/* Mobile */
+@media (max-width: 768px) {
+  .left-panel {
+    padding: 20px !important;
+  }
 
+  .left-panel .text-white {
+    width: 100%;
+    padding: 12px 15px;
+  }
+
+  .left-panel h1 {
+    font-size: 1.6rem !important;
+  }
+
+  .left-panel p {
+    font-size: 1rem !important;
+  }
+
+  .left-panel .btn {
+    margin: 5px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .carousel-item video,
+  .carousel-item img {
+    height: auto;
+    min-height: 60vh;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+  .left-panel h1 {
+    font-size: 1.4rem !important;
+  }
+  .left-panel p {
+    font-size: 0.9rem !important;
+  }
+  .left-panel .btn {
+    font-size: 0.85rem;
+    padding: 6px 14px;
+  }
+}
 
 
 
@@ -232,7 +305,7 @@
   padding: 80px 0;
   color: #fff;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
 }
 
 /* Container */
@@ -603,8 +676,6 @@
 
 
 /* CONTACTMAP */
-
-/* Underline input effect */
 .underline-form {
   position: relative;
 }
@@ -631,9 +702,6 @@
   margin-top: 4px;
   display: block;
 }
-
-
-
 
 
 
@@ -743,7 +811,7 @@ footer .fw-semibold {
 /* CONTACT US */
 .contact-page {
   background: linear-gradient(135deg, #e6f2f1, #ffffff);
-  font-family: 'Segoe UI', sans-serif;
+  /* font-family: 'Segoe UI', sans-serif; */
   color: #333;
 }
 
@@ -965,9 +1033,14 @@ footer .fw-semibold {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(185, 164, 164, 0.4);
+  /* Dark gradient from top to bottom for better readability */
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.4)
+  );
   z-index: 1;
 }
+
 
 .hero-text {
   position: relative;
@@ -978,7 +1051,7 @@ footer .fw-semibold {
 
 /* New Side-by-Side Project Cards */
 .project-card-container {
-  background: #c7b9b9;
+  background: rgba(255,165,0,0.8);
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1019,17 +1092,63 @@ footer .fw-semibold {
   background: linear-gradient(90deg, #a64ce4, #0044ff);
   color: white;
   text-align: center;
-  padding: 27px 0;
+  padding: 20px 10px; /* reduced padding for small screens */
   font-size: 19px;
   font-weight: 500;
-  /* font-family: "Helvetica Neue", Arial, sans-serif; */
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .announcement-text {
-  transition: opacity 0.7s ease-in-out;
+  display: inline-block;
+  transition: transform 0.7s ease, opacity 0.7s ease;
 }
 
-/* wind solar hybrid */
+/* Animations */
+.slide-in {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.slide-out-left {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.slide-in-right {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+/* Responsive text sizing */
+@media (max-width: 992px) {
+  .announcement-bar {
+    font-size: 16px;
+    padding: 16px 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .announcement-bar {
+    font-size: 15px;
+    line-height: 1.4;
+    white-space: normal; /* allow wrapping */
+  }
+}
+
+@media (max-width: 480px) {
+  .announcement-bar {
+    font-size: 14px;
+    padding: 12px 6px;
+  }
+}
+
+
+
+
+
+
+/* WIND SOLAR HYBRID */
 /* Page container */
 .normal_leptop_container { max-width: 1240px; margin: 0 auto; padding: 0 18px; }
 

@@ -16,10 +16,7 @@ export default function StickyButtons() {
         <FaWhatsapp />
       </a>
 
-      {/* Live Chat Button */}
-      <button className="chat-btn" aria-label="Live Chat" title="Live Chat">
-        <FaComments />
-      </button>
+   
     </div>
     </>
   );
