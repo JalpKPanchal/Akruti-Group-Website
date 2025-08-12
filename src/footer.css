@@ -1,0 +1,168 @@
+/* ===== Footer Theme: Modern, Animated, Cohesive with Hero/Career/Homepage ===== */
+
+.footer-akruti {
+  background: linear-gradient(90deg, #10181f 60%, #1b9b65 100%);
+  color: #e6f6ff;
+  padding-top: 3.5rem;
+  padding-bottom: 0.5rem;
+  border-top: 4px solid #2ebcff;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-akruti .container {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-akruti img {
+  max-width: 180px;
+  filter: drop-shadow(0 2px 8px rgba(46,188,255,0.16));
+  transition: transform 0.22s;
+}
+.footer-akruti img:hover {
+  transform: scale(1.02) rotate(-2deg);
+}
+
+.footer-akruti h5 {
+  color: #2ebcff;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  margin-bottom: 1rem;
+}
+
+.footer-akruti .small,
+.footer-akruti .list-unstyled.small li {
+  color: #e6f6ff;
+  font-size: 0.97rem;
+  letter-spacing: 0.01em;
+}
+.footer-akruti .list-unstyled.small li {
+  margin-bottom: 0.45em;
+}
+.footer-akruti .list-unstyled.small li a {
+  color: #e6f6ff;
+  text-decoration: none;
+  padding: 0 2px;
+  transition: color 0.16s;
+  border-radius: 4px;
+}
+.footer-akruti .list-unstyled.small li a:hover, 
+.footer-akruti .list-unstyled.small li a:focus {
+  color: #2ebcff;
+  background: rgba(46,188,255,0.07);
+  text-decoration: underline;
+}
+
+.footer-akruti .d-flex.gap-3 a {
+  color: #2ebcff;
+  background: rgba(255,255,255,0.04);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.33rem;
+  margin-right: 2px;
+  transition: background 0.18s, color 0.18s, transform 0.19s;
+  box-shadow: 0 2px 8px 0 rgba(46,188,255,0.12);
+}
+.footer-akruti .d-flex.gap-3 a:hover, .footer-akruti .d-flex.gap-3 a:focus {
+  background: #2ebcff;
+  color: #10181f;
+  transform: scale(1.13) rotate(-3deg);
+}
+
+.footer-akruti .fw-semibold {
+  color: #ffe156;
+  font-weight: 700;
+  font-size: 1.08rem;
+  letter-spacing: 0.01em;
+}
+
+.footer-akruti .small a {
+  color: #2ebcff;
+  text-decoration: underline;
+  transition: color 0.17s;
+}
+.footer-akruti .small a:hover {
+  color: #ffe156;
+}
+
+.footer-akruti .hr,
+.footer-akruti hr {
+  border-top: 2px solid #2ebcff33;
+  opacity: 1;
+  margin: 2rem 0 1.5rem 0;
+}
+
+.footer-akruti .text-center small {
+  color: #e6f6ff;
+  font-size: 0.99rem;
+  letter-spacing: 0.01em;
+}
+
+.footer-akruti .text-center a {
+  color: #2ebcff;
+  text-decoration: underline;
+  transition: color 0.18s;
+}
+.footer-akruti .text-center a:hover {
+  color: #ffe156;
+}
+
+/* Contact Info Icons */
+.footer-akruti .small svg {
+  color: #ffe156;
+  margin-right: 7px;
+  font-size: 1.15em;
+  vertical-align: middle;
+  margin-bottom: 3px;
+}
+
+/* Animations */
+@keyframes fadeInUpFooter {
+  from { opacity: 0; transform: translateY(30px);}
+  to   { opacity: 1; transform: translateY(0);}
+}
+.footer-akruti .container > .row,
+.footer-akruti .container > .text-center {
+  animation: fadeInUpFooter 1s cubic-bezier(.44, .13, .48, .87) both;
+}
+.footer-akruti .container > .row { animation-delay: 0.08s; }
+.footer-akruti .container > .text-center { animation-delay: 0.30s; }
+
+/* Decorative BG (optional: subtle moving shapes) */
+.footer-akruti::before {
+  content: '';
+  position: absolute;
+  left: -120px;
+  top: -60px;
+  width: 330px;
+  height: 330px;
+  background: radial-gradient(circle at 30% 30%, #2ebcff44 0%, #26409a00 83%);
+  filter: blur(18px);
+  z-index: 1;
+  animation: floatBgFooter 8s ease-in-out infinite alternate;
+  opacity: 0.6;
+}
+@keyframes floatBgFooter {
+  from { transform: translateY(0) scale(1);}
+  to   { transform: translateY(24px) scale(1.05);}
+}
+
+@media (max-width: 991.98px) {
+  .footer-akruti { padding-top: 2.2rem; }
+  .footer-akruti img { max-width: 120px; }
+}
+@media (max-width: 767.98px) {
+  .footer-akruti { padding: 2.2rem 0 0.5rem 0; }
+  .footer-akruti .container > .row { flex-direction: column; gap: 0.5em; }
+  .footer-akruti .text-center { font-size: 0.95rem; }
+}
+@media (max-width: 575.98px) {
+  .footer-akruti { padding: 1.2rem 0 0.2rem 0; }
+  .footer-akruti img { max-width: 90px; }
+}
