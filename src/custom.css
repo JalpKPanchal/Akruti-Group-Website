@@ -846,7 +846,8 @@ footer .fw-semibold {
   border-radius: 12px; /* Smooth corners */
   padding: 4px; /* Space for gradient effect */
   background: linear-gradient(135deg, #f6d365, #fda085) border-box; /* Warm gradient border */
-  box-shadow: 0 8px 25px rgba(255, 168, 0, 0.5); /* Soft shadow */
+  box-shadow: 0 8px 25px rgba(255, 168, 0, 0.
+  5); /* Soft shadow */
 }
 
 .gallery-card:hover .gallery-img {
@@ -934,3 +935,189 @@ footer .fw-semibold {
 .nav-btn:hover {
   color: #f0ad4e;
 }
+
+
+
+
+
+
+/* OUR PROJECTS */
+/* Hero Section */
+.projects-hero {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.projects-hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.projects-hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(185, 164, 164, 0.4);
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* New Side-by-Side Project Cards */
+.project-card-container {
+  background: #c7b9b9;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.46);
+}
+
+.project-card-img {
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Modal Styling */
+.modal-content {
+  border-radius: 10px;
+}
+
+/* Expanding content animation */
+.expandable-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.expandable-content.expanded {
+  max-height: 500px; /* Adjust based on expected content size */
+}
+
+
+
+
+/* ANNOUNCEMENT */
+.announcement-bar {
+  background: linear-gradient(90deg, #a64ce4, #0044ff);
+  color: white;
+  text-align: center;
+  padding: 27px 0;
+  font-size: 19px;
+  font-weight: 500;
+  /* font-family: "Helvetica Neue", Arial, sans-serif; */
+}
+
+.announcement-text {
+  transition: opacity 0.7s ease-in-out;
+}
+
+/* wind solar hybrid */
+/* Page container */
+.normal_leptop_container { max-width: 1240px; margin: 0 auto; padding: 0 18px; }
+
+/* Hero */
+.black_hero {
+  background: #000;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+.hero-careear { max-width: 1100px; margin: 0 auto; }
+.career-headings { font-size: 48px; font-weight: 700; margin: 0; line-height: 1.05; }
+.career-span-2 { color: #00b894; }
+.career_content p { margin-top: 18px; color: rgba(255,255,255,0.9); }
+
+/* ABOUT */
+.careers-about { padding: 48px 0; gap: 28px; }
+.ca-content { padding: 8px; }
+.ca-images { padding: 8px; }
+.career_img { width: 100%; border-radius: 8px; display: block; margin: 0 auto; }
+
+/* HEADINGS and TEXT */
+._1-heading { font-size: 32px; font-weight: 700; margin-bottom: 12px; color: #0b0b0b; }
+.paragraph-16px { font-size: 16px; line-height: 1.7; color: #333; }
+.paragraph-18px { font-size: 18px; line-height: 1.6; color: #333; }
+
+/* EPC SOLUTIONS */
+.section-7 { background: #fff; padding: 48px 0; }
+.c3a-card { background: #fff; border-radius: 10px; padding: 18px; margin-bottom: 14px; box-shadow: 0 8px 20px rgba(10,10,10,0.04); display:flex; gap:12px; align-items:center; transition: transform .28s ease; }
+.c3a-card:hover { transform: translateY(-6px); box-shadow: 0 14px 30px rgba(10,10,10,0.06); }
+.c3a-circle { width:48px; height:48px; border-radius:50%; background:#f3f6f5; display:flex; align-items:center; justify-content:center; }
+
+/* PROGRAM (Process boxes) */
+.section_program { padding: 48px 0; }
+.program_wrap { display:flex; gap:20px; align-items:flex-start; }
+.program_left-box { padding-right: 18px; }
+.program_right-box { display:flex; flex-direction:column; gap:14px; }
+.program_content-box { background: #fff; border-radius:10px; padding:14px; box-shadow:0 6px 18px rgba(0,0,0,0.04); }
+.program_name { font-weight:700; margin-bottom:6px; }
+.text-size-regular-2 { font-size:15px; color:#5f6b70; }
+
+/* PROCESS / WHY */
+.process_section { background: #fff; padding: 48px 0; }
+.process { padding-top: 16px; }
+.process_card, .process_card_02 { display:flex; gap:18px; align-items:center; margin-bottom:28px; flex-wrap:wrap; }
+.process_details { min-width:260px; }
+.centre_block { display:flex; align-items:center; justify-content:center; }
+.centre_step { width:70px; height:70px; border-radius:50%; background:#0a6b4a; color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:18px; }
+
+/* PROCESS IMAGES */
+.image-40 { max-width:260px; border-radius:8px; }
+.process_image { max-width:100%; border-radius:8px; }
+
+/* SCROLL / FULL PAGE */
+.full-page-wrapper { padding: 28px 0; }
+.s-scroll { display:flex; gap:0; border-top:1px solid rgba(0,0,0,0.04); flex-wrap:wrap; }
+.s-scroll-box-wrapper { flex: 1 1 50%; padding: 28px; box-sizing:border-box; }
+.img-wrapper { height: 380px; border-radius: 8px; background-size: cover; background-position: center; }
+.ws1 { background-image:url("https://cdn.prod.website-files.com/64dbc131328758d2f8cb2f35/677d7b1f2f3c9e1bdb3a2b9d_2.jpg"); }
+.ws2 { background-image:url("https://cdn.prod.website-files.com/64dbc131328758d2f8cb2f35/677e3bf7b6f3f6c8d3a3d1aa_3.jpg"); }
+.ws3 { background-image:url("https://cdn.prod.website-files.com/64dbc131328758d2f8cb2f35/677e5f4c4b1f3f3b6b3a9cee_4.jpg"); }
+
+/* LINES / tiny decorations */
+.lines-outer-wrapper { margin-top: 14px; }
+.line-2 { width:100%; height:2px; background:linear-gradient(90deg,#eaeaea,#f5f5f5); margin:8px 0; }
+
+/* TESTIMONIALS */
+.section-5 { padding: 36px 0; }
+.testimonial-card { background:#fff; border-radius:10px; padding:18px; box-shadow:0 8px 20px rgba(0,0,0,0.04); }
+.avatar-image { width:64px; height:64px; border-radius:50%; object-fit:cover; margin-right:14px; }
+
+/* CTA */
+.apply_now_cta { margin: 36px 0; }
+.center-content-vertically { background:#fff; border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,0.04); }
+.button-5 { display:inline-block; padding:12px 20px; background:#0b4f3f; color:#fff; border-radius:8px; text-decoration:none; }
+.button-5 .paragraph-14px { color:#fff; margin:0; }
+
+/* SMALL */
+.text-7 { color:#0a6b4a; font-weight:700; font-size:14px; margin-bottom:8px; }
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .career-headings { font-size:34px; }
+  .s-scroll-box-wrapper { flex:1 1 100%; }
+  .process_card, .process_card_02, .careers-about { flex-direction: column; text-align:center; }
+  .centre_block { order: 2; }
+  .process_image_wrap, .process_details { order: 3; width:100%; }
+}
+
+/* small tweak for images */
+.img-fluid { max-width:100%; height:auto; display:block; }

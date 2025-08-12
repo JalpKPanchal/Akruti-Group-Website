@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "../custom.css";
 
 const messages = [
   "🌞 India's leading EPC company in Solar, EV & Automation!",
@@ -18,18 +19,10 @@ export default function AnnouncementBar() {
   }, []);
 
   return (
-    <>
-    <div className="bg-success text-white py-4 text-center">
-      <div
-        className="transition"
-        style={{
-          transition: "transform 0.5s ease-in-out",
-          transform: "translateY(0)",
-        }}
-      >
-        <strong>{messages[currentMsgIndex]}</strong>
+    <div className="announcement-bar">
+      <div className="announcement-text">
+        {messages[currentMsgIndex]}
       </div>
     </div>
-    </>
   );
 }
