@@ -1,137 +1,209 @@
-// src/components/Careers.jsx
-import React, { useState } from 'react';
-import '../custom.css';
-import { Container, Row, Col, Card, Collapse } from 'react-bootstrap';
+import React, { useState, useRef } from "react";
+import "../career.css";
 
 const jobOpenings = [
   {
-    title: 'Business Development Executive',
-    location: 'Ahmedabad, Gujarat',
-    experience: '1–3 years',
+    title: "Projects Manager",
+    location: "Multiple Locations",
+    overview:
+      "The Projects Manager will oversee solar project execution, coordinate teams, and ensure timely delivery and quality.",
     responsibilities: [
-      'Identify potential clients and new business opportunities.',
-      'Develop and maintain strong client relationships.',
-      'Prepare proposals and presentations for potential clients.',
+      "Lead project planning and coordination.",
+      "Manage project teams and contractors.",
+      "Ensure projects are delivered on time and within budget.",
+      "Maintain client relationships and project documentation.",
     ],
-    skills: [
-      'Strong communication & negotiation skills',
-      'Lead generation & CRM knowledge',
-      'Team player with strategic thinking',
+    qualifications: [
+      "Bachelor’s degree in Engineering or related field.",
+      "5+ years of project management experience.",
+      "Excellent leadership and communication skills.",
     ],
   },
   {
-    title: 'Electrical Engineer',
-    location: 'Ahmedabad, Gujarat',
-    experience: '2–5 years',
+    title: "Solar Design Engineers",
+    location: "Multiple Locations",
+    overview:
+      "The Solar Design Engineer will be responsible for designing solar power systems, including rooftop and ground-mounted installations. The role includes feasibility studies, system sizing, and working closely with the procurement and construction teams.",
     responsibilities: [
-      'Design, develop, and test electrical systems.',
-      'Supervise site installations and maintenance.',
-      'Ensure compliance with safety and quality standards.',
+      "Design and develop solar power systems, including PV layouts and electrical schematics.",
+      "Perform system sizing calculations and generate bill of materials.",
+      "Prepare technical drawings and designs using AutoCAD or similar software.",
+      "Conduct feasibility studies and technical site assessments.",
+      "Collaborate with procurement, project management, and installation teams.",
     ],
-    skills: [
-      'AutoCAD, MATLAB, or similar tools',
-      'Strong problem-solving ability',
-      'Knowledge of industrial safety standards',
+    qualifications: [
+      "Bachelor’s degree in Electrical Engineering or related field.",
+      "2+ years of experience in solar design.",
+      "Proficiency in AutoCAD, PVSyst, and other design tools.",
     ],
   },
-   {
-    title: 'Programmer Engineer',
-    location: 'Ahmedabad, Gujarat',
-    experience: '2–10 years',
+  {
+    title: "Business Development Manager",
+    location: "Multiple Locations",
+    overview:
+      "Responsible for driving business growth, building client relationships, and identifying new opportunities in the renewable energy sector.",
     responsibilities: [
-      'Design, develop, and test electrical systems.',
-      'Supervise site installations and maintenance.',
-      'Ensure compliance with safety and quality standards.',
+      "Identify new business opportunities and potential clients.",
+      "Develop and maintain client relationships.",
+      "Prepare proposals and presentations for stakeholders.",
+      "Collaborate with technical and project teams.",
     ],
-    skills: [
-      'HTML,CSS,JS,REACTsimilar tools',
-      'Strong problem-solving ability',
-      'Knowledge of industrial safety standards',
+    qualifications: [
+      "Bachelor’s degree in Business, Engineering, or related field.",
+      "3+ years in business development or sales.",
+      "Strong communication and negotiation skills.",
     ],
   },
-  // Add more positions here...
+  {
+    title: "Procurement Manager",
+    location: "Multiple Locations",
+    overview:
+      "Manages procurement processes, vendor relationships, and ensures timely delivery of materials for solar projects.",
+    responsibilities: [
+      "Develop and implement procurement strategies.",
+      "Manage vendor relationships and negotiations.",
+      "Ensure timely delivery of project materials.",
+      "Monitor inventory and coordinate with project teams.",
+    ],
+    qualifications: [
+      "Bachelor’s degree in Supply Chain, Business, or related field.",
+      "4+ years of procurement experience.",
+      "Strong negotiation and organizational skills.",
+    ],
+  },
 ];
 
 const Careers = () => {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState(0); // default open first job
+  const jobsRef = useRef(null);
 
-  const toggleDescription = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
+  const mailtoLink =
+    openIndex !== null
+      ? `mailto:akrutiengineering72@gmail.com?subject=Application for ${encodeURIComponent(
+          jobOpenings[openIndex].title
+        )}&body=Dear Akruti Team,%0D%0A%0D%0AI am writing to express my interest in the position of ${encodeURIComponent(
+          jobOpenings[openIndex].title
+        )} at Akruti Engineering.%0D%0A%0D%0APlease find my resume attached.%0D%0A%0D%0AThank you for your consideration.%0D%0A%0D%0ABest regards,%0D%0A[Your Name]`
+      : "mailto:akrutiengineering72@gmail.com?subject=Application for Open Position at Akruti Engineering&body=Dear Akruti Team,%0D%0A%0D%0AI am writing to express my interest in an open position at Akruti Engineering.%0D%0A%0D%0APlease find my resume attached.%0D%0A%0D%0AThank you for your consideration.%0D%0A%0D%0ABest regards,%0D%0A[Your Name]";
+
+  // Scroll to job section
+  const handleExploreClick = () => {
+    if (jobsRef.current) {
+      jobsRef.current.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
-    <>
-    <div className="careers-page text-white">
+    <div>
       {/* Hero Section */}
-      <div className="hero-section d-flex flex-column justify-content-center align-items-center text-center px-3 py-5 bg-dark">
-        <h1 className="display-4 fw-bold">
-          Build a <span className="text-white">Sustainable</span><br />
-          <span className="highlight text-success">Career with Akruti</span>
-        </h1>
-        <p className="lead mt-3">
-          We are always on the lookout for talented individuals who share our passion for innovation and engineering excellence. <br />
-          Join our team and grow with us.
-        </p>
-        <a href="#open-positions" className="btn btn-outline-light rounded-pill px-4 py-2 mt-4">
-          Explore Open Positions
-        </a>
-      </div>
-
-      {/* Open Positions Section */}
-      <section id="open-positions" className="bg-white text-dark py-5">
-        <Container>
-          <h2 className="text-center fw-bold mb-5">Explore Our Open Positions</h2>
-          <Row className="g-4">
-            {jobOpenings.map((job, index) => (
-              <Col key={index} md={6}>
-                <Card className="position-card h-100 border-0 shadow-sm p-3">
-                  <Card.Body>
-                    <h5 className="fw-semibold mb-2">{job.title}</h5>
-                    <p className="mb-1"><strong>Location:</strong> {job.location}</p>
-                    <p className="mb-3"><strong>Experience:</strong> {job.experience}</p>
-
-                    {/* Buttons Row */}
-                    <div className="d-flex flex-column flex-md-row align-items-start gap-2 mb-3">
-                      <button
-                        className="btn btn-outline-primary btn-sm"
-                        onClick={() => toggleDescription(index)}
-                      >
-                        {openIndex === index ? 'Hide Description' : 'View Description'}
-                      </button>
-                      <a
-                        href={`mailto:akrutiengineering72@gmail.com?subject=Application for ${encodeURIComponent(job.title)}&body=Dear Akruti Team,%0D%0A%0D%0AI am writing to express my interest in the position of ${encodeURIComponent(job.title)} at Akruti Engineering.%0D%0A%0D%0APlease find my resume attached.%0D%0A%0D%0AThank you for your consideration.%0D%0A%0D%0ABest regards,%0D%0A[Your Name]`}
-                        className="btn btn-outline-success btn-sm"
-                      >
-                        Apply Now
-                      </a>
-                    </div>
-
-                    {/* Collapse Section */}
-                    <Collapse in={openIndex === index}>
-                      <div>
-                        <p className="fw-semibold mb-1">Key Responsibilities:</p>
-                        <ul className="mb-3 ps-3">
-                          {job.responsibilities.map((item, idx) => (
-                            <li key={idx}>{item}</li>
-                          ))}
-                        </ul>
-                        <p className="fw-semibold mb-1">Key Skills:</p>
-                        <ul className="ps-3">
-                          {job.skills.map((skill, idx) => (
-                            <li key={idx}>{skill}</li>
-                          ))}
-                        </ul>
-                      </div>
-                    </Collapse>
-                  </Card.Body>
-                </Card>
-              </Col>
-            ))}
-          </Row>
-        </Container>
+      <section className="career-hero-bg">
+        <div className="career-hero-content">
+          <h1>
+            Build a Sustainable <br />
+            <span>Career with Akruti</span>
+          </h1>
+          <p>
+            We are always on the lookout for talented individuals who share our
+            passion for clean energy and sustainability.
+            <br />
+            Join our team and make an impact on the future of renewable energy.
+          </p>
+          <button className="career-hero-btn" onClick={handleExploreClick}>
+            Explore Open Positions
+          </button>
+        </div>
       </section>
+
+      {/* Careers List Section */}
+      <div className="careers-bg-soft" ref={jobsRef}>
+        <div className="careers-header">
+          <h2>
+            Explore Our <span>Open Positions</span>
+          </h2>
+        </div>
+        <div className="careers-main-card">
+          <div className="careers-list-side">
+            {jobOpenings.map((job, idx) => (
+              <div
+                key={job.title}
+                className={`careers-list-title${
+                  openIndex === idx ? " active" : ""
+                }`}
+                onClick={() => setOpenIndex(idx)}
+                tabIndex={0}
+                onKeyPress={(e) => {
+                  if (e.key === "Enter") setOpenIndex(idx);
+                }}
+              >
+                {job.title}
+              </div>
+            ))}
+          </div>
+          <div className="careers-detail-side">
+            <div className="careers-detail-content careers-detail-center-anim">
+              <div className="careers-detail-center">
+                <div>
+                  <p>
+                    <span className="careers-bold">Location:</span>
+                    <br />
+                    {jobOpenings[openIndex].location}
+                  </p>
+                  <p>
+                    <span className="careers-bold">Job Overview:</span>
+                    <br />
+                    {jobOpenings[openIndex].overview}
+                  </p>
+                </div>
+              </div>
+              <div className="careers-detail-right">
+                <div>
+                  <p className="careers-bold">Key Responsibilities:</p>
+                  <ul>
+                    {jobOpenings[openIndex].responsibilities.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <p className="careers-bold">Qualifications:</p>
+                  <ul>
+                    {jobOpenings[openIndex].qualifications.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+                {/* <a
+                  href={`mailto:akrutiengineering72@gmail.com?subject=Application for ${encodeURIComponent(
+                    jobOpenings[openIndex].title
+                  )}&body=Dear Akruti Team,%0D%0A%0D%0AI am writing to express my interest in the position of ${encodeURIComponent(
+                    jobOpenings[openIndex].title
+                  )} at Akruti Engineering.%0D%0A%0D%0APlease find my resume attached.%0D%0A%0D%0AThank you for your consideration.%0D%0A%0D%0ABest regards,%0D%0A[Your Name]`}
+                  className="apply-now-button details"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Apply Now
+                </a> */}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="careers-cta">
+          <p>
+            Explore our open roles and take the first step towards building a
+            sustainable future with Akruti Group.
+          </p>
+          <a
+            href={mailtoLink}
+            className="apply-now-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Apply Now
+          </a>
+        </div>
+      </div>
     </div>
-    </>
   );
 };
 

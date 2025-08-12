@@ -46,7 +46,7 @@ function CustomNavbar() {
               <NavDropdown.Item as={Link} to="/solaric">Solar I & C</NavDropdown.Item>
             </NavDropdown>
 
-            <Nav.Link as={Link} to="/projects" className="px-3">Our Projects</Nav.Link>
+            <Nav.Link as={Link} to="/projects" className="px-3">Projects</Nav.Link>
             <Nav.Link as={Link} to="/gallerypage" className="px-3">Gallery</Nav.Link>
             <Nav.Link as={Link} to="/contact" className="px-3">Contact</Nav.Link>
             <Nav.Link as={Link} to="/career" className="px-3">Career</Nav.Link>
