@@ -12,7 +12,7 @@ export default function About() {
   return (
     <main className="aboutus-page">
       {/* HERO */}
-      <section className="au-hero" data-aos="fade-up" data-aos-delay="80">
+      <section className="au-hero" data-aos="fade-up" data-aos-delay="80" style={{marginBottom:"15px"}}>
         <div className="container au-hero-content">
           <h1 className="au-title" data-aos="fade-up" data-aos-delay="140">
             About{" "}
@@ -59,16 +59,14 @@ export default function About() {
         className="container au-section"
         data-aos="fade-up"
         data-aos-delay="140"
+        style={{marginTop:"15px"}}
       >
         <div className="row align-items-stretch">
           <div className="col-md-6 mb-4 mb-md-0">
             <div className="au-card mission-card">
               <h3 className="au-card-title">Our Mission</h3>
               <p>
-                To accelerate the adoption of renewable energy and enable a
-                greener planet by providing innovative, reliable, and integrated
-                solutions that deliver exceptional value to our clients and
-                partners.
+                Accelerating renewable energy adoption through innovative, reliable solutions that create lasting value for our clients, partners, and the planet.
               </p>
             </div>
           </div>

@@ -60,7 +60,7 @@ const Projects = () => {
         <div className="container hero-text text-white">
           <div className="row">
             <div className="col-lg-6">
-              <h1 className="fw-bold display-5">
+              <h1 className="fw-bold display-5 text-white">
                 Discover Our Renewable Energy Projects
               </h1>
             </div>
@@ -69,7 +69,7 @@ const Projects = () => {
                 Explore our end-to-end Solar EPC, Wind-Solar hybrid, EV & BESS
                 infrastructure projects that drive sustainability and innovation.
               </p>
-              <Link to ="/contact"  className="btn btn-primary btn-lg fw-semibold">
+              <Link to ="/contact"  className="btn btn-primary btn-lg fw-semibold text-white">
                 Get In Touch
               </Link>
             </div>
