@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../custom.css";
 import { Link } from "react-router-dom";
+import "../project.css";
 
 const projects = [
   {
@@ -18,7 +17,7 @@ const projects = [
         <li>Modules used: Bifacial solar panels</li>
         <li>Expected annual generation: 500 GWh</li>
       </ul>
-    `
+    `,
   },
   {
     title: "Renewable Energy Park",
@@ -28,7 +27,7 @@ const projects = [
     imgSrc: "/projects/2.webp",
     details: `
       <p>This hybrid wind-solar project maximizes land usage for renewable energy generation.</p>
-    `
+    `,
   },
   {
     title: "BESS Solar Storage",
@@ -38,8 +37,8 @@ const projects = [
     imgSrc: "/projects/3.png",
     details: `
       <p>This project integrates battery energy storage with solar power to ensure round-the-clock supply.</p>
-    `
-  }
+    `,
+  },
 ];
 
 const Projects = () => {
@@ -57,23 +56,18 @@ const Projects = () => {
           <source src="/img/home-bg-video.mp4" type="video/mp4" />
         </video>
         <div className="overlay"></div>
-        <div className="container hero-text text-white">
-          <div className="row">
-            <div className="col-lg-6">
-              <h1 className="fw-bold display-5 text-white">
-                Discover Our Renewable Energy Projects
-              </h1>
-            </div>
-            <div className="col-lg-6">
-              <p className="mb-4">
-                Explore our end-to-end Solar EPC, Wind-Solar hybrid, EV & BESS
-                infrastructure projects that drive sustainability and innovation.
-              </p>
-              <Link to ="/contact"  className="btn btn-primary btn-lg fw-semibold text-white">
-                Get In Touch
-              </Link>
-            </div>
-          </div>
+        <div className="hero-text">
+          <h1 className="fade-up">Discover Our Renewable Energy Projects</h1>
+          <p className="fade-up delay-1">
+            Explore our end-to-end Solar EPC, Wind-Solar hybrid, EV & BESS
+            infrastructure projects that drive sustainability and innovation.
+          </p>
+          <Link
+            to="/contact"
+            className="btn btn-primary btn-lg fade-up delay-2"
+          >
+            Get In Touch
+          </Link>
         </div>
       </section>
 
@@ -82,18 +76,24 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="project-card-container mb-5 shadow-sm border-0"
+            className="project-card-container mb-5 fade-up"
+            style={{ animationDelay: `${index * 0.2}s` }}
           >
             <div className="row g-0 align-items-center">
               {/* Left - Text */}
               <div className="col-md-6 p-5 d-flex flex-column justify-content-center">
-                <h3>{project.title}</h3>
+                <h3 className="project-title">{project.title}</h3>
                 <hr />
-                <p><strong>Client:</strong> {project.client}</p>
-                <p><strong>Capacity:</strong> {project.capacity}</p>
-                <p><strong>Location:</strong> {project.location}</p>
+                <p>
+                  <strong>Client:</strong> {project.client}
+                </p>
+                <p>
+                  <strong>Capacity:</strong> {project.capacity}
+                </p>
+                <p>
+                  <strong>Location:</strong> {project.location}
+                </p>
 
-                {/* Expanding Content */}
                 <div
                   className={`expandable-content ${
                     expandedIndex === index ? "expanded" : ""
@@ -102,7 +102,7 @@ const Projects = () => {
                 />
 
                 <button
-                  className="btn text-white mt-3 fw-semibold"
+                  className="btn read-more-btn mt-3 fw-semibold"
                   onClick={() => toggleExpand(index)}
                 >
                   {expandedIndex === index ? "Read Less" : "Read More"}
@@ -110,7 +110,7 @@ const Projects = () => {
               </div>
 
               {/* Right - Image */}
-              <div className="col-md-6">
+              <div className="col-md-6 img-container">
                 <img
                   src={project.imgSrc}
                   alt={project.title}

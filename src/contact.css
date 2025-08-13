@@ -1,0 +1,201 @@
+/* General page styling */
+.contact-page {
+  background-color: #f5f7fa; /* Light background */
+  color: #333; /* Dark text for better contrast */
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Hero Banner Styling */
+.contact-hero-dark {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  height: 40vh;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-hero-dark::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(96,165,250,0.15) 20%, transparent 60%);
+  animation: heroPulse 8s infinite linear;
+}
+
+@keyframes heroPulse {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.contact-hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  text-shadow: 0 0 8px rgba(96, 165, 250, 0.8);
+}
+
+.contact-hero-title-blue {
+  color: #60a5fa;
+}
+
+.contact-hero-desc {
+  font-size: 1.2rem;
+  max-width: 600px;
+  line-height: 1.6;
+  opacity: 0.9;
+  color: #e5e7eb;
+}
+
+/* Glassmorphism Card Styling */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.2);
+}
+
+/* Form Styling */
+.form-control {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #ccc;
+  color: #333;
+  border-radius: 8px;
+  padding: 10px 14px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.4);
+  background: #fff;
+}
+
+.form-control::placeholder {
+  color: #888;
+}
+
+.form-label {
+  color: #111;
+  font-weight: 600;
+}
+
+.form-control.is-invalid {
+  border-color: #ef4444;
+}
+
+.invalid-feedback {
+  color: #ef4444;
+  font-size: 0.875rem;
+}
+
+/* Submit Button Styling */
+.contact-hero-btn {
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 0.6rem 2rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(96, 165, 250, 0.4);
+}
+
+.contact-hero-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(96, 165, 250, 0.6);
+}
+
+/* Office Info Section */
+.glass-card p {
+  color: #333;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.glass-card strong {
+  color: #111;
+}
+
+.glass-card a {
+  color: #2563eb;
+  transition: color 0.3s ease;
+}
+
+.glass-card a:hover {
+  color: #1d4ed8;
+}
+
+/* Animation for Fade Effect */
+.animate-fade {
+  animation: fadeUp 0.6s ease forwards;
+  opacity: 0;
+}
+
+.animate-fade.delay-1 {
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-hero-title {
+    font-size: 2.5rem;
+  }
+
+  .contact-hero-desc {
+    font-size: 1rem;
+  }
+
+  .contact-hero-dark {
+    height: 30vh;
+    padding: 1.5rem;
+  }
+
+  .glass-card {
+    padding: 1.5rem;
+  }
+
+  .contact-hero-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-hero-title {
+    font-size: 2rem;
+  }
+
+  .contact-hero-desc {
+    font-size: 0.9rem;
+  }
+
+  .glass-card {
+    padding: 1rem;
+  }
+}

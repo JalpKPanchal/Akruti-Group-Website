@@ -1,0 +1,137 @@
+/* ===== Hero Section ===== */
+.projects-hero {
+  position: relative;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+}
+
+.projects-hero video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.projects-hero .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.projects-hero .hero-text {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 20px;
+}
+
+.projects-hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.7);
+  margin-bottom: 1rem;
+}
+
+.projects-hero p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #00b4d8, #0077b6);
+  border: none;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #0096c7, #023e8a);
+  transform: translateY(-2px);
+}
+
+/* ===== Animations ===== */
+.fade-up {
+  animation: fadeUp 1s ease forwards;
+  opacity: 0;
+}
+.fade-up.delay-1 { animation-delay: 0.3s; }
+.fade-up.delay-2 { animation-delay: 0.6s; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Project Cards ===== */
+.project-card-container {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card-container:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.img-container { overflow: hidden; }
+.project-card-img {
+  transition: transform 0.5s ease;
+}
+.project-card-container:hover .project-card-img {
+  transform: scale(1.05);
+}
+
+/* ===== Expandable Content ===== */
+.expandable-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.6s ease, opacity 0.4s ease;
+}
+.expandable-content.expanded {
+  max-height: 500px;
+  opacity: 1;
+}
+
+/* ===== Read More Button ===== */
+.read-more-btn {
+  background: linear-gradient(135deg, #ff7b00, #ff4500);
+  color: #fff;
+  border-radius: 50px;
+  padding: 8px 18px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+.read-more-btn:hover {
+  background: linear-gradient(135deg, #ff6600, #cc3700);
+  transform: translateY(-2px);
+}
+
+/* ===== Titles ===== */
+.project-title {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #0077b6;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .projects-hero { height: 70vh; }
+}
+
+@media (max-width: 768px) {
+  .projects-hero h1 { font-size: 2rem; }
+  .projects-hero p { font-size: 1rem; }
+}
