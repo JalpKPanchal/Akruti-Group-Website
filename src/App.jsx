@@ -40,7 +40,7 @@ function App() {
               <ServicesSection />
               <AboutSection />
               <FeatureSection />
-              <GallerySection />
+              {/* <GallerySection /> */}
               <PartnersSection />
               <ContactMapSection />
             </>
