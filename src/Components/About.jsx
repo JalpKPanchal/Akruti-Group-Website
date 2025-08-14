@@ -12,7 +12,12 @@ export default function About() {
   return (
     <main className="aboutus-page">
       {/* HERO */}
-      <section className="au-hero" data-aos="fade-up" data-aos-delay="80" style={{marginBottom:"15px"}}>
+      <section
+        className="au-hero"
+        data-aos="fade-up"
+        data-aos-delay="80"
+        style={{ marginBottom: "15px" }}
+      >
         <div className="container au-hero-content">
           <h1 className="au-title" data-aos="fade-up" data-aos-delay="140">
             About{" "}
@@ -34,21 +39,22 @@ export default function About() {
         <div className="row align-items-center">
           <div className="col-lg-6 mb-4 mb-lg-0">
             <img
-              className="au-img"
-              src="https://cdn.prod.website-files.com/64dbc131328758d2f8cb2f35/677e447ad95eaf411325e7fb_What%20Makes%20Akruti%20the%20Ideal%20Partner%20for%20Wind%20Solar%20Hybrid%20Solutions.jpg"
-              alt="Akruti Team"
+              className="au-img-full"
+              src="/img/logo.png"
+              alt="Akruti Logo"
               loading="lazy"
+              data-aos="zoom-in"
+              data-aos-delay="120"
             />
           </div>
           <div className="col-lg-6">
             <h2 className="au-heading">Who We Are</h2>
             <p className="au-desc">
-              Akruti Green Energy Limited is a leading renewable energy
-              company, dedicated to delivering cutting-edge solar, wind, and
-              hybrid solutions across India. With a passion for sustainability
-              and innovation, we empower industries, communities, and
-              governments to transition toward clean, reliable, and
-              cost-effective energy.
+              Akruti Green Energy Limited is a leading renewable energy company,
+              dedicated to delivering cutting-edge solar, wind, and hybrid
+              solutions across India. With a passion for sustainability and
+              innovation, we empower industries, communities, and governments to
+              transition toward clean, reliable, and cost-effective energy.
             </p>
           </div>
         </div>
@@ -59,14 +65,16 @@ export default function About() {
         className="container au-section"
         data-aos="fade-up"
         data-aos-delay="140"
-        style={{marginTop:"15px"}}
+        style={{ marginTop: "15px" }}
       >
         <div className="row align-items-stretch">
           <div className="col-md-6 mb-4 mb-md-0">
             <div className="au-card mission-card">
               <h3 className="au-card-title">Our Mission</h3>
               <p>
-                Accelerating renewable energy adoption through innovative, reliable solutions that create lasting value for our clients, partners, and the planet.
+                Accelerating renewable energy adoption through innovative,
+                reliable solutions that create lasting value for our clients,
+                partners, and the planet.
               </p>
             </div>
           </div>
@@ -124,40 +132,32 @@ export default function About() {
       </section>
 
       {/* JOURNEY */}
-      <section
-        className="container au-section"
-        data-aos="fade-up"
-        data-aos-delay="220"
-      >
-        <h2 className="au-heading mb-4">Our Journey</h2>
-        <div className="au-timeline">
-          <div className="au-timeline-item">
-            <div className="au-timeline-dot"></div>
-            <div>
-              <strong>2015</strong> – Akruti Green Energy is founded with a
-              vision to transform India’s energy landscape.
-            </div>
+      <section className="journey-section">
+        <h2 data-aos="fade-up">Our Journey</h2>
+        <div className="timeline">
+          <div className="timeline-item" data-aos="fade-right">
+            <div className="timeline-year">2015</div>
+            <p>
+              Akruti Green Energy is founded with a vision to transform India’s
+              energy landscape.
+            </p>
           </div>
-          <div className="au-timeline-item">
-            <div className="au-timeline-dot"></div>
-            <div>
-              <strong>2017</strong> – Commissioned our first large-scale solar
-              park in Gujarat.
-            </div>
+          <div className="timeline-item" data-aos="fade-left">
+            <div className="timeline-year">2017</div>
+            <p>Commissioned our first large-scale solar park in Gujarat.</p>
           </div>
-          <div className="au-timeline-item">
-            <div className="au-timeline-dot"></div>
-            <div>
-              <strong>2020</strong> – Launched hybrid wind-solar solutions for
-              industrial and commercial clients.
-            </div>
+          <div className="timeline-item" data-aos="fade-right">
+            <div className="timeline-year">2020</div>
+            <p>
+              Launched hybrid wind-solar solutions for industrial and commercial
+              clients.
+            </p>
           </div>
-          <div className="au-timeline-item">
-            <div className="au-timeline-dot"></div>
-            <div>
-              <strong>2024</strong> – Reached 1 GW in total renewable energy
-              installations across India.
-            </div>
+          <div className="timeline-item" data-aos="fade-left">
+            <div className="timeline-year">2024</div>
+            <p>
+              Reached 1 GW in total renewable energy installations across India.
+            </p>
           </div>
         </div>
       </section>
