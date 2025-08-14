@@ -24,8 +24,8 @@ export default function About() {
             <span className="au-title-highlight">Akruti Green Energy</span>
           </h1>
           <p className="au-hero-desc" data-aos="fade-up" data-aos-delay="200">
-            Empowering a sustainable future through innovative renewable energy
-            solutions.
+            Driving a Sustainable Future with Cutting-Edge Renewable Energy
+            Solutions for Global Impact.
           </p>
         </div>
       </section>
@@ -50,11 +50,11 @@ export default function About() {
           <div className="col-lg-6">
             <h2 className="au-heading">Who We Are</h2>
             <p className="au-desc">
-              Akruti Green Energy Limited is a leading renewable energy company,
-              dedicated to delivering cutting-edge solar, wind, and hybrid
-              solutions across India. With a passion for sustainability and
-              innovation, we empower industries, communities, and governments to
-              transition toward clean, reliable, and cost-effective energy.
+              Akruti Green Energy Limited is a global leader in renewable
+              energy, committed to delivering innovative solar, wind, and hybrid
+              solutions worldwide. Driven by sustainability and technological
+              excellence, we enable industries, communities, and governments to
+              achieve a clean, reliable, and cost-efficient energy future.
             </p>
           </div>
         </div>
@@ -72,9 +72,9 @@ export default function About() {
             <div className="au-card mission-card">
               <h3 className="au-card-title">Our Mission</h3>
               <p>
-                Accelerating renewable energy adoption through innovative,
-                reliable solutions that create lasting value for our clients,
-                partners, and the planet.
+                Driving global renewable energy adoption through innovative,
+                reliable, and scalable solutions that deliver enduring value for
+                clients, partners, and the planet.
               </p>
             </div>
           </div>
@@ -82,8 +82,8 @@ export default function About() {
             <div className="au-card vision-card">
               <h3 className="au-card-title">Our Vision</h3>
               <p>
-                To be the most trusted energy partner in propelling India’s
-                transition to a sustainable and carbon-neutral future.
+                To be the world’s most trusted energy partner, leading the
+                global transition to a sustainable, net-zero future.
               </p>
             </div>
           </div>
@@ -103,8 +103,8 @@ export default function About() {
               <div className="au-value-icon bg-primary">🌱</div>
               <h4 className="au-value-title">Sustainability</h4>
               <p>
-                Committed to environment-friendly solutions and responsible
-                business practices.
+                Dedicated to eco-friendly solutions and sustainable business
+                practices that support global environmental goals.
               </p>
             </div>
           </div>
@@ -113,8 +113,8 @@ export default function About() {
               <div className="au-value-icon bg-success">💡</div>
               <h4 className="au-value-title">Innovation</h4>
               <p>
-                Constantly pushing boundaries to develop advanced and efficient
-                energy technologies.
+                Pioneering cutting-edge, efficient energy technologies to drive
+                the global renewable energy revolution.
               </p>
             </div>
           </div>
@@ -123,8 +123,8 @@ export default function About() {
               <div className="au-value-icon bg-warning">🤝</div>
               <h4 className="au-value-title">Integrity</h4>
               <p>
-                Building trust through transparency, dependability, and ethical
-                standards.
+                Fostering trust through transparency, reliability, and the
+                highest ethical standards in all global operations.
               </p>
             </div>
           </div>

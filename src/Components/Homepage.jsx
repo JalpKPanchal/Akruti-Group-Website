@@ -9,20 +9,20 @@ const Homepage = () => {
       type: "video",
       src: "/img/home-bg-video.mp4",
       heading:
-        "India’s Emerging Solar EPC & IPP Company for Decarbonization & Renewable Energy Solutions",
-      text: "Transforming Energy Landscapes with Intelligent Solar Power Solutions & Battery Energy Storage Systems (BESS)",
+        "Global Leader in Solar EPC & IPP for Decarbonization and Renewable Energy Solutions",
+      text: "Revolutionizing Energy Landscapes with Advanced Solar Power Technologies and Battery Energy Storage Systems (BESS) Worldwide",
     },
     {
       type: "image",
       src: "/img/promo-2.jpg",
-      heading: "Modern Technology in Sun Energy",
-      text: "Empowering the future with sustainable innovation",
+      heading: "Cutting-Edge Solar Energy Technologies",
+      text: "Driving a Sustainable Future with Innovative Global Solutions",
     },
     {
       type: "image",
       src: "/img/promo-1.jpg",
-      heading: "Business Hand in Hand with New Technology",
-      text: "Leading the green energy revolution for tomorrow",
+      heading: "Integrating Business Excellence with Advanced Technology",
+      text: "Spearheading the Global Green Energy Revolution for a Sustainable Tomorroww",
     },
   ];
 

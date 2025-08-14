@@ -1,0 +1,33 @@
+/* Section Styling */
+.partners-section {
+  position: relative;
+}
+
+.partners-section .title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.partners-section .subtitle {
+  font-size: 1rem;
+  color: #555;
+}
+
+.partners-swiper {
+  will-change: transform;
+}
+
+/* Logo Styling - ORIGINAL COLORS */
+.brand-logo {
+  max-height: 60px; /* Professional size */
+  transition: transform 0.3s ease;
+}
+
+.brand-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Optional Bootstrap Utility Overrides */
+.container {
+  overflow: hidden; /* Hide overflow during animation */
+}
