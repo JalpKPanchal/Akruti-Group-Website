@@ -35,15 +35,15 @@ export default function About() {
           <div className="col-lg-6 mb-4 mb-lg-0">
             <img
               className="au-img"
-              src="https://cdn.prod.website-files.com/64dbc131328758d2f8cb2f35/677e447ad95eaf411325e7fb_What%20Makes%20Prozeal%20the%20Ideal%20Partner%20for%20Wind%20Solar%20Hybrid%20Solutions.jpg"
-              alt="Prozeal Team"
+              src="https://cdn.prod.website-files.com/64dbc131328758d2f8cb2f35/677e447ad95eaf411325e7fb_What%20Makes%20Akruti%20the%20Ideal%20Partner%20for%20Wind%20Solar%20Hybrid%20Solutions.jpg"
+              alt="Akruti Team"
               loading="lazy"
             />
           </div>
           <div className="col-lg-6">
             <h2 className="au-heading">Who We Are</h2>
             <p className="au-desc">
-              Prozeal Green Energy Limited is a leading renewable energy
+              Akruti Green Energy Limited is a leading renewable energy
               company, dedicated to delivering cutting-edge solar, wind, and
               hybrid solutions across India. With a passion for sustainability
               and innovation, we empower industries, communities, and
@@ -134,7 +134,7 @@ export default function About() {
           <div className="au-timeline-item">
             <div className="au-timeline-dot"></div>
             <div>
-              <strong>2015</strong> – Prozeal Green Energy is founded with a
+              <strong>2015</strong> – Akruti Green Energy is founded with a
               vision to transform India’s energy landscape.
             </div>
           </div>
@@ -181,7 +181,7 @@ export default function About() {
               <p className="au-leader-role">CEO & Co-Founder</p>
               <p className="au-leader-bio">
                 Rahul brings 15+ years of renewable energy expertise,
-                spearheading Prozeal’s growth and innovative strategy.
+                spearheading Akruti’s growth and innovative strategy.
               </p>
             </div>
           </div>

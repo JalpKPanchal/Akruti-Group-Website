@@ -2,8 +2,9 @@ import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "../WindSolarHybrid.css";
+// import "../Components/WindSolarHybrid1.css"; // Assuming this is the correct path to your CSS file
 import { Link } from "react-router-dom";
+import "../WindSolarHybrid.css"; // Ensure this path is correct
 
 export default function SolarWind() {
   useEffect(() => {
@@ -36,7 +37,7 @@ export default function SolarWind() {
             <div className="ca-text-wrapper">
               <div className="paragraph-16px">
                 A Wind Solar Hybrid System combines both wind and solar power generation technologies to create a more efficient and reliable renewable energy solution. By integrating wind turbines and solar panels, this hybrid system optimizes
-                energy production, as wind and solar resources often complement each other. At Prozeal, we design and build custom hybrid systems that optimize energy production while reducing the impact of weather fluctuations.
+                energy production, as wind and solar resources often complement each other. At Akruti, we design and build custom hybrid systems that optimize energy production while reducing the impact of weather fluctuations.
               </div>
             </div>
           </div>
@@ -60,7 +61,7 @@ export default function SolarWind() {
               <div className="c3a-text-wrapper">
                 <h2 className="_1-heading">Expert <strong>Hybrid EPC Solutions</strong></h2>
                 <div className="paragraph-18px">
-                  Prozeal provides a full range of Wind Solar Hybrid EPC services, ensuring exceptional quality in every project. From detailed project analysis to seamless construction and ongoing monitoring, our expert approach delivers high
+                  Akruti provides a full range of Wind Solar Hybrid EPC services, ensuring exceptional quality in every project. From detailed project analysis to seamless construction and ongoing monitoring, our expert approach delivers high
                   performance, reliability, and efficiency.
                 </div>
               </div>
@@ -197,21 +198,21 @@ export default function SolarWind() {
         </div>
       </div>
 
-      {/* WHY PROZEAL */}
+      {/* WHY Akruti */}
       <section className="container normal_leptop_container">
         <div className="careers-about reverse_careers d-flex align-items-center flex-wrap">
           <div className="ca-content col-lg-6" data-aos="fade-right" data-aos-delay="120">
             <div className="ca-bedge"><div className="text-7">Why Akruti?</div></div>
-            <h2 className="_1-heading">What Makes Prozeal the Ideal Partner for <br /><strong>Wind Solar Hybrid Solutions?</strong></h2>
+            <h2 className="_1-heading">What Makes Akruti the Ideal Partner for <br /><strong>Wind Solar Hybrid Solutions?</strong></h2>
             <div className="ca-text-wrapper">
               <div className="paragraph-16px">
-                Prozeal Green combines expertise in wind and solar energy to deliver hybrid systems. To develop our hybrid energy business, we have secured grid connectivity approval for wind-solar hybrid park in Gujarat and initiated scouting suitable land.
+                Akruti Green combines expertise in wind and solar energy to deliver hybrid systems. To develop our hybrid energy business, we have secured grid connectivity approval for wind-solar hybrid park in Gujarat and initiated scouting suitable land.
               </div>
             </div>
           </div>
 
           <div className="ca-images col-lg-6 text-center" data-aos="fade-left" data-aos-delay="240">
-            <img className="career_img" src="https://cdn.prod.website-files.com/64dbc131328758d2f8cb2f35/677e447ad95eaf411325e7fb_What%20Makes%20Prozeal%20the%20Ideal%20Partner%20for%20Wind%20Solar%20Hybrid%20Solutions.jpg" alt="Why Prozeal" />
+            <img className="career_img" src="https://cdn.prod.website-files.com/64dbc131328758d2f8cb2f35/677e447ad95eaf411325e7fb_What%20Makes%20Akruti%20the%20Ideal%20Partner%20for%20Wind%20Solar%20Hybrid%20Solutions.jpg" alt="Why Akruti" />
           </div>
         </div>
       </section>
@@ -277,7 +278,7 @@ export default function SolarWind() {
                 <img className="avatar-image" src="https://cdn.prod.website-files.com/64dbc131328758d2f8cb2f35/66d2ab4bcb0b824defe86bee_john-carter-team-member-brix-templates-avatar-picture.jpg" alt="John Carter" />
                 <div>
                   <div className="fw-bold">MD at India’s biggest commercial automobile manufacturing plant</div>
-                  <p className="mt-2">Prozeal Green Energy Limited delivered exceptional solar solutions, perfectly tailored to our energy needs. Their commitment to sustainability is truly commendable.</p>
+                  <p className="mt-2">Akruti Green Energy Limited delivered exceptional solar solutions, perfectly tailored to our energy needs. Their commitment to sustainability is truly commendable.</p>
                 </div>
               </div>
             </div>
@@ -287,17 +288,18 @@ export default function SolarWind() {
                 <img className="avatar-image" src="https://cdn.prod.website-files.com/64dbc131328758d2f8cb2f35/66d2ab4acb0b824defe86b5b_sohphie-moore-team-member-brix-templates-avatar-picture.jpg" alt="Sophie Moore" />
                 <div>
                   <div className="fw-bold">CEO at top textile manufacturing company of India</div>
-                  <p className="mt-2">Working with Prozeal Green Energy Limited has been a game-changer for our clean energy goals. Their expertise and seamless execution exceeded our expectations.</p>
+                  <p className="mt-2">Working with Akruti Green Energy Limited has been a game-changer for our clean energy goals. Their expertise and seamless execution exceeded our expectations.</p>
                 </div>
               </div>
             </div>
+
 
             <div className="testimonial-card mt-3" data-aos="fade-up" data-aos-delay="420">
               <div className="d-flex align-items-start">
                 <img className="avatar-image" src="https://cdn.prod.website-files.com/64dbc131328758d2f8cb2f35/66d2ab4bcb0b824defe86bbb_matt-cannon-team-member-brix-templates-avatar-picture.jpg" alt="Matt Cannon" />
                 <div>
                   <div className="fw-bold">Director of Engineering at top Indian Government PSU</div>
-                  <p className="mt-2">Prozeal Green Energy Limited’s solar installations have significantly reduced our carbon footprint. Their professionalism and innovation are unmatched.</p>
+                  <p className="mt-2">Akruti Green Energy Limited’s solar installations have significantly reduced our carbon footprint. Their professionalism and innovation are unmatched.</p>
                 </div>
               </div>
             </div>
@@ -309,7 +311,7 @@ export default function SolarWind() {
       {/* APPLY CTA */}
       <div className="apply_now_cta normal_leptop_container container" data-aos="fade-up" data-aos-delay="140">
         <div className="center-content-vertically d-flex align-items-center justify-content-between flex-wrap p-4">
-          <p className="text-size-large-2 text-color-grey mb-2">Interested in maximizing renewable energy output?<br/>Contact Prozeal Green for a customized Wind Solar Hybrid solution.</p>
+          <p className="text-size-large-2 text-color-grey mb-2">Interested in maximizing renewable energy output?<br/>Contact Akruti Green for a customized Wind Solar Hybrid solution.</p>
           <Link Link to="/contact" className="button-5 bg-dark-blue d-inline-block">
             <div className="paragraph-14px white _2">Contact Now</div>
           </Link>

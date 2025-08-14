@@ -68,7 +68,7 @@ export default function SolarIC() {
                 renewable energy solution. By integrating wind turbines and
                 solar panels, this hybrid system optimizes energy production, as
                 wind and solar resources often complement each other. At
-                Prozeal, we design and build custom hybrid systems that optimize
+                Akruti, we design and build custom hybrid systems that optimize
                 energy production while reducing the impact of weather
                 fluctuations.
               </div>
@@ -104,7 +104,7 @@ export default function SolarIC() {
                   Expert <strong>Hybrid EPC Solutions</strong>
                 </h2>
                 <div className="paragraph-18px">
-                  Prozeal provides a full range of Wind Solar Hybrid EPC
+                  Akruti provides a full range of Wind Solar Hybrid EPC
                   services, ensuring exceptional quality in every project. From
                   detailed project analysis to seamless construction and ongoing
                   monitoring, our expert approach delivers high performance,
@@ -332,7 +332,7 @@ export default function SolarIC() {
         </div>
       </div>
 
-      {/* WHY PROZEAL */}
+      {/* WHY Akruti */}
       <section className="container normal_leptop_container">
         <div className="careers-about reverse_careers d-flex align-items-center flex-wrap">
           <div
@@ -344,12 +344,12 @@ export default function SolarIC() {
               <div className="text-7">Why Akruti?</div>
             </div>
             <h2 className="_1-heading">
-              What Makes Prozeal the Ideal Partner for <br />
+              What Makes Akruti the Ideal Partner for <br />
               <strong>Wind Solar Hybrid Solutions?</strong>
             </h2>
             <div className="ca-text-wrapper">
               <div className="paragraph-16px">
-                Prozeal Green combines expertise in wind and solar energy to
+                Akruti Green combines expertise in wind and solar energy to
                 deliver hybrid systems. To develop our hybrid energy business,
                 we have secured grid connectivity approval for wind-solar hybrid
                 park in Gujarat and initiated scouting suitable land.
@@ -364,8 +364,8 @@ export default function SolarIC() {
           >
             <img
               className="career_img"
-              src="https://cdn.prod.website-files.com/64dbc131328758d2f8cb2f35/677e447ad95eaf411325e7fb_What%20Makes%20Prozeal%20the%20Ideal%20Partner%20for%20Wind%20Solar%20Hybrid%20Solutions.jpg"
-              alt="Why Prozeal"
+              src="https://cdn.prod.website-files.com/64dbc131328758d2f8cb2f35/677e447ad95eaf411325e7fb_What%20Makes%20Akruti%20the%20Ideal%20Partner%20for%20Wind%20Solar%20Hybrid%20Solutions.jpg"
+              alt="Why Akruti"
             />
           </div>
         </div>
@@ -500,7 +500,7 @@ export default function SolarIC() {
                     plant
                   </div>
                   <p className="mt-2">
-                    Prozeal Green Energy Limited delivered exceptional solar
+                    Akruti Green Energy Limited delivered exceptional solar
                     solutions, perfectly tailored to our energy needs. Their
                     commitment to sustainability is truly commendable.
                   </p>
@@ -524,7 +524,7 @@ export default function SolarIC() {
                     CEO at top textile manufacturing company of India
                   </div>
                   <p className="mt-2">
-                    Working with Prozeal Green Energy Limited has been a
+                    Working with Akruti Green Energy Limited has been a
                     game-changer for our clean energy goals. Their expertise and
                     seamless execution exceeded our expectations.
                   </p>
@@ -548,7 +548,7 @@ export default function SolarIC() {
                     Director of Engineering at top Indian Government PSU
                   </div>
                   <p className="mt-2">
-                    Prozeal Green Energy Limited’s solar installations have
+                    Akruti Green Energy Limited’s solar installations have
                     significantly reduced our carbon footprint. Their
                     professionalism and innovation are unmatched.
                   </p>
@@ -569,7 +569,7 @@ export default function SolarIC() {
           <p className="text-size-large-2 text-color-grey mb-2">
             Interested in maximizing renewable energy output?
             <br />
-            Contact Prozeal Green for a customized Wind Solar Hybrid solution.
+            Contact Akruti Green for a customized Wind Solar Hybrid solution.
           </p>
           <Link
             Link
