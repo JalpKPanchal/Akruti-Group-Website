@@ -9,21 +9,21 @@ const Homepage = () => {
       type: "video",
       src: "/img/home-bg-video.mp4",
       heading:
-        "Global Leader in Solar EPC & IPP for Decarbonization and Renewable Energy Solutions",
-      text: "Revolutionizing Energy Landscapes with Advanced Solar Power Technologies and Battery Energy Storage Systems (BESS) Worldwide",
+        "India’s Illuminating Solar EPC and C&I Company for Renewable Energy Solutions",
+      text: "Redefining Power Landscapes with Innovative Solar Technologies And Shaping a Sustainable Future with Advanced Solar Systems",
     },
-    {
-      type: "image",
-      src: "/img/promo-2.jpg",
-      heading: "Cutting-Edge Solar Energy Technologies",
-      text: "Driving a Sustainable Future with Innovative Global Solutions",
-    },
-    {
-      type: "image",
-      src: "/img/promo-1.jpg",
-      heading: "Integrating Business Excellence with Advanced Technology",
-      text: "Spearheading the Global Green Energy Revolution for a Sustainable Tomorroww",
-    },
+    // {
+    //   type: "image",
+    //   src: "/img/promo-2.jpg",
+    //   heading: "Cutting-Edge Solar Energy Technologies",
+    //   text: "Driving a Sustainable Future with Innovative Global Solutions",
+    // },
+    // {
+    //   type: "image",
+    //   src: "/img/promo-1.jpg",
+    //   heading: "Integrating Business Excellence with Advanced Technology",
+    //   text: "Spearheading the Global Green Energy Revolution for a Sustainable Tomorroww",
+    // },
   ];
 
   return (
@@ -41,10 +41,7 @@ const Homepage = () => {
                 key={index}
                 className={`carousel-item ${index === 0 ? "active" : ""}`}
               >
-                <div
-                  className="position"
-                
-                >
+                <div className="position">
                   {/* Background video or image */}
                   {slide.type === "video" ? (
                     <video
@@ -67,12 +64,12 @@ const Homepage = () => {
                   )}
 
                   {/* Left side content with animation */}
-                  <div className="left-panel d-flex align-items-center">
-                    <div className="text-white">
-                      <h1 className="fw-bold mb-3">
-                        {/* If you want to blue-accent a word, wrap it in <span className="hero-accent">word</span> */}
-                        {slide.heading}
-                      </h1>
+                  <div className="left-panel">
+                    <div data-gsap="an4" className="heading-style-h1">
+                      {/* <h1 className="fw-bold mb-3"> */}
+                      {/* If you want to blue-accent a word, wrap it in <span className="hero-accent">word</span> */}
+                      {slide.heading}
+                      {/* </h1> */}
                       <p className="lead mb-4">{slide.text}</p>
                       <div>
                         <Link

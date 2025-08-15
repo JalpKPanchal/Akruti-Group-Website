@@ -61,14 +61,19 @@
   box-sizing: border-box;
 }
 
-.left-panel .text-white {
-  background: rgba(0, 17, 40, 0.677);
-  border-radius: 30px;
-  padding: 36px 36px 36px 36px;
-  box-shadow: 0 8px 48px 0 rgba(46,188,255,0.13);
-  animation: slideInLeft 1.3s cubic-bezier(.55,.09,.48,.99);
-  max-width: 95%;
-  width: 95%;
+.heading-style-h1{
+  color: #fff;
+    font-size: 56px;
+    /* font-weight: 700; */
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    /* I need shadow back side */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 2.5), 0 0 20px rgba(0, 0, 0, 2.5), 0 0 30px rgba(0, 0, 0, 2.5);
+    animation: slideInLeft 0.8s ease-out forwards;  
+    /* Animation for the heading */
+    animation-delay: 0.2s;
+
 }
 
 /* Impressive Heading */
@@ -95,7 +100,8 @@
   margin-bottom: 2.2rem;
   font-weight: 400;
   max-width: 520px;
-  text-shadow: 0 1px 6px rgba(32,47,65,0.13);
+  /* text-shadow: 0 1px 6px rgba(32,47,65,0.13) , 0 0 2px rgba(46,188,255,0.12); */
+  font-style: oblique;
 }
 
 /* Buttons */

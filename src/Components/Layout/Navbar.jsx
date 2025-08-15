@@ -54,13 +54,13 @@ function CustomNavbar() {
                   renderMenuOnMount={true}
                 >
                   <NavDropdown.Item as={Link} to="/solarepc">
-                    Solar EPC
+                    Solar EPC And C&I
                   </NavDropdown.Item>
                   <NavDropdown.Item as={Link} to="/windsolarhybrid">
                     Wind Solar Hybrid
                   </NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/solaric">
-                    Solar I & C
+                  <NavDropdown.Item as={Link} to="/solarrooftop">
+                    Solar Rooftop
                   </NavDropdown.Item>
                 </NavDropdown>
               </div>

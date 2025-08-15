@@ -16,11 +16,11 @@ export default function WindSolarHybrid() {
     <>
       <div className="hero-section" data-aos="fade-up">
         <div className="container">
-          <h1 className="hero-title">Wind Solar Hybrid Solutions</h1>
-          <h2 className="hero-subtitle">for Maximizing</h2>
-          <h2 className="hero-highlight">Renewable Energy Efficiency</h2>
+          <h1 className="hero-title">Wind Solar Hybrid Services</h1>
+          <h2 className="hero-subtitle">for Enhancing</h2>
+          <h2 className="hero-highlight">Renewable Energy Capability</h2>
           <p className="hero-description">
-            Building hybrid solutions with Innovation & Collaboration
+            Innovating together to build next-generation hybrid solutions.
           </p>
         </div>
       </div>
@@ -32,14 +32,14 @@ export default function WindSolarHybrid() {
                 What is Wind Solar Hybrid System?
               </h2>
               <p className="section-text">
-                A Wind Solar Hybrid System combines both wind and solar power
-                generation technologies to create a more efficient and reliable
-                renewable energy solution. By integrating wind turbines and
-                solar panels, this hybrid system optimizes energy production, as
-                wind and solar resources often complement each other. At
-                Akruti, we design and build custom hybrid systems that optimize
-                energy production while reducing the impact of weather
-                fluctuations.
+                A Wind–Solar Hybrid System integrates wind and solar power
+                generation technologies to deliver a more efficient and reliable
+                renewable energy solution. By combining wind turbines with solar
+                panels, these systems maximize energy output, as wind and solar
+                resources typically complement each other. At Akruti, we
+                specialize in designing and building customized hybrid solutions
+                that enhance energy production while minimizing the impact of
+                weather variability.
               </p>
             </div>
             <div className="col-md-6">
@@ -57,16 +57,16 @@ export default function WindSolarHybrid() {
         <div className="container">
           <div className="row">
             <div className="col-md-5">
-              <h2 className="epc-title">Expert</h2>
+              <h2 className="epc-title">Specialized</h2>
               <h2 className="epc-title">Hybrid EPC</h2>
-              <h2 className="epc-title">Solutions</h2>
+              <h2 className="epc-title">Services</h2>
               <p className="epc-description mt-4">
-                Akruti provides a full range of Wind Solar Hybrid EPC services,
-                ensuring exceptional quality in every project. From detailed
-                project analysis to seamless construction and ongoing
-                monitoring, our expert approach delivers high performance,
-                reliability, and efficiency. Trust Akruti for end-to-end solar
-                solutions that drive sustainable energy success.
+                Akruti delivers comprehensive Wind–Solar Hybrid EPC services
+                with an unwavering focus on quality. From in-depth project
+                analysis to seamless construction and continuous performance
+                monitoring, our expertise ensures high efficiency, reliability,
+                and long-term performance. Count on Akruti for end-to-end solar
+                solutions that power sustainable energy success.
               </p>
             </div>
             <div className="col-md-7 d-flex align-items-center">
@@ -95,10 +95,10 @@ export default function WindSolarHybrid() {
                       <div className="check-circle">&#10003;</div>
                       <span>Captive and Group Captive Models</span>
                     </div>
-                    <div className="service-item">
+                    {/* <div className="service-item">
                       <div className="check-circle">&#10003;</div>
                       <span>Battery Energy Storage System (BESS)</span>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -112,24 +112,25 @@ export default function WindSolarHybrid() {
           <h1 className="process-title">Hybrid System</h1>
           <div className="row mt-4">
             <div className="col-md-4 mb-4">
-              <h3 className="process-subtitle">Site Assessment & Design</h3>
+              <h3 className="process-subtitle">Site Analysis & Planning</h3>
               <p className="process-description">
-                Comprehensive site analysis to determine the optimal
-                configuration of wind and solar components.
+                In-depth site study to determine the ideal setup for wind and
+                solar infrastructure
               </p>
             </div>
             <div className="col-md-4 mb-4">
-              <h3 className="process-subtitle">Integrated Control Systems</h3>
+              <h3 className="process-subtitle">Central Control Solutions</h3>
               <p className="process-description">
-                Control systems to seamlessly switch between wind and solar
-                inputs, ensuring consistent energy supply.
+                Advanced control systems enabling smooth transition between wind
+                and solar sources for consistent power delivery.
               </p>
             </div>
             <div className="col-md-4 mb-4">
-              <h3 className="process-subtitle">Customized Installations</h3>
+              <h3 className="process-subtitle">Specialized Setups</h3>
               <p className="process-description">
-                Tailored solutions for different environments, whether it&#39;s
-                a solar farm augmented with wind turbines or vice versa.
+                Custom solutions designed for varied settings, from solar farms
+                integrated with wind power to wind projects supported by solar
+                generation.
               </p>
             </div>
           </div>
@@ -140,10 +141,10 @@ export default function WindSolarHybrid() {
           <h2 className="why-title">Why Wind Solar Hybrid?</h2>
           <div className="row align-items-center mb-5">
             <div className="col-md-5">
-              <h3 className="benefit-subtitle">Increased Energy Yield</h3>
+              <h3 className="benefit-subtitle">Improved Energy Performance</h3>
               <p className="benefit-description">
-                Combines wind and solar to produce more energy than standalone
-                systems.
+                Utilizes wind and solar synergy to achieve greater energy yield
+                than single-source systems.
               </p>
             </div>
             <div className="col-md-2 text-center number-col">
@@ -171,19 +172,19 @@ export default function WindSolarHybrid() {
               <span className="benefit-number">02</span>
             </div>
             <div className="col-md-5">
-              <h3 className="benefit-subtitle">Reduced Intermittency</h3>
+              <h3 className="benefit-subtitle">Enhanced Supply Stability</h3>
               <p className="benefit-description">
-                Balances energy production, providing a more stable power
-                supply.
+                Maintains balanced generation, resulting in a more stable power
+                output
               </p>
             </div>
           </div>
           <div className="row align-items-center mb-5">
             <div className="col-md-5">
-              <h3 className="benefit-subtitle">Cost-Effective</h3>
+              <h3 className="benefit-subtitle">Budget-Friendly</h3>
               <p className="benefit-description">
-                Maximizes the use of available land and resources, offering a
-                higher return on investment.
+                Enhances land and resource efficiency for greater investment
+                returns
               </p>
             </div>
             <div className="col-md-2 text-center number-col">
@@ -214,16 +215,15 @@ export default function WindSolarHybrid() {
             <div className="col-md-7">
               <span className="Akruti-label">Why Akruti?</span>
               <h2 className="Akruti-title">
-                What Makes Akruti the Ideal Partner for Wind Solar Hybrid
-                Solutions?
+                Why Akruti the Ideal Partner for Wind Solar Hybrid Services?
               </h2>
               <p className="Akruti-description">
-                Akruti Green combines expertise in wind and solar energy to
-                deliver hybrid systems. To develop our hybrid energy business,
-                we have secured grid connectivity approval for wind-solar hybrid
-                parks in Gujarat. We have also initiated the process of scouting
-                suitable sites for the commissioning of a wind-solar hybrid
-                project.
+                Akruti Green leverages its expertise in wind and solar energy to
+                deliver advanced hybrid power solutions worldwide. As part of
+                our commitment to expanding the hybrid energy sector, we have
+                secured grid connectivity approvals for wind–solar hybrid parks
+                in Gujarat and are actively identifying prime locations across
+                diverse regions for future project commissioning.
               </p>
             </div>
           </div>

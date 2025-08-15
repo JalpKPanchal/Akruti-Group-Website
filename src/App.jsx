@@ -20,9 +20,10 @@ import PageLayout from './Components/Layout/PageLayout'
 import ContactUs from './Components/ContactUs'
 import SolarEPC from './Components/SolarEPC'
 import WindSolarHybrid from './Components/WindSolarHybrid'
-import SolarIC from './Components/Solar ic'
+// import SolarIC from './Components/Solar ic'
 import GalleryPage from './Components/GalleryPage'
 import Projects from './Components/Our Projects'
+import SolarRooftop from './Components/SolarRooftop'
 
 function App() {
   return (
@@ -51,7 +52,7 @@ function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/solarepc" element={<SolarEPC />} />
           <Route path="/windsolarhybrid" element={<WindSolarHybrid />} />
-            <Route path="/solaric" element={<SolarIC />} />
+            <Route path="/solarrooftop" element={<SolarRooftop/>} />
             <Route path="/gallerypage" element={<GalleryPage />} /> 
             <Route path="/projects" element={<Projects />} /> 
         <Route path="/about" element={<AboutSection />} />

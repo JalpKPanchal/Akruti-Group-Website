@@ -16,16 +16,16 @@ export default function SolarEPC() {
     <>
       <div className="hero-section" data-aos="fade-up">
         <div className="container">
-          <h1 className="hero-title">Our Solar EPC Solutions</h1>
-          <h2 className="hero-subtitle">for Sustainable and</h2>
-          <h2 className="hero-highlight">Renewable Energy Growth</h2>
+          <h1 className="hero-title">Our Solar EPC Innovation</h1>
+          <h2 className="hero-subtitle">for Enduring and</h2>
+          <h2 className="hero-highlight">Renewable Energy Expansion</h2>
           <p className="hero-description">
-            Akruti Green delivers advanced solar EPC solutions, from ideation to
-            commissioning, driving renewable energy innovation.
+            Akruti Green leads with top-tier solar EPC services, fostering
+            renewable energy innovation from start to finish.
           </p>
         </div>
       </div>
-  
+
       <div className="expert-epc-section py-5" data-aos="fade-up">
         <div className="container">
           <div className="row">
@@ -34,12 +34,12 @@ export default function SolarEPC() {
               <h2 className="epc-title">EPC Services</h2>
 
               <p className="epc-description mt-4">
-                Akruti provides a full range of Wind Solar Hybrid EPC services,
-                ensuring exceptional quality in every project. From detailed
-                project analysis to seamless construction and ongoing
-                monitoring, our expert approach delivers high performance,
-                reliability, and efficiency. Trust Akruti for end-to-end solar
-                solutions that drive sustainable energy success.
+                Akruti delivers comprehensive Wind-Solar Hybrid EPC services,
+                ensuring top-tier quality in every project. From in-depth
+                project planning to flawless execution and continuous
+                monitoring, our expert approach guarantees superior performance,
+                reliability, and efficiency. Partner with Akruti for end-to-end
+                renewable energy solutions that power sustainable success.
               </p>
             </div>
             <div className="col-md-7 d-flex align-items-center">
@@ -68,10 +68,10 @@ export default function SolarEPC() {
                       <div className="check-circle">&#10003;</div>
                       <span>Captive and Group Captive Models</span>
                     </div>
-                    <div className="service-item">
+                    {/* <div className="service-item">
                       <div className="check-circle">&#10003;</div>
                       <span>Battery Energy Storage System (BESS)</span>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -87,31 +87,33 @@ export default function SolarEPC() {
 
           <div className="row mt-4">
             <div className="col-md-4 mb-4">
-              <h3 className="process-subtitle">Project Analysis</h3>
+              <h3 className="process-subtitle">Project Evaluation</h3>
               <p className="process-description">
-                Estimating the economic and engineering viability using shadow
-                analysis, system loss predictions, and equipment selection.
+                Analyzing economic and engineering feasibility with precise
+                shadow analysis, detailed system loss projections, and optimal
+                equipment choices.
               </p>
             </div>
             <div className="col-md-4 mb-4">
-              <h3 className="process-subtitle">System Design</h3>
+              <h3 className="process-subtitle">Technical Design</h3>
               <p className="process-description">
-                Plant design simulation with stability analysis, mechanical
-                structure creation, and detailed parameter selection.
+                Comprehensive plant modeling and simulation, including stability
+                evaluation, mechanical structure design, and optimized parameter
+                selection.
               </p>
             </div>
             <div className="col-md-4 mb-4">
               <h3 className="process-subtitle">Construction & Installation</h3>
               <p className="process-description">
-                End-to-end project execution, from mechanical installation to
-                electrical setup, ensuring quality and safety.
+                Complete project delivery, from mechanical installation to
+                electrical integration, with a focus on quality and safety.
               </p>
             </div>
             <div className="col-md-4 mb-4">
               <h3 className="process-subtitle">Testing & Commissioning</h3>
               <p className="process-description">
-                Continuous testing and commissioning to ensure optimal
-                performance and maximum energy yield.
+                Continuous validation and commissioning processes to achieve
+                optimal efficiency and energy yield.
               </p>
             </div>
           </div>
@@ -123,14 +125,14 @@ export default function SolarEPC() {
           <div className="row align-items-center mb-5">
             <div className="col-md-5">
               <h3 className="benefit-subtitle">
-                Solar Project Analysis Services
+                Solar Project Evalution Services
               </h3>
               <p className="benefit-description">
-                We analyze clients energy needs, assess optimal scenarios, and
-                identify suitable locations through our expert business
-                development team. After creating a preliminary site plan, we
-                propose capital investment solutions and assist in drafting
-                comprehensive contracts upon onboarding.
+                Our business development team analyzes clients’ energy
+                requirements, evaluates optimal scenarios, and identifies the
+                most suitable locations. Following the creation of a preliminary
+                site plan, we propose capital investment options and support the
+                drafting of comprehensive contracts upon onboarding.
               </p>
             </div>
             <div className="col-md-2 text-center number-col">
@@ -158,22 +160,23 @@ export default function SolarEPC() {
               <span className="benefit-number">02</span>
             </div>
             <div className="col-md-5">
-              <h3 className="benefit-subtitle">System Design</h3>
+              <h3 className="benefit-subtitle">Technical Design</h3>
               <p className="benefit-description">
-                We utilize software simulation to optimize system parameters and
-                enhance plant performance. Subsequently, we finalize components
-                such as modules, inverters, cables, etc. and initiate our
-                procurement process.
+                Through simulation-driven analysis, we optimize key system
+                parameters to enhance plant output. After component
+                finalization—covering modules, inverters, cables, etc.—we move
+                into the procurement phase.
               </p>
             </div>
           </div>
           <div className="row align-items-center mb-5">
             <div className="col-md-5">
-              <h3 className="benefit-subtitle">Construction</h3>
+              <h3 className="benefit-subtitle">Construction & Installation</h3>
               <p className="benefit-description">
-                We mark the site layout and prepare the mounting structures for
-                procured modules. Subsequently, we lay and interconnect all
-                plant components as per the design specifications.
+                The process begins with marking the site layout and setting up
+                mounting structures for procured modules, followed by the
+                systematic installation and interconnection of all plant
+                components according to design specifications.
               </p>
             </div>
             <div className="col-md-2 text-center number-col">
@@ -203,11 +206,10 @@ export default function SolarEPC() {
             <div className="col-md-5">
               <h3 className="benefit-subtitle">Testing and Commissioning</h3>
               <p className="benefit-description">
-                Following installation, we conduct mechanical testing of
-                structural and earthing components as well as electrical testing
-                of the system. Subsequently, we proceed with grid or off-grid
-                connectivity and integrate the infrastructure with existing
-                power supply.
+                Once installation is complete, we perform structural and
+                earthing system checks, electrical testing, and final system
+                validation. The process concludes with grid or off-grid
+                connection and integration into the existing power system.
               </p>
             </div>
           </div>
@@ -227,16 +229,15 @@ export default function SolarEPC() {
             <div className="col-md-7">
               <span className="Akruti-label">Why Akruti?</span>
               <h2 className="Akruti-title">
-                What Makes Akruti the Ideal Partner for Wind Solar Hybrid
-                Solutions?
+                Why Akruti the Ideal Partner for Solar EPC Solutions?
               </h2>
               <p className="Akruti-description">
-                Akruti Green combines expertise in wind and solar energy to
-                deliver hybrid systems. To develop our hybrid energy business,
-                we have secured grid connectivity approval for wind-solar hybrid
-                parks in Gujarat. We have also initiated the process of scouting
-                suitable sites for the commissioning of a wind-solar hybrid
-                project.
+                Akruti Green leverages its expertise in solar energy to deliver
+                large-scale solar power solutions. To expand our solar energy
+                portfolio across India, we have secured grid connectivity
+                approvals for solar parks in multiple states. We have also
+                initiated the process of identifying and evaluating suitable
+                sites nationwide for the commissioning of new solar projects.
               </p>
             </div>
           </div>
@@ -244,9 +245,9 @@ export default function SolarEPC() {
       </div>
       <div className="contact-section py-5" data-aos="fade-up">
         <div className="container text-center">
-          <p className="contact-text">Ready to harness the power of the sun?</p>
+          <p className="contact-text">Make the switch to solar today.</p>
           <p className="contact-text">
-            Contact Akruti Green today for a tailored solar solution.{" "}
+            Connect with Akruti Group for solutions built around your needs{" "}
           </p>
           <Link to="/contact" className="btn contact-btn">
             Contact Now
