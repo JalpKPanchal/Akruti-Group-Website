@@ -58,7 +58,7 @@ function App() {
         <Route path="/about" element={<AboutSection />} />
         {/* //gallerypage done */}
       </Routes>
-
+      {/*akruti group*/}
       {/* <Footer/> */}
     </>
   );
