@@ -1,369 +1,209 @@
 /* ===========================
-   About Us Page CSS
-=========================== */
-
-/* GOOGLE FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@400;500&display=swap');
-
-/* GLOBAL STYLES */
-.aboutus-page {
-  background: #f8fafc;
-  color: #232c3d;
-  font-family: 'Roboto', sans-serif;
-  min-height: 100vh;
-}
-
-/* ==========================
    HERO SECTION
-========================== */
+=========================== */
 .au-hero {
-  background: linear-gradient(135deg, #000000, #0a0a0a);
+  background: linear-gradient(135deg, #000, #0a0a0a);
   color: #fff;
-  padding: 80px 15px;
+  padding: 100px 15px;
+  margin: 90px 20px 0 20px;
+  border-radius: 0 0 24px 24px;
+  box-shadow: 0 8px 32px rgba(32,47,65,0.2);
   text-align: center;
-  /* border-radius: 0 0 36px 36px; */
-  box-shadow: 0 8px 32px rgba(32,47,65,0.15);
-  margin-right: 50px;
-  margin-left: 50px;
-}
-
-.au-hero-content {
-  max-width: 800px;
-  margin: auto;
 }
 
 .au-title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2.6rem;
+  font-size: 3rem;
   font-weight: 800;
-  line-height: 1.2;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
 }
 
 .au-title-highlight {
-  color: #ffe156;
-  background: linear-gradient(90deg,#1b9b65 20%, #ffe156 100%);
+  background: linear-gradient(90deg,#1b9b65, #ffe156);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .au-hero-desc {
   font-size: 1.2rem;
-  font-weight: 400;
-  margin-bottom: 0;
+  max-width: 700px;
+  margin: auto;
+  opacity: 0.9;
 }
 
-/* ==========================
-   SECTION HEADINGS
-========================== */
-.au-section {
-  padding: 80px 0;
-  background-color: #f9f9f9;
-}
-
-.au-heading {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  font-size: 2rem;
-  color: #222;
-  margin-bottom: 60px;
-  text-align: center;
-  letter-spacing: 1px;
-}
-
-/* ==========================
-   WHO WE ARE
-========================== */
-/* WHO WE ARE SECTION */
-.who-we-are {
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
-.who-img-container {
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-}
-
-.who-img-container:hover {
-  transform: scale(1.03);
-  box-shadow: 0 15px 45px rgba(0,0,0,0.2);
-}
-
-.who-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.5s ease;
-}
-
-.who-img-container:hover .who-img {
-  transform: scale(1.1) rotate(1deg);
-}
-
-/* Gradient overlay effect */
-.who-img-overlay {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, rgba(36,161,156,0.3), rgba(255,201,86,0.3));
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.who-img-container:hover .who-img-overlay {
-  opacity: 1;
-}
-
-/* Text animation */
-.au-desc {
-  font-size: 1.15rem;
-  line-height: 1.6;
-  color: #232c3d;
-  text-align: justify;
-  animation: slideInLeft 0.8s ease-out forwards;
-}
-
-@keyframes slideInLeft {
-  0% { opacity: 0; transform: translateX(-30px); }
-  100% { opacity: 1; transform: translateX(0); }
-}
-
-
-/* ==========================
-   MISSION & VISION CARDS
-========================== */
-.au-card {
-  background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
-  color: #fff;
-  border-radius: 20px;
-  padding: 30px 25px;
-  min-height: 180px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+#mission-vision .row {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-wrap: wrap;
 }
+
+#mission-vision .col-md-6 {
+  display: flex;
+}
+
+.au-card {
+  background: #111;
+  border-radius: 16px;
+  padding: 30px 20px;
+  color: #eee;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  flex: 1; /* equal height */
+}
+
 .au-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.8);
 }
 
-.au-card-title {
+.au-card-heading {
+  font-size: 1.8rem;
   font-weight: 800;
-  color: #f1c40f;
-  text-decoration: underline;
-  margin-bottom: 12px;
-  font-size: 1.4rem;
-  text-align: center;
-  text-transform: uppercase;
+  margin-bottom: 20px;
   letter-spacing: 1px;
+  color: #1b9b65;
+  position: relative;
+  display: inline-block;
+}
+.au-card-heading::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 3px;
+  margin: 6px auto 0;
+  background: linear-gradient(90deg,#1b9b65,#ffe156);
+  border-radius: 2px;
 }
 
-#mission, #vision {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
-  line-height: 1.6;
+.au-card-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  opacity: 0.95;
+  max-width: 90%;
+  margin: auto;
   text-align: justify;
-  margin: 0;
 }
 
-/* Accent Borders */
-.mission-card { border-left: 5px solid #3498db; }
-.vision-card { border-left: 5px solid #e74c3c; }
+.highlight {
+  color: #ffe156;
+  font-weight: 600;
+}
 
-/* ==========================
-   CORE VALUES CARDS
-========================== */
+
+/* ===========================
+   SECTION HEADINGS
+=========================== */
+.au-heading {
+  font-size: 2.2rem;
+  font-weight: 800;
+  text-align: center;
+  /* margin-bottom: 50px; */
+  margin-top: 20px;
+  color: #1b9b65;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.au-heading::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #1b9b65, #ffe156);
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.au-desc{
+  font-size: 1.3em;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: justify;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===========================
+   CORE VALUES
+=========================== */
 .au-value-card {
   background: #fff;
-  border-radius: 20px;
-  padding: 30px 25px;
-  min-height: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  border-radius: 16px;
+  padding: 25px 20px;
+  min-height: 240px;
   text-align: center;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
 .au-value-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  transform: translateY(-5px);
 }
 
 .au-value-icon {
-  font-size: 2.5rem;
-  color: #fff;
-  width: 80px;
-  height: 80px;
+  font-size: 2rem;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 15px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  margin-bottom: 20px;
-  transition: transform 0.4s ease;
-}
-.au-value-card:hover .au-value-icon {
-  transform: scale(1.2);
 }
 
-.bg-primary { background-color: #3498db; }   /* Blue */
-.bg-success { background-color: #2ecc71; }   /* Green */
-.bg-warning { background-color: #f1c40f; }   /* Yellow; text will be readable automatically */
-
-.au-value-title {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 1.25rem;
-  margin-bottom: 15px;
-  color: #222;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.au-value-card p {
-  font-size: 0.95rem;
-  color: #555;
-  line-height: 1.6;
-  margin: 0;
-}
-
-/* ==========================
+/* ===========================
    JOURNEY TIMELINE
-========================== */
+=========================== */
 .journey-section {
-  padding: 60px 20px;
+  padding: 60px 15px;
   text-align: center;
 }
 
 .journey-section h2 {
   font-size: 2rem;
-  color: #005f4b;
-  margin-bottom: 50px;
-  font-weight: 700;
+  margin-bottom: 40px;
+  color: #000;
+  text-decoration: underline;
 }
 
 .timeline {
-  position: relative;
-  max-width: 800px;
+  max-width: 700px;
   margin: auto;
-  padding-left: 20px;
   border-left: 3px solid #24a19c;
-}
-
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: -3px;
-  top: 0;
-  height: 0;
-  width: 3px;
-  background: linear-gradient(#24a19c, #ffcc00);
-  animation: growLine 2s ease-out forwards;
-}
-
-@keyframes growLine {
-  to { height: 100%; }
+  padding-left: 20px;
 }
 
 .timeline-item {
-  position: relative;
-  padding: 20px 30px;
-  margin-bottom: 30px;
-  background: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.timeline-item:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 20px rgba(36,161,156,0.2);
-}
-
-.timeline-year {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #24a19c;
-  margin-bottom: 8px;
-}
-
-/* ==========================
-   LEADERSHIP CARDS
-========================== */
-.au-leader-card {
+  margin-bottom: 25px;
   background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 2px 8px rgba(32,47,65,0.09);
-  padding: 28px 14px 18px 14px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.au-leader-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(36,161,156,0.2);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  text-align: left;
 }
 
-.au-leader-img {
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 12px;
-  border: 3px solid #ffe156;
+.timeline-year{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f96401;
+  margin-bottom: 10px;
 }
 
-.au-leader-name {
-  font-weight: 700;
-  font-size: 1.13rem;
-  color: #247c7c;
-  margin-bottom: 2px;
-}
-.au-leader-role {
-  color: #26409a;
-  font-size: 0.99rem;
-  margin-bottom: 6px;
-}
-.au-leader-bio {
-  font-size: 0.97rem;
-  color: #232c3d;
-  text-align: center;
-}
 
-/* ==========================
-   ANIMATIONS
-========================== */
-@keyframes slideInLeft {
-  0% { opacity: 0; transform: translateX(-30px); }
-  100% { opacity: 1; transform: translateX(0); }
-}
-
-/* ==========================
-   RESPONSIVE DESIGN
-========================== */
-@media (max-width: 991.98px) {
-  .au-section, .container { padding-left: 18px; padding-right: 18px; }
-  .au-timeline { max-width: 100%; }
-}
-
-@media (max-width: 767.98px) {
-  .au-hero { padding: 50px 15px; border-radius: 0 0 16px 16px; }
-  .au-title { font-size: 2rem; }
-  .au-heading { font-size: 1.5rem; }
-  .au-card, .au-value-card, .au-leader-card { padding: 20px; }
-}
-
-@media (max-width: 575.98px) {
-  .au-leader-img { width: 48px; height: 48px; }
-  .au-title { font-size: 1.5rem; }
-  .au-hero-desc { font-size: 1rem; }
+/* Responsive Timeline */
+@media (max-width: 768px) {
+  .timeline {
+    flex-direction: column;
+    align-items: center;
+  }
+  .timeline::before {
+    width: 3px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .timeline-item {
+    width: 90%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
 }

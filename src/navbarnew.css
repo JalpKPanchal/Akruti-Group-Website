@@ -1,0 +1,124 @@
+/* ===== Homepage Hero Carousel Theme ===== */
+
+/* Navbar glass style */
+.solar-navbar1 {
+  background: rgba(0, 0, 0, 0.588);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  position: fixed !important;
+  width: 100%;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+/* Remove dropdown arrow for nav links */
+.solar-navbar1 .dropdown-toggle::after {
+  display: none;
+}
+
+
+/* Navbar brand + links */
+.solar-navbar1 .navbar-brand,
+.solar-navbar1 .nav-link {
+  color: white !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Hover color for nav links */
+.custom-nav .nav-link:hover {
+  color: #ff6600 !important;
+}
+
+/* Center nav links spacing */
+.custom-nav .nav-link {
+  margin: 0 5px;
+  position: relative;
+}
+
+/* Nav link underline animation */
+.custom-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #ff6600;
+  transition: width 0.3s;
+}
+.custom-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Dropdown menu with fade + slide animation */
+.solar-navbar1 .dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Show dropdown on hover */
+.solar-navbar1 .dropdown:hover .dropdown-menu,
+.solar-navbar1 .dropdown.show .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Dropdown items */
+.solar-navbar1 .dropdown-item {
+  color: white !important;
+  font-weight: 400;
+  transition: all 0.2s ease;
+}
+
+/* Dropdown item hover */
+.solar-navbar1 .dropdown-item:hover {
+  background: #ff6600 !important;
+  color: white !important;
+  transform: translateX(5px);
+}
+
+/* Contact Us Button (Right Side desktop) */
+.btn.contact-btn {
+  background: #ff6600;
+  color: white !important;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 8px 22px;
+  border: none;
+  transition: all 0.3s ease;
+}
+.btn.contact-btn:hover {
+  background: white;
+  color: #ff6600 !important;
+  transform: translateY(-2px);
+}
+
+/* Contact Us Button (Mobile inside collapse) */
+.navbar-contact-btn {
+  background: #ff6600;
+  color: white !important;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 8px 20px;
+  border: none;
+  transition: all 0.3s ease;
+}
+.navbar-contact-btn:hover {
+  background: white;
+  color: #ff6600 !important;
+  transform: translateY(-1px);
+}
+
+/* Optional: navbar toggle icon color */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}

@@ -1,33 +1,34 @@
-import React from "react";
-import StickyButtons from "./Sticky";
-import "../homepage.css"; // <-- Import the dedicated impressive CSS
+import React, { useState } from "react";
+import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import StickyButtons from "./Sticky";
+import "../homepage.css";
+import AnnouncementBar from "./Announcement";
+import logo from "/img/logo.png";
+import CustomNavbar from "./Layout/Navbar";
 
 const Homepage = () => {
+  const [showServices, setShowServices] = useState(false);
+
   const slides = [
     {
       type: "video",
       src: "/img/home-bg-video.mp4",
-      heading:
-        "India’s Illuminating Solar EPC and C&I Company for Renewable Energy Solutions",
+      heading: "India’s Illuminating Solar EPC and C&I Company for Renewable Energy Solutions",
       text: "Redefining Power Landscapes with Innovative Solar Technologies And Shaping a Sustainable Future with Advanced Solar Systems",
     },
-    // {
-    //   type: "image",
-    //   src: "/img/promo-2.jpg",
-    //   heading: "Cutting-Edge Solar Energy Technologies",
-    //   text: "Driving a Sustainable Future with Innovative Global Solutions",
-    // },
-    // {
-    //   type: "image",
-    //   src: "/img/promo-1.jpg",
-    //   heading: "Integrating Business Excellence with Advanced Technology",
-    //   text: "Spearheading the Global Green Energy Revolution for a Sustainable Tomorroww",
-    // },
+    
   ];
 
   return (
     <>
+         <AnnouncementBar />
+    <section className="homepage-wrapper">
+  <div className="homepage-inner">    <div style={{ position: "relative" }}>
+      {/* Navbar */}
+   <CustomNavbar/>
+
+      {/* Hero Carousel */}
       <section>
         <div
           id="homepageCarousel"
@@ -35,35 +36,31 @@ const Homepage = () => {
           data-bs-ride="carousel"
           data-bs-interval="6000"
         >
-          <div className="carousel-inner">
+          <div className="carousel-inner" style={{  }}>
             {slides.map((slide, index) => (
-              <div
-                key={index}
-                className={`carousel-item ${index === 0 ? "active" : ""}`}
-              >
-                <div className="position">
-                  {/* Background video or image */}
-                  {slide.type === "video" ? (
-                    <video
-                      className="w-100 h-100"
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                      style={{ objectFit: "cover" }}
-                    >
-                      <source src={slide.src} type="video/mp4" />
-                    </video>
-                  ) : (
-                    <img
-                      src={slide.src}
-                      className="d-block w-100"
-                      alt={`Slide ${index + 1}`}
-                      style={{ height: "100vh", objectFit: "cover" }}
-                    />
-                  )}
+              <div key={index} className={`carousel-item ${index === 0 ? "active" : ""}`}>
+                {slide.type === "video" ? (
+                  <video
+                    className="w-100 h-100"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    style={{ objectFit: "cover", height: "100vh" }}
+                  >
+                    <source src={slide.src} type="video/mp4" />
+                  </video>
+                ) : (
+                  <img
+                    src={slide.src}
+                    className="d-block w-100"
+                    alt={`Slide ${index + 1}`}
+                    style={{ height: "100vh", objectFit: "cover" }}
+                  />
+                )}
 
-                  {/* Left side content with animation */}
+                {/* Overlay */}
+               {/* Left side content with animation */}
                   <div className="left-panel">
                     <div data-gsap="an4" className="heading-style-h1">
                       {/* <h1 className="fw-bold mb-3"> */}
@@ -87,12 +84,11 @@ const Homepage = () => {
                       </div>
                     </div>
                   </div>
-                </div>
               </div>
             ))}
           </div>
 
-          {/* Carousel indicators */}
+          {/* Indicators */}
           <div className="carousel-indicators">
             {slides.map((_, index) => (
               <button
@@ -108,7 +104,10 @@ const Homepage = () => {
 
         <StickyButtons />
       </section>
-    </>
+    </div>
+    </div>
+  </section>
+</>
   );
 };
 

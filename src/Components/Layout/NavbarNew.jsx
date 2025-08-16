@@ -2,21 +2,16 @@ import React, { useState } from "react";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from "/img/logo.png";
-import "../../navbar.css";
+import "../../navbarnew.css";
 
-function CustomNavbar() {
+function NavbarNew() {
   const [showServices, setShowServices] = useState(false);
 
   return (
     <Navbar
       expand="lg"
-      className="solar-navbar position-absolute top-2 start-50 translate-middle-x"
-      style={{
-        width: "95%",
-        zIndex: 999,
-        borderRadius: "50px",
-        marginTop: "9px",
-      }}
+      className="solar-navbar1 position-absolute top-0 start-50 translate-middle-x"
+      style={{ width: "100%", zIndex: 999,}}
     >
       <Container
         fluid
@@ -98,4 +93,4 @@ function CustomNavbar() {
   );
 }
 
-export default CustomNavbar;
+export default NavbarNew;

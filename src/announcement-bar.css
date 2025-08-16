@@ -1,40 +1,56 @@
+/* ANNOUNCEMENT */
 .announcement-bar {
-  width: 100%;
-  background: linear-gradient(90deg, #247c7c 40%, #26409a 100%);
-  color: #fff;
-  font-weight: 600;
-  font-size: 1.05rem;
-  padding: 8px 0;
+  background: linear-gradient(90deg, #a64ce4, #0044ff);
+  color: white;
+  text-align: center;
+  padding: 30px 10px; /* reduced padding for small screens */
+  font-size: 19px;
+  font-weight: 500;
   overflow: hidden;
-  position: relative;
-  z-index: 100;
-  box-shadow: 0 2px 8px 0 rgba(32,47,65,0.08);
-  letter-spacing: 0.01em;
+  white-space: nowrap;
+  margin-bottom: 20px;
 }
 
 .announcement-text {
   display: inline-block;
-  min-width: 100%;
-  padding: 0 20px;
-  white-space: nowrap;
-  /* Animation handled by React, so no keyframes here */
-  transition: transform 0.7s cubic-bezier(0.5,0,0.2,1), opacity 0.6s;
-  will-change: transform, opacity;
-  position: relative;
-  left: 0;
+  transition: transform 0.7s ease, opacity 0.7s ease;
 }
 
-.announcement-text.slide-in {
-  transform: translateX(0%);
+/* Animations */
+.slide-in {
+  transform: translateX(0);
   opacity: 1;
 }
 
-.announcement-text.slide-out-left {
+.slide-out-left {
   transform: translateX(-100%);
   opacity: 0;
 }
 
-.announcement-text.slide-in-right {
+.slide-in-right {
   transform: translateX(100%);
   opacity: 0;
+}
+
+/* Responsive text sizing */
+@media (max-width: 992px) {
+  .announcement-bar {
+    font-size: 16px;
+    padding: 16px 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .announcement-bar {
+    font-size: 15px;
+    line-height: 1.4;
+    white-space: normal; /* allow wrapping */
+  }
+}
+
+@media (max-width: 480px) {
+  .announcement-bar {
+    font-size: 14px;
+    padding: 30px 6px;
+  }
 }
