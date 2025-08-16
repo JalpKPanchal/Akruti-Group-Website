@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 
 import { Link } from "react-router-dom";
 import "../WindSolarHybrid.css"; // Adjusted to "./" assuming same directory; change if needed
+import PageLayout from "./Layout/PageLayout";
 
 export default function WindSolarHybrid() {
   useEffect(() => {
@@ -14,6 +15,7 @@ export default function WindSolarHybrid() {
 
   return (
     <>
+    <PageLayout>
       <div className="hero-section" data-aos="fade-up">
         <div className="container">
           <h1 className="hero-title">Wind Solar Hybrid Services</h1>
@@ -242,6 +244,7 @@ export default function WindSolarHybrid() {
           </Link>
         </div>
       </div>
+    </PageLayout>
     </>
   );
 }
