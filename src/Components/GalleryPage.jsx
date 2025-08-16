@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../custom.css";
 import { FaSearchPlus, FaTimes, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import PageLayout from "./Layout/PageLayout";
 
 // Single flat array for all images
 const galleryImages = [
@@ -81,9 +82,10 @@ export default function GalleryPage() {
 
   return (
     <>
+     <PageLayout>
     <div className="gallery-page py-5">
       <div className="container">
-        <h2 className="text-center mb-4 fw-bold">Our Project Gallery</h2>
+        <h2 className="text-center mb-4 fw-bold" id="gallery">Our Project Gallery</h2>
         <p className="text-center text-muted mb-5">
           Explore our latest solar installations and innovative project work.
         </p>
@@ -130,6 +132,7 @@ export default function GalleryPage() {
         </div>
       )}
     </div>
+    </PageLayout>
     </>
   );
 }

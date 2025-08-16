@@ -1,7 +1,10 @@
 
 
 
-
+#gallery{
+  margin-top: 50px;
+  /* margin-bottom: 20px; */
+}
 
 /*SERVICES */
 .service-card {
