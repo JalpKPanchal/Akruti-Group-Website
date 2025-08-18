@@ -5,39 +5,75 @@ import PageLayout from "./Layout/PageLayout";
 
 const projects = [
   {
-    title: "Arcelor Mittal Solar Project",
-    client: "Arcelor Mittal",
-    capacity: "332 MWp",
-    location: "Kurnool, Andhra Pradesh",
+    title: "Rewa Solar Power Project",
+    client: "L&T, Belectric Photovoltaic, ReNew Power, Solpower",
+    capacity: "225 MW",
+    location: "Rewa District, Madhya Pradesh",
     imgSrc: "/projects/1.webp",
     details: `
       <p>This large-scale solar power plant generates clean energy for industrial operations, 
       reducing carbon footprint significantly.</p>
-      <ul>
-        <li>Completed: 2023</li>
-        <li>Modules used: Bifacial solar panels</li>
-        <li>Expected annual generation: 500 GWh</li>
-      </ul>
+     
     `,
   },
   {
-    title: "Renewable Energy Park",
-    client: "Adani Green Energy",
-    capacity: "150 MWp",
-    location: "Jaisalmer, Rajasthan",
+    title: "Torrent Solar Power Project",
+    client: "Torrent Power",
+    capacity: "200 MW",
+    location: "Surel, Gujarat",
     imgSrc: "/projects/2.webp",
     details: `
-      <p>This hybrid wind-solar project maximizes land usage for renewable energy generation.</p>
+      <p>Torrent Solar Power Project – A landmark 200 MW solar installation at Surel, Gujarat, developed for Torrent Power. Harnessing clean and sustainable energy, this project strengthens India’s renewable energy landscape and contributes to a greener future.</p>
     `,
   },
   {
-    title: "BESS Solar Storage",
-    client: "NTPC Limited",
-    capacity: "10 MW + 40 MWh",
-    location: "Leh, Ladakh",
+    title: "Torrent Solar Power Project",
+    client: "Torrent Power",
+    capacity: "200 MW",
+    location: "Babra, Gujarat",
     imgSrc: "/projects/3.png",
     details: `
-      <p>This project integrates battery energy storage with solar power to ensure round-the-clock supply.</p>
+      <p>Torrent Solar Power Project – A 200 MW solar installation at Babra, Gujarat, developed for Torrent Power. This large-scale project demonstrates our commitment to delivering clean, reliable, and sustainable energy solutions for India’s growing power needs.</p>
+    `,
+  },
+  {
+    title: "Ayaana Solar Power Project",
+    client: "Ayaana Power",
+    capacity: "185 MW",
+    location: "Bhuj(Village: Nirona), Gujarat",
+    imgSrc: "/projects/3.png",
+    details: `
+      <p>Torrent Solar Power Project – A 200 MW solar installation at Babra, Gujarat, developed for Torrent Power. This large-scale project demonstrates our commitment to delivering clean, reliable, and sustainable energy solutions for India’s growing power needs.</p>
+    `,
+  },
+  {
+    title: "GSECL Solar Power Project",
+    client: "Gujarat State Electricity Corporation Limited (GSECL)",
+    capacity: "67 MW",
+    location: "Wankaner, Gujarat",
+    imgSrc: "/projects/3.png",
+    details: `
+      <p>Torrent Solar Power Project – A 200 MW solar installation at Babra, Gujarat, developed for Torrent Power. This large-scale project demonstrates our commitment to delivering clean, reliable, and sustainable energy solutions for India’s growing power needs.</p>
+    `,
+  },
+  {
+    title: "Renew Solar Power Project",
+    client: "ReNew Power",
+    capacity: "40 MW",
+    location: "Telangana",
+    imgSrc: "/projects/3.png",
+    details: `
+      <p>Torrent Solar Power Project – A 200 MW solar installation at Babra, Gujarat, developed for Torrent Power. This large-scale project demonstrates our commitment to delivering clean, reliable, and sustainable energy solutions for India’s growing power needs.</p>
+    `,
+  },
+  {
+    title: "Belectric Photovoltaic Solar Power Project",
+    client: "Belectric Photovoltaic",
+    capacity: "52 MW",
+    location: "Nataram, Madhya Pradesh",
+    imgSrc: "/projects/3.png",
+    details: `
+      <p>Torrent Solar Power Project – A 200 MW solar installation at Babra, Gujarat, developed for Torrent Power. This large-scale project demonstrates our commitment to delivering clean, reliable, and sustainable energy solutions for India’s growing power needs.</p>
     `,
   },
 ];

@@ -8,7 +8,8 @@ const ContactUs = () => {
     name: "",
     phone: "",
     email: "",
-    kw: "",
+    capacity: "",
+    unit: "KW", // default unit
     message: "",
   });
 
@@ -28,9 +29,9 @@ const ContactUs = () => {
     if (!formData.email.trim()) newErrors.email = "Email is required";
     else if (!/\S+@\S+\.\S+/.test(formData.email))
       newErrors.email = "Enter a valid email address";
-    if (!formData.kw.trim()) newErrors.kw = "Kilo Watt is required";
-    else if (isNaN(formData.kw) || parseFloat(formData.kw) <= 0)
-      newErrors.kw = "Enter a valid positive number for Kilo Watt";
+    if (!formData.capacity.trim()) newErrors.capacity = "Capacity is required";
+    else if (isNaN(formData.capacity) || parseFloat(formData.capacity) <= 0)
+      newErrors.capacity = "Enter a valid positive number for Capacity";
     if (!formData.message.trim()) newErrors.message = "Message cannot be empty";
     return newErrors;
   };
@@ -51,8 +52,17 @@ const ContactUs = () => {
     const validationErrors = validate();
     if (Object.keys(validationErrors).length === 0) {
       setSubmitted(true);
-      alert("Form submitted successfully!");
-      setFormData({ name: "", phone: "", email: "", kw: "", message: "" });
+      alert(
+        `Form submitted successfully!\nCapacity: ${formData.capacity} ${formData.unit}`
+      );
+      setFormData({
+        name: "",
+        phone: "",
+        email: "",
+        capacity: "",
+        unit: "KW",
+        message: "",
+      });
       setSubmitted(false);
     } else {
       setErrors(validationErrors);
@@ -124,18 +134,31 @@ const ContactUs = () => {
                       </Form.Control.Feedback>
                     </Form.Group>
 
+                    {/* ✅ Capacity with KW / MW */}
                     <Form.Group className="mb-3">
-                      <Form.Label>Kilo Watt (KW)</Form.Label>
-                      <Form.Control
-                        type="number"
-                        name="kw"
-                        placeholder="Enter Kilo Watt"
-                        value={formData.kw}
-                        onChange={handleChange}
-                        isInvalid={!!errors.kw}
-                      />
+                      <Form.Label>Capacity</Form.Label>
+                      <div className="d-flex">
+                        <Form.Control
+                          type="number"
+                          name="capacity"
+                          placeholder="Enter Capacity"
+                          value={formData.capacity}
+                          onChange={handleChange}
+                          isInvalid={!!errors.capacity}
+                        />
+                        <Form.Select
+                          name="unit"
+                          value={formData.unit}
+                          onChange={handleChange}
+                          className="ms-2"
+                          style={{ maxWidth: "100px" }}
+                        >
+                          <option value="KW">kW</option>
+                          <option value="MW">MW</option>
+                        </Form.Select>
+                      </div>
                       <Form.Control.Feedback type="invalid">
-                        {errors.kw}
+                        {errors.capacity}
                       </Form.Control.Feedback>
                     </Form.Group>
 

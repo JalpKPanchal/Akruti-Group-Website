@@ -1,22 +1,33 @@
-/* Section Styling */
+/* =========================
+   Partners Section Styling
+   ========================= */
 .partners-section {
   position: relative;
+  padding: 3rem 0;
+  background: #000;   /* Option B → makes entire section black */
+  color: #fff;        /* White text for contrast */
 }
 
 .partners-section .title {
   font-size: 2.7rem;
   font-weight: bold;
   text-decoration: underline;
+  color: #000000; /* Ensure title is visible on black */
 }
 
 .partners-section .subtitle {
   font-size: 1rem;
-  color: #555;
+  color: #ccc; /* Lighter text for subtitle */
 }
 
+/* Swiper Styling */
 .partners-swiper {
   will-change: transform;
+  background: linear-gradient(to right, #000000, #ffffff); /* Black → White */
+  padding: 20px 0;    /* spacing inside slider */
+  border-radius: 8px; /* optional smooth edges */
 }
+
 
 /* Logo Styling - ORIGINAL COLORS */
 .brand-logo {
@@ -27,4 +38,3 @@
 .brand-logo:hover {
   transform: scale(1.05);
 }
-

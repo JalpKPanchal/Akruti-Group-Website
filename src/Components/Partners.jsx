@@ -6,10 +6,15 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "../PartnersSection.css"; // Custom CSS
 
-const brands = Array.from({ length: 14 }, (_, i) => ({
-  img: `/Partners/brand-${i + 1}.webp`,
-  alt: `brand-${i + 1}`,
-}));
+// Added 2 new brands at the end
+const brands = [
+  ...Array.from({ length: 14 }, (_, i) => ({
+    img: `/Partners/brand-${i + 1}.webp`,
+    alt: `brand-${i + 1}`,
+  })),
+  { img: "/img/bondada.jpg", alt: "bondada" },
+  { img: "/img/mahajenco.png", alt: "mahajenco" },
+];
 
 export default function PartnersSection() {
   const swiperRef = useRef(null);
@@ -48,9 +53,6 @@ export default function PartnersSection() {
           <h3 className="title">
             <b>Our Clients</b>
           </h3>
-          {/* <h5 className="subtitle">
-            <span>Akruti Group</span> <span>Brands</span>
-          </h5> */}
         </div>
 
         <Swiper

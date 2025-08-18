@@ -41,6 +41,15 @@
   animation: fadeInUp 0.8s ease forwards;
   opacity: 0;
 }
+.service-card p {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* clean modern font */
+  font-size: 16px;   /* slightly larger for readability */
+  line-height: 1.6;  /* better spacing */
+  color: #333333;    /* darker, easier to read */
+  font-weight: 400;  /* normal, not too light */
+  margin-top: 8px;
+}
+
 
 .service-card:hover {
   transform: translateY(-8px);

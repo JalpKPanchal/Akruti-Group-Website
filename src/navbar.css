@@ -2,7 +2,8 @@
 
 /* Navbar glass style */
 .solar-navbar {
-  background: rgba(0, 0, 0, 0.358);
+  /* background: rgba(241, 241, 241, 0.648); */
+  background: linear-gradient(to left, #000000, #ffffff);
   backdrop-filter: blur(1px);
   border-radius: 50px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.021);
@@ -15,7 +16,7 @@
 /* Navbar brand + links */
 .solar-navbar .navbar-brand,
 .solar-navbar .nav-link {
-  color: white !important;
+  color: rgb(0, 0, 0) !important;
   font-weight: 500;
   transition: color 0.3s ease;
 }
