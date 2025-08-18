@@ -45,10 +45,12 @@ export default function PartnersSection() {
     <section className="partners-section py-5 bg-light">
       <div className="container">
         <div className="text-center mb-4">
-          <h3 className="title">Partners</h3>
-          <h5 className="subtitle">
+          <h3 className="title">
+            <b>Our Clients</b>
+          </h3>
+          {/* <h5 className="subtitle">
             <span>Akruti Group</span> <span>Brands</span>
-          </h5>
+          </h5> */}
         </div>
 
         <Swiper

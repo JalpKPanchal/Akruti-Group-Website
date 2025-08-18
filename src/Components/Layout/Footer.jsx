@@ -1,198 +1,111 @@
 import React from "react";
-import {
-  FaPhoneAlt,
-  FaEnvelope,
-  FaMapMarkerAlt,
-  FaFacebookF,
-  FaLinkedinIn,
-  FaInstagram,
-} from "react-icons/fa";
+import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { Container, Row, Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import logo from "/img/logo.png";
-import "../../custom.css";
+import "../../footer.css"; // Updated CSS file for footer styles
 
 const Footer = () => {
   return (
-    <>
-      <footer className="bg-dark text-light pt-5">
-        <Container>
-          <Row className="gy-4">
-            {/* Logo & Description */}
-            <Col md={4}>
-              <img
-                src={logo}
-                alt="Akruti Logo"
-                style={{ maxWidth: "180px" }}
-                className="mb-3"
-              />
-              <p className="small">
-                Akruti Group is India’s leading solar EPC & I&C service provider
-                with over 200+ clients across the globe.
-              </p>
-              <div className="d-flex gap-3 mt-3">
-                <a href="#" className="text-light fs-5">
-                  <FaFacebookF />
-                </a>
-                <a
-                  href="https://www.linkedin.com/company/akrutigroup1/"
-                  target="_blank"
-                  className="text-light fs-5"
-                  rel="noopener noreferrer"
-                >
-                  <FaLinkedinIn />
-                </a>
-                <a
-                  href="https://www.instagram.com/akrutigroup_hmt?igsh=MWxxcnQ3Yms0ZzFubw==" target="_blank"
-                  className="text-light fs-5"
-                >
-                  <FaInstagram />
-                </a>
-              </div>
-            </Col>
-
-            {/* Quick Links */}
-            <Col md={2}>
-              <h5 className="fw-semibold">Quick Links</h5>
-              <ul className="list-unstyled small">
-                <li>
-                  <Link to="/" className="text-light text-decoration-none">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/about" className="text-light text-decoration-none">
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/contact"
-                    className="text-light text-decoration-none"
-                  >
-                    Contact
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/services"
-                    className="text-light text-decoration-none"
-                  >
-                    Gallery
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/ourprojects"
-                    className="text-light text-decoration-none"
-                  >
-                    {" "}
-                    Our Projects
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/career"
-                    className="text-light text-decoration-none"
-                  >
-                    Careers
-                  </Link>
-                </li>
-              </ul>
-            </Col>
-
-            {/* Services */}
-            <Col md={3}>
-              <h5 className="fw-semibold">Our Services</h5>
-              <ul className="list-unstyled small">
-                <li>
-                  <Link
-                    to="/solarepc"
-                    className="text-light text-decoration-none"
-                  >
-                    Solar EPC
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/solaric"
-                    className="text-light text-decoration-none"
-                  >
-                    Solar I&C
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/windsolarhybrid"
-                    className="text-light text-decoration-none"
-                  >
-                    Wind Solar Hybrid
-                  </Link>
-                </li>
-                {/* <li><Link to="/consulting" className="text-light text-decoration-none">Consulting</Link></li> */}
-              </ul>
-            </Col>
-
-            {/* Contact Info */}
-            <Col md={3}>
-              <h5 className="fw-semibold">Contact Us</h5>
-              <p className="small mb-2">
-                <FaMapMarkerAlt className="me-2" />
-                Himmatnagar, Gujarat, India
-              </p>
-              <p className="small mb-2">
-                <FaPhoneAlt className="me-2" />
-                +91 83202 92904
-              </p>
-              <p className="small mb-2">
-                <FaEnvelope className="me-2" />
-                <a
-                  href="mailto:akrutiengineering72@gmail.com"
-                  className="text-light text-decoration-none"
-                  style={{ wordBreak: "break-all" }}
-                >
-                  akrutiengineering72@gmail.com
-                </a>
-              </p>
-            </Col>
-          </Row>
-
-          <hr className="text-secondary my-4" />
-
-          <div className="text-center pb-2">
-            <small style={{ color: "white" }}>
-              © {new Date().getFullYear()}{" "}
-              <a href="/" style={{ textDecoration: "none" }}>
-                Akruti Group Pvt. Ltd.
-              </a>{" "}
-              All rights reserved.
-            </small>
-          </div>
-          <div className="text-center pb-3">
-            <small style={{ color: "#d1d5db" }}>
-              Created by{" "}
+    <footer className="bg-dark text-light py-5">
+      <Container>
+        <Row className="gy-4 justify-content-between">
+          {/* Logo, Email, Phone */}
+          <Col lg={3} md={6} className="footer-logo-section">
+            <img
+              src={logo}
+              alt="Akruti Group"
+              style={{ maxWidth: "180px" }}
+              className="mb-3"
+            />
+            <p className="small mb-1">
               <a
-                href="https://www.linkedin.com/in/jalp-panchal-8b619631a/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-decoration-underline text-light"
+                href="mailto:akrutiengineering72@gmail.com"
+                className="text-light text-decoration-none"
               >
-                Jalp Panchal
-              </a>{" "}
-              and{" "}
-              <a
-                href="https://www.linkedin.com/in/ruchit-patel-0206ar/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-decoration-underline text-light"
-              >
-                Ruchit Patel
+                akrutiengineering72@gmail.com
               </a>
-            </small>
-          </div>
-        </Container>
-      </footer>
-    </>
+            </p>
+            <p className="small mb-0">+91 83202 92904</p>
+          </Col>
+
+          {/* Visit Links */}
+          <Col lg={3} md={6}>
+            <h6 className="fw-bold mb-3">Visit</h6>
+            <ul className="list-unstyled small">
+              <li>
+                <a href="/about" className="text-light text-decoration-none">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="/services" className="text-light text-decoration-none">
+                  Our Services
+                </a>
+              </li>
+              <li>
+                <a href="/career" className="text-light text-decoration-none">
+                  Careers
+                </a>
+              </li>
+            </ul>
+          </Col>
+
+          {/* Quick Links */}
+          <Col lg={3} md={6}>
+            <h6 className="fw-bold mb-3">Quick Links</h6>
+            <ul className="list-unstyled small">
+              <li>
+                <a
+                  href="/projects"
+                  className="text-light text-decoration-none"
+                >
+                  Our Projects
+                </a>
+              </li>
+              <li>
+                <a href="/contact" className="text-light text-decoration-none">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </Col>
+
+          {/* Offices */}
+          <Col lg={3} md={6}>
+            <div className="mb-3">
+              <h6 className="fw-bold mb-3">Corporate Office</h6>
+              <p className="small mb-1">Himmatnagar, Gujarat, India</p>
+              <p className="small mb-0">Ph: +91 83202 92904</p>
+            </div>
+          </Col>
+        </Row>
+
+        <hr className="border-secondary my-4" />
+
+        <Row className="align-items-center">
+          <Col md={6}>
+            <p className="small mb-0">
+              Copyright © {new Date().getFullYear()} Akruti Group Pvt. Ltd. All
+              rights reserved.
+            </p>
+          </Col>
+          <Col md={6} className="text-md-end text-center">
+            <a
+              href="https://www.linkedin.com/company/akrutigroup1/"
+              className="text-light mx-2 fs-5 social-icon"
+            >
+              <FaLinkedinIn />
+            </a>
+            <a
+              href="https://www.instagram.com/akrutigroup_hmt?igsh=MWxxcnQ3Yms0ZzFubw=="
+              className="text-light mx-2 fs-5 social-icon"
+            >
+              <FaInstagram />
+            </a>
+          </Col>
+        </Row>
+      </Container>
+    </footer>
   );
 };
 

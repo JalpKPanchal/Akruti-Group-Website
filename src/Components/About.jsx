@@ -195,9 +195,7 @@ export default function About() {
                   <div className="timeline-year">
                     <b>{item.year}</b>
                   </div>
-                  <p>
-                    <b>{item.desc}</b>
-                  </p>
+                  <p className="timeline-desc">{item.desc}</p>
                 </div>
               ))}
             </div>

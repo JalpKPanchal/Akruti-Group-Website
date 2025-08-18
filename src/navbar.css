@@ -2,8 +2,8 @@
 
 /* Navbar glass style */
 .solar-navbar {
-  background: rgba(0, 0, 0, 0.478);
-  backdrop-filter: blur(3px);
+  background: rgba(0, 0, 0, 0.358);
+  backdrop-filter: blur(1px);
   border-radius: 50px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.021);
   position: fixed;

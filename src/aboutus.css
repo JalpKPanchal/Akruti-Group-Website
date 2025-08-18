@@ -187,6 +187,14 @@
   margin-bottom: 10px;
 }
 
+.timeline-desc {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #1b9b65;
+  margin: 0;
+}
+
 
 /* Responsive Timeline */
 @media (max-width: 768px) {
