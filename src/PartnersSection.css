@@ -9,10 +9,10 @@
 }
 
 .partners-section .title {
-  font-size: 2.7rem;
+  font-size: 3rem;
   font-weight: bold;
   text-decoration: underline;
-  color: #000000; /* Ensure title is visible on black */
+  color: #ffffff; /* Ensure title is visible on black */
 }
 
 .partners-section .subtitle {
@@ -23,9 +23,9 @@
 /* Swiper Styling */
 .partners-swiper {
   will-change: transform;
-  background: linear-gradient(to right, #000000, #ffffff); /* Black → White */
-  padding: 20px 0;    /* spacing inside slider */
-  border-radius: 8px; /* optional smooth edges */
+  background: linear-gradient(to right, #000000, #525252,#ffffff); /* Black → White */
+  padding: 30px 0;    /* spacing inside slider */
+  /* border-radius: 8px;  */
 }
 
 

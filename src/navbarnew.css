@@ -3,7 +3,7 @@
 /* Navbar glass style */
 .solar-navbar1 {
   /* background: rgba(255, 255, 255, 0.588); */
-    background: linear-gradient(to left, #000000, #ffffff);
+  background: linear-gradient(to left, #000000, #ffffff);
 
   backdrop-filter: blur(6px);
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
@@ -11,10 +11,17 @@
   width: 100%;
   z-index: 999;
   transition: all 0.3s ease;
+  font-family: 'Roboto', sans-serif;
 }
 /* Remove dropdown arrow for nav links */
 .solar-navbar1 .dropdown-toggle::after {
   display: none;
+}
+.custom-nav .nav-link,
+.custom-nav .dropdown-toggle,
+.solar-navbar1 .dropdown-item {
+  text-transform: capitalize !important;
+  font-variant: small-caps; /* optional for a classy look */
 }
 
 
@@ -51,7 +58,19 @@
 .custom-nav .nav-link:hover::after {
   width: 100%;
 }
+/* Nav links smaller font */
+.custom-nav .nav-link,
+.custom-nav .dropdown-toggle {
+  font-size: 1rem;   /* smaller than default */
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
 
+/* Dropdown items smaller too */
+.solar-navbar1 .dropdown-item {
+  font-size: 0.85rem;
+  font-weight: 400;
+}
 /* Dropdown menu with fade + slide animation */
 .solar-navbar1 .dropdown-menu {
   opacity: 0;

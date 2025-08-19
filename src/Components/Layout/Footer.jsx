@@ -10,12 +10,20 @@ const Footer = () => {
       <Container>
         <Row className="gy-4 justify-content-between">
           {/* Logo, Email, Phone */}
-          <Col lg={3} md={6} className="footer-logo-section">
+          <Col
+            xxl={3}
+            xl={3}
+            lg={3}
+            md={6}
+            sm={12}
+            xs={12}
+            className="footer-logo-section"
+          >
             <img
               src={logo}
               alt="Akruti Group"
+              className="mb-3 img-fluid" // Added img-fluid for responsive image scaling
               style={{ maxWidth: "180px" }}
-              className="mb-3"
             />
             <p className="small mb-1">
               <a
@@ -29,7 +37,7 @@ const Footer = () => {
           </Col>
 
           {/* Visit Links */}
-          <Col lg={3} md={6}>
+          <Col xxl={3} xl={3} lg={3} md={6} sm={12} xs={12}>
             <h6 className="fw-bold mb-3">Visit</h6>
             <ul className="list-unstyled small">
               <li>
@@ -38,8 +46,24 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/services" className="text-light text-decoration-none">
-                  Our Services
+                <a href="/solarepc" className="text-light text-decoration-none">
+                  Solar EPC And C & I
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/windsolarhybrid"
+                  className="text-light text-decoration-none"
+                >
+                  Wind Solar Hybrid
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/solarrooftop"
+                  className="text-light text-decoration-none"
+                >
+                  Solar Rooftop
                 </a>
               </li>
               <li>
@@ -51,14 +75,11 @@ const Footer = () => {
           </Col>
 
           {/* Quick Links */}
-          <Col lg={3} md={6}>
+          <Col xxl={3} xl={3} lg={3} md={6} sm={12} xs={12}>
             <h6 className="fw-bold mb-3">Quick Links</h6>
             <ul className="list-unstyled small">
               <li>
-                <a
-                  href="/projects"
-                  className="text-light text-decoration-none"
-                >
+                <a href="/projects" className="text-light text-decoration-none">
                   Our Projects
                 </a>
               </li>
@@ -71,7 +92,7 @@ const Footer = () => {
           </Col>
 
           {/* Offices */}
-          <Col lg={3} md={6}>
+          <Col xxl={3} xl={3} lg={3} md={6} sm={12} xs={12}>
             <div className="mb-3">
               <h6 className="fw-bold mb-3">Corporate Office</h6>
               <p className="small mb-1">Himmatnagar, Gujarat, India</p>
@@ -83,13 +104,21 @@ const Footer = () => {
         <hr className="border-secondary my-4" />
 
         <Row className="align-items-center">
-          <Col md={6}>
+          <Col xxl={6} xl={6} lg={6} md={6} sm={12} xs={12}>
             <p className="small mb-0">
               Copyright © {new Date().getFullYear()} Akruti Group Pvt. Ltd. All
               rights reserved.
             </p>
           </Col>
-          <Col md={6} className="text-md-end text-center">
+          <Col
+            xxl={6}
+            xl={6}
+            lg={6}
+            md={6}
+            sm={12}
+            xs={12}
+            className="text-xxl-end text-xl-end text-lg-end text-md-end text-sm-center text-center mt-sm-3 mt-3"
+          >
             <a
               href="https://www.linkedin.com/company/akrutigroup1/"
               className="text-light mx-2 fs-5 social-icon"

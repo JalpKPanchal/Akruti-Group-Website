@@ -8,7 +8,7 @@ import "../aboutus.css";
 const servicesData = [
   {
     id: 1,
-    img: "/img/1.webp",
+    img: "/img/SolarEPC.jpg",
     category: "Solar EPC",
     title: "Sun Energy",
     desc: "End-to-End Design and Construction of Utility-Scale Solar Plants",
@@ -24,7 +24,7 @@ const servicesData = [
   },
   {
     id: 3,
-    img: "/img/serv-in-bg-3.jpg",
+    img: "/img/C&I.jpg",
     category: "Solar C & I",
     title: "Solar C & I",
     desc: "Comprehensive Project Management Delivering On-Time, On-Budget",

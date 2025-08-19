@@ -35,10 +35,6 @@ footer p.small {
   margin-bottom: 0.75rem;
 }
 
-footer .text-md-end {
-  text-align: right;
-}
-
 footer a.text-light:hover {
   color: #adb5bd !important;
 }
@@ -57,11 +53,106 @@ footer hr {
 
 footer .footer-logo-section p {
   line-height: 1.4;
+  margin-right: 105px;
 }
 
-@media (max-width: 991px) {
-  footer .text-md-end {
+/* Enhanced media queries for better responsiveness across devices */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  footer h6 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  footer p.small,
+  footer ul.list-unstyled li {
+    font-size: 0.85rem;
+  }
+
+  footer .social-icon {
+    font-size: 1.5rem; /* Slightly larger for touch targets on small phones */
+  }
+
+  footer .img-fluid {
+    max-width: 150px; /* Scale down logo for very small screens */
+  }
+
+  footer .text-center {
     text-align: center !important;
-    margin-top: 1rem;
+  }
+
+  footer .mt-3 {
+    margin-top: 1rem !important;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  footer .text-sm-center {
+    text-align: center !important;
+  }
+
+  footer .mt-sm-3 {
+    margin-top: 1rem !important;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  footer .text-md-end {
+    text-align: right !important;
+  }
+
+  footer .mt-md-0 {
+    margin-top: 0 !important;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  footer .text-lg-end {
+    text-align: right !important;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  footer .text-xl-end {
+    text-align: right !important;
+  }
+}
+
+/* Extra extra large devices (TVs, very large screens, 1400px and up) */
+@media (min-width: 1400px) {
+  footer {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  footer h6 {
+    font-size: 1.2rem;
+  }
+
+  footer p.small,
+  footer ul.list-unstyled li {
+    font-size: 1rem;
+  }
+
+  footer .social-icon {
+    font-size: 1.8rem; /* Larger icons for bigger screens */
+  }
+
+  footer .img-fluid {
+    max-width: 200px; /* Slightly larger logo for TVs/large screens */
+  }
+
+  footer .text-xxl-end {
+    text-align: right !important;
   }
 }

@@ -27,6 +27,7 @@ function CustomNavbar() {
           <img
             src={logo}
             alt="Logo"
+            className="img-fluid"
             style={{ height: "55px", objectFit: "contain" }}
           />
         </Link>
@@ -34,10 +35,7 @@ function CustomNavbar() {
         <Navbar.Toggle aria-controls="main-navbar" />
         <Navbar.Collapse id="main-navbar" className="justify-content-center">
           {/* Center: Nav Links */}
-          <Nav className="custom-nav text-uppercase fw-semibold align-items-center">
-            {/* <Nav.Link as={Link} to="/" className="px-3">
-              Home
-            </Nav.Link> */}
+          <Nav className="custom-nav fw-semibold align-items-center">
             <Nav.Link as={Link} to="/about" className="px-3">
               About Us
             </Nav.Link>
@@ -57,7 +55,7 @@ function CustomNavbar() {
                 renderMenuOnMount={true}
               >
                 <NavDropdown.Item as={Link} to="/solarepc">
-                  Solar EPC And C&I
+                  Solar EPC and C&I
                 </NavDropdown.Item>
                 <NavDropdown.Item as={Link} to="/windsolarhybrid">
                   Wind Solar Hybrid
@@ -80,7 +78,7 @@ function CustomNavbar() {
 
             {/* Contact Us button (always visible, inside collapse for mobile) */}
             <div className="d-lg-none mt-2">
-              <Link to="/contact" className="navbar-contact-btn" style={{}}>
+              <Link to="/contact" className="navbar-contact-btn">
                 Contact Us
               </Link>
             </div>

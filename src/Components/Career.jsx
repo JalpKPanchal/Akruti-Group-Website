@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import "../career.css";
+import PageLayout from "./Layout/PageLayout";
 
 const jobOpenings = [
   {
@@ -94,85 +95,92 @@ const Careers = () => {
   };
 
   return (
-    <div>
-      {/* Hero Section */}
-      <section className="career-hero-bg">
-        <div className="career-hero-content">
-          <h1>
-            Build a Sustainable <br />
-            <span>Career with Akruti</span>
-          </h1>
-          <p>
-            We are always on the lookout for talented individuals who share our
-            passion for clean energy and sustainability.
-            <br />
-            Join our team and make an impact on the future of renewable energy.
-          </p>
-          <button className="career-hero-btn" onClick={handleExploreClick}>
-            Explore Open Positions
-          </button>
-        </div>
-      </section>
+    <>
+      <PageLayout>
+        <div>
+          {/* Hero Section */}
+          <section className="career-hero-bg">
+            <div className="career-hero-content">
+              <h1>
+                Build a Sustainable <br />
+                <span>Career with Akruti</span>
+              </h1>
+              <p>
+                We are always on the lookout for talented individuals who share
+                our passion for clean energy and sustainability.
+                <br />
+                Join our team and make an impact on the future of renewable
+                energy.
+              </p>
+              <button className="career-hero-btn" onClick={handleExploreClick}>
+                Explore Open Positions
+              </button>
+            </div>
+          </section>
 
-      {/* Careers List Section */}
-      <div className="careers-bg-soft" ref={jobsRef}>
-        <div className="careers-header">
-          <h2>
-            Explore Our <span>Open Positions</span>
-          </h2>
-        </div>
-        <div className="careers-main-card">
-          <div className="careers-list-side">
-            {jobOpenings.map((job, idx) => (
-              <div
-                key={job.title}
-                className={`careers-list-title${
-                  openIndex === idx ? " active" : ""
-                }`}
-                onClick={() => setOpenIndex(idx)}
-                tabIndex={0}
-                onKeyPress={(e) => {
-                  if (e.key === "Enter") setOpenIndex(idx);
-                }}
-              >
-                {job.title}
+          {/* Careers List Section */}
+          <div className="careers-bg-soft" ref={jobsRef}>
+            <div className="careers-header">
+              <h2>
+                Explore Our <span>Open Positions</span>
+              </h2>
+            </div>
+            <div className="careers-main-card">
+              <div className="careers-list-side">
+                {jobOpenings.map((job, idx) => (
+                  <div
+                    key={job.title}
+                    className={`careers-list-title${
+                      openIndex === idx ? " active" : ""
+                    }`}
+                    onClick={() => setOpenIndex(idx)}
+                    tabIndex={0}
+                    onKeyPress={(e) => {
+                      if (e.key === "Enter") setOpenIndex(idx);
+                    }}
+                  >
+                    {job.title}
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-          <div className="careers-detail-side">
-            <div className="careers-detail-content careers-detail-center-anim">
-              <div className="careers-detail-center">
-                <div>
-                  <p>
-                    <span className="careers-bold">Location:</span>
-                    <br />
-                    {jobOpenings[openIndex].location}
-                  </p>
-                  <p>
-                    <span className="careers-bold">Job Overview:</span>
-                    <br />
-                    {jobOpenings[openIndex].overview}
-                  </p>
-                </div>
-              </div>
-              <div className="careers-detail-right">
-                <div>
-                  <p className="careers-bold">Key Responsibilities:</p>
-                  <ul>
-                    {jobOpenings[openIndex].responsibilities.map((item, i) => (
-                      <li key={i}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
-                <div>
-                  <p className="careers-bold">Qualifications:</p>
-                  <ul>
-                    {jobOpenings[openIndex].qualifications.map((item, i) => (
-                      <li key={i}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
-                {/* <a
+              <div className="careers-detail-side">
+                <div className="careers-detail-content careers-detail-center-anim">
+                  <div className="careers-detail-center">
+                    <div>
+                      <p>
+                        <span className="careers-bold">Location:</span>
+                        <br />
+                        {jobOpenings[openIndex].location}
+                      </p>
+                      <p>
+                        <span className="careers-bold">Job Overview:</span>
+                        <br />
+                        {jobOpenings[openIndex].overview}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="careers-detail-right">
+                    <div>
+                      <p className="careers-bold">Key Responsibilities:</p>
+                      <ul>
+                        {jobOpenings[openIndex].responsibilities.map(
+                          (item, i) => (
+                            <li key={i}>{item}</li>
+                          )
+                        )}
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="careers-bold">Qualifications:</p>
+                      <ul>
+                        {jobOpenings[openIndex].qualifications.map(
+                          (item, i) => (
+                            <li key={i}>{item}</li>
+                          )
+                        )}
+                      </ul>
+                    </div>
+                    {/* <a
                   href={`mailto:akrutiengineering72@gmail.com?subject=Application for ${encodeURIComponent(
                     jobOpenings[openIndex].title
                   )}&body=Dear Akruti Team,%0D%0A%0D%0AI am writing to express my interest in the position of ${encodeURIComponent(
@@ -184,26 +192,28 @@ const Careers = () => {
                 >
                   Apply Now
                 </a> */}
+                  </div>
+                </div>
               </div>
+            </div>
+            <div className="careers-cta">
+              <p>
+                Explore our open roles and take the first step towards building
+                a sustainable future with Akruti Group.
+              </p>
+              <a
+                href={mailtoLink}
+                className="apply-now-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Apply Now
+              </a>
             </div>
           </div>
         </div>
-        <div className="careers-cta">
-          <p>
-            Explore our open roles and take the first step towards building a
-            sustainable future with Akruti Group.
-          </p>
-          <a
-            href={mailtoLink}
-            className="apply-now-button"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Apply Now
-          </a>
-        </div>
-      </div>
-    </div>
+      </PageLayout>
+    </>
   );
 };
 

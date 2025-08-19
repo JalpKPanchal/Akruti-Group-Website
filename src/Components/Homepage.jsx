@@ -67,7 +67,7 @@ const Homepage = () => {
                       {/* If you want to blue-accent a word, wrap it in <span className="hero-accent">word</span> */}
                       {slide.heading}
                       {/* </h1> */}
-                      <p className="lead mb-4">{slide.text}</p>
+                      <p className="lead mb-4" id="textsld">{slide.text}</p>
                       <div>
                         <Link
                           to="/about"

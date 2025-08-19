@@ -103,15 +103,38 @@
   text-shadow: 0 4px 28px rgba(46,188,255,0.17), 0 2px 8px rgba(0,0,0,0.21);
   /* Optional: blue accent on a keyword */
 }
-.left-panel h1 .hero-accent {
-  color: #ffffff;
+#textsld{
+  color: #fff;
+  font-size: 1.22rem;
+  margin-bottom: 2.2rem;
+  font-weight: 400;
+  max-width: 520px;
+  /* animation */
+  animation: slideInLeft 0.8s ease-out forwards;
+  animation-delay: 0.4s;/ 
+
+  /* text-shadow: 0 1px 6px rgba(125, 171, 228, 0.13) , 0 0 2px rgba(8, 56, 78, 0.12); */
+}
+/* hover effect in  #textsld*/
+.left-panel h1:hover, #textsld:hover {
+  /* color: #000000;
+  text-shadow: 0 4px 28px rgba(46,188,255,0.17), 0 2px 8px rgba(0,0,0,0.21); */
+  transform: translateY(-2px) scale(1.02);  
+  transition: color 0.3s, text-shadow 0.3s, transform 0.3s;
   font-weight: 900;
-  letter-spacing: -1.5px;
-  text-shadow: 0 2px 8px rgba(46,188,255,0.16);
+  font-size: 1.5rem;
+  cursor: pointer;
+  /* Optional: add a subtle shadow effect on hover */
+  box-shadow: 0 4px 16px rgba(46,188,255,0.16);
+  /* Optional: add a slight scale effect on hover */
+  /* transform: scale(1.02); */
+  /* Optional: add a transition effect */
+  transition: color 0.3s, text-shadow 0.3s, transform 0.3s, box-shadow 0.3s;
+
 }
 
 .left-panel .lead {
-  color: #e6f6ff;
+  color: #ffffff;
   font-size: 1.22rem;
   margin-bottom: 2.2rem;
   font-weight: 400;
