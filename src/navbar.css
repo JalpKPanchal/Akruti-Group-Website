@@ -18,7 +18,8 @@
   color: rgb(0, 0, 0) !important;
   font-weight: 500;
   transition: color 0.3s ease;
-  text-transform: capitalize; /* Ensure proper capitalization */
+  text-transform: capitalize !important;
+  font-variant: small-caps; /* match navbarnew.css */
 }
 
 /* Center nav links */
@@ -52,6 +53,16 @@
   display: none;
 }
 
+/* Nav links + dropdown toggle font */
+.custom-nav .nav-link,
+.custom-nav .dropdown-toggle {
+  font-size: 1rem;   /* same as navbarnew.css */
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: capitalize !important;
+  font-variant: small-caps; /* match navbarnew.css */
+}
+
 /* Dropdown menu with fade + slide animation */
 .solar-navbar .dropdown-menu {
   opacity: 0;
@@ -74,14 +85,17 @@
 /* Dropdown items */
 .solar-navbar .dropdown-item {
   color: white !important;
+  font-size: 0.85rem;  /* match navbarnew.css */
   font-weight: 400;
   transition: all 0.2s ease;
-  text-transform: capitalize; /* Capitalize dropdown items */
+  text-transform: capitalize !important;
+  font-variant: small-caps; /* match navbarnew.css */
 }
 
 /* Dropdown item hover */
 .solar-navbar .dropdown-item:hover {
-  color: #ff6600 !important;
+  background: #ff6600 !important;
+  color: white !important;
   transform: translateX(5px);
 }
 
@@ -94,7 +108,8 @@
   padding: 8px 22px;
   border: 1.5px solid #ddd;
   transition: all 0.3s ease;
-  text-transform: capitalize; /* Capitalize button text */
+  text-transform: capitalize; 
+  font-variant: small-caps; /* keep consistency */
 }
 .navbar-contact-btn:hover {
   background: white;
@@ -108,36 +123,36 @@
 /* Extra small devices (small phones, less than 576px) */
 @media (max-width: 575.98px) {
   .solar-navbar {
-    width: 100%; /* Full width on small screens */
-    border-radius: 0; /* Remove rounding for edge-to-edge */
-    margin-top: 0; /* Adjust positioning */
-    padding: 0.5rem 1rem; /* Smaller padding */
+    width: 100%;
+    border-radius: 0;
+    margin-top: 0;
+    padding: 0.5rem 1rem;
   }
 
   .solar-navbar .navbar-brand img {
-    height: 40px; /* Smaller logo */
+    height: 40px;
   }
 
   .custom-nav .nav-link {
-    font-size: 0.9rem; /* Smaller font for links */
-    padding: 0.75rem 1rem; /* Better touch targets */
-    text-align: center; /* Center links in mobile menu */
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+    text-align: center;
   }
 
   .navbar-contact-btn {
-    width: 100%; /* Full width button in mobile */
+    width: 100%;
     text-align: center;
     padding: 10px;
     font-size: 1rem;
   }
 
   .solar-navbar .dropdown-menu {
-    text-align: center; /* Center dropdown items */
-    width: 100%; /* Full width dropdown */
+    text-align: center;
+    width: 100%;
   }
 
   .nav-item.dropdown {
-    position: static; /* For full-width dropdown on mobile */
+    position: static;
   }
 }
 
@@ -161,12 +176,12 @@
 @media (min-width: 768px) and (max-width: 991.98px) {
   .solar-navbar {
     width: 95%;
-    border-radius: 40px; /* Slightly less rounding */
+    border-radius: 40px;
     padding: 1rem 2rem;
   }
 
   .custom-nav .nav-link {
-    margin: 0 10px; /* More spacing */
+    margin: 0 10px;
     font-size: 1.1rem;
   }
 
@@ -190,7 +205,7 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   .solar-navbar {
-    width: 90%; /* Slightly narrower for large screens */
+    width: 90%;
     padding: 1.25rem 3rem;
   }
 
@@ -200,25 +215,25 @@
   }
 
   .solar-navbar .navbar-brand img {
-    height: 60px; /* Larger logo */
+    height: 60px;
   }
 }
 
 /* Extra extra large devices (TVs, very large screens, 1400px and up) */
 @media (min-width: 1400px) {
   .solar-navbar {
-    width: 85%; /* Even narrower for TVs */
-    border-radius: 60px; /* More pronounced rounding */
-    padding: 1.5rem 4rem; /* More padding */
+    width: 85%;
+    border-radius: 60px;
+    padding: 1.5rem 4rem;
   }
 
   .custom-nav .nav-link {
     margin: 0 25px;
-    font-size: 1.3rem; /* Larger fonts for visibility */
+    font-size: 1.3rem;
   }
 
   .solar-navbar .navbar-brand img {
-    height: 70px; /* Larger logo for big screens */
+    height: 70px;
   }
 
   .navbar-contact-btn {
@@ -227,6 +242,6 @@
   }
 
   .solar-navbar .dropdown-menu {
-    font-size: 1.2rem; /* Larger dropdown text */
+    font-size: 1.2rem;
   }
 }

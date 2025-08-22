@@ -23,8 +23,8 @@
 /* Swiper Styling */
 .partners-swiper {
   will-change: transform;
-  background: linear-gradient(to right, #000000, #525252,#ffffff); /* Black → White */
-  padding: 30px 0;    /* spacing inside slider */
+  background: linear-gradient(to left, #000000,#ffffff); /* Black → White */
+  padding: 25px 0;    /* spacing inside slider */
   /* border-radius: 8px;  */
 }
 

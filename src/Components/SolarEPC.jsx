@@ -1,4 +1,3 @@
-// WindSolarHybrid.jsx
 import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AOS from "aos";
@@ -32,8 +31,7 @@ export default function SolarEPC() {
           <div className="container">
             <div className="row">
               <div className="col-md-5">
-                <h2 className="epc-title">Our Solar</h2>
-                <h2 className="epc-title">EPC Services</h2>
+                <h2 className="epc-title">Our Solar EPC Services</h2>
 
                 <p className="epc-description mt-4">
                   Akruti delivers comprehensive Wind-Solar Hybrid EPC services,
@@ -50,17 +48,17 @@ export default function SolarEPC() {
                   <div className="row justify-content-between">
                     <div className="col-md-5">
                       <div className="service-item">
-                        <div className="check-circle">&#10003;</div>
+                
                         <span style={{ fontSize: "20px" }}>Solar Parks</span>
                       </div>
                       <div className="service-item">
-                        <div className="check-circle">&#10003;</div>
+            
                         <span style={{ fontSize: "20px" }}>
                           Commercial & Industrial (C&I) Installations
                         </span>
                       </div>
                       <div className="service-item">
-                        <div className="check-circle">&#10003;</div>
+        
                         <span style={{ fontSize: "20px" }}>
                           Wind & Solar Hybrid Systems
                         </span>
@@ -68,21 +66,17 @@ export default function SolarEPC() {
                     </div>
                     <div className="col-md-5">
                       <div className="service-item">
-                        <div className="check-circle">&#10003;</div>
+            
                         <span style={{ fontSize: "20px" }}>
                           Turnkey Projects
                         </span>
                       </div>
                       <div className="service-item">
-                        <div className="check-circle">&#10003;</div>
+                    
                         <span style={{ fontSize: "20px" }}>
                           Captive and Group Captive Models
                         </span>
                       </div>
-                      {/* <div className="service-item">
-                      <div className="check-circle">&#10003;</div>
-                      <span>Battery Energy Storage System (BESS)</span>
-                    </div> */}
                     </div>
                   </div>
                 </div>
@@ -92,9 +86,7 @@ export default function SolarEPC() {
         </div>
         <div className="process-section py-5" data-aos="fade-up">
           <div className="container">
-            <h2 className="process-title">Key Steps to</h2>
-            <h1 className="process-title">Solar Energy</h1>
-            <h1 className="process-title">Success</h1>
+            <h1 className="process-title">Key Steps to Solar Energy Success</h1>
 
             <div className="row mt-4">
               <div className="col-md-4 mb-4">

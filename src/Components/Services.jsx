@@ -27,7 +27,7 @@ const servicesData = [
     img: "/img/C&I.jpg",
     category: "Solar C & I",
     title: "Solar C & I",
-    desc: "Comprehensive Project Management Delivering On-Time, On-Budget",
+    desc: "End-to-End Project Management — On Time, On Budget",
     link: "/solarepc",
   },
   {

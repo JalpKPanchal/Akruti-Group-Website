@@ -86,30 +86,19 @@
 }
 
 .service-item {
-  background-color: #e6f2ff; /* Light blue background */
+  /* Light blue background */
   border-radius: 20px;
   padding: 10px 15px;
   margin-bottom: 15px;
   display: flex;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #001f3f;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
 
-.check-circle {
-  background-color: #00bfff; /* Cyan */
-  color: #ffffff;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 10px;
-  font-size: 0.8rem;
-  font-weight: bold;
-}
+
 
 /* For responsiveness */
 @media (max-width: 768px) {

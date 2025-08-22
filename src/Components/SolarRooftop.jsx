@@ -14,18 +14,18 @@ export default function SolarRooftop() {
   }, []);
 
   const projects = [
-    {
-      image: "path/to/asahi-glass.jpg", // Replace with your actual image path
-      caption: "Asahi Glass - 4.26 MW",
-    },
-    {
-      image: "path/to/supreme-petrochem.jpg", // Replace with your actual image path
-      caption: "Supreme Petrochem - 1.3 MW",
-    },
-    {
-      image: "path/to/reliance.jpg", // Replace with your actual image path
-      caption: "Reliance - 700 KW Flexible module",
-    },
+    // {
+    //   image: "path/to/asahi-glass.jpg", // Replace with your actual image path
+    //   caption: "Asahi Glass - 4.26 MW",
+    // },
+    // {
+    //   image: "path/to/supreme-petrochem.jpg", // Replace with your actual image path
+    //   caption: "Supreme Petrochem - 1.3 MW",
+    // },
+    // {
+    //   image: "path/to/reliance.jpg", // Replace with your actual image path
+    //   caption: "Reliance - 700 KW Flexible module",
+    // },
   ];
 
   return (

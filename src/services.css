@@ -34,7 +34,7 @@
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 10px rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -45,9 +45,10 @@
   font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* clean modern font */
   font-size: 16px;   /* slightly larger for readability */
   line-height: 1.6;  /* better spacing */
-  color: #333333;    /* darker, easier to read */
+  color: #000000;    /* darker, easier to read */
   font-weight: 400;  /* normal, not too light */
   margin-top: 8px;
+  text-align: left; /* right-aligned text */
 }
 
 
