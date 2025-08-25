@@ -4,12 +4,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "../aboutus.css";
 import PageLayout from "./Layout/PageLayout";
-
 export default function About() {
   useEffect(() => {
     AOS.init({ duration: 800, once: true, offset: 120, easing: "ease-in-out" });
   }, []);
-
   return (
     <>
       <PageLayout>
@@ -21,17 +19,12 @@ export default function About() {
                 About{" "}
                 <span className="au-title-highlight">Akruti Green Energy</span>
               </h1>
-              <p
-                className="au-hero-desc"
-                data-aos="fade-up"
-                data-aos-delay="200"
-              >
+              <p>
                 Building a Sustainable Legacy with Advanced Energy Solutions For
-                Empowering Future Fuel
+                Empowering Future
               </p>
             </div>
           </section>
-
           <section
             className="container au-section who-we-are"
             data-aos="fade-up"
@@ -66,7 +59,6 @@ export default function About() {
               </div>
             </div>
           </section>
-
           {/* MISSION & VISION */}
           <section
             className="container au-section"
@@ -115,7 +107,6 @@ export default function About() {
               </div>
             </div>
           </section>
-
           {/* CORE VALUES */}
           <section
             className="container au-section"
@@ -156,7 +147,6 @@ export default function About() {
               </div>
             </div>
           </section>
-
           {/* JOURNEY */}
           <section className="journey-section">
             <h2 data-aos="fade-up">
@@ -200,47 +190,85 @@ export default function About() {
               ))}
             </div>
           </section>
-
-          {/* LEADERSHIP */}
-          <section
+          {/* MESSAGE FROM LEADERSHIP TEAM */}
+          {/* <section
             className="container au-section"
             data-aos="fade-up"
             data-aos-delay="260"
           >
-            <h2 className="au-heading text-center mb-5">Leadership Team</h2>
-            <div className="row justify-content-center g-4">
-              <div className="col-md-4">
-                <div className="au-leader-card text-center">
-                  <img
-                    className="au-leader-img"
-                    src="https://randomuser.me/api/portraits/men/32.jpg"
-                    alt="CEO"
-                  />
-                  <h5 className="au-leader-name">Rahul Sharma</h5>
-                  <p className="au-leader-role">CEO & Co-Founder</p>
+            <h2 className="au-heading text-center mb-5">
+              Message from Leadership Team
+            </h2>
+            <div className="row g-4">
+              <div className="col-md-6">
+                <div
+                  className="au-leader-card"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <h5 className="au-leader-name">Nitinbhai Ahir</h5>
+                  <p className="au-leader-role">Chairman of Akruti Group</p>
                   <p className="au-leader-bio">
-                    Rahul brings 15+ years of renewable energy expertise,
-                    spearheading Akruti’s growth and innovative strategy.
+                    With over 20 years in the energy sector, I am proud to lead
+                    Akruti Group towards a sustainable future, focusing on
+                    innovative green technologies that benefit society and the
+                    environment.
                   </p>
                 </div>
               </div>
-              <div className="col-md-4">
-                <div className="au-leader-card text-center">
-                  <img
-                    className="au-leader-img"
-                    src="https://randomuser.me/api/portraits/women/44.jpg"
-                    alt="CTO"
-                  />
-                  <h5 className="au-leader-name">Priya Nair</h5>
-                  <p className="au-leader-role">CTO & Co-Founder</p>
+              <div className="col-md-6">
+                <div
+                  className="au-leader-card"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <h5 className="au-leader-name">Tarang Ahir</h5>
+                  <p className="au-leader-role">
+                    CEO & Co-Founder of Akruti Group
+                  </p>
                   <p className="au-leader-bio">
-                    Priya leads the technical team, developing advanced
-                    solutions for India's evolving energy needs.
+                    As CEO and Co-Founder, my vision is to accelerate the
+                    adoption of renewable energy through strategic partnerships
+                    and cutting-edge solutions, ensuring long-term growth and
+                    environmental stewardship.
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div
+                  className="au-leader-card"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <h5 className="au-leader-name">Bharat Panchal</h5>
+                  <p className="au-leader-role">Director</p>
+                  <p className="au-leader-bio">
+                    Guiding operational excellence, I focus on delivering
+                    reliable and efficient energy projects that align with our
+                    commitment to sustainability and client satisfaction.
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div
+                  className="au-leader-card"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <h5 className="au-leader-name">Jalp Panchal</h5>
+                  <p className="au-leader-role">
+                    Information Technology Partner
+                  </p>
+                  <p className="au-leader-bio">
+                    Leveraging technology to optimize our renewable energy
+                    initiatives, I ensure seamless integration of IT solutions
+                    that enhance efficiency and drive innovation across the
+                    group.
                   </p>
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
         </main>
       </PageLayout>
     </>

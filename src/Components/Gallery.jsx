@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import '../custom.css';
+
 import { Link } from 'react-router-dom';
+import '../gallery.css'; // Ensure you have the CSS for styling
 
 const galleryData = [
   { id: 1, img: '/gallery/1.webp', label: 'Solar Projects' },
@@ -46,7 +47,7 @@ export default function GallerySection() {
         </div>
 
         {/* Gallery Grid */}
-        <div className="gallery row gx-0">
+        <div>
           {galleryData.map((item) => (
             <div
               key={item.id}

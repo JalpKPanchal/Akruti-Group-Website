@@ -18,10 +18,11 @@
 .services-subtitle {
   text-transform: uppercase;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   margin-bottom: 30px;
-  background-color: #03388c;
+  background-color: #000000;
+  border-radius: 15px;
 }
 
 .services-grid {

@@ -146,7 +146,7 @@ export default function SolarEPC() {
               </div>
               <div className="col-md-5">
                 <img
-                  src="EPC/EPC1.webp"
+                  src="EPC/EPC1.jpg"
                   alt="Solar Project Analysis Services"
                   className="img-fluid"
                   data-aos="zoom-in"
@@ -202,7 +202,7 @@ export default function SolarEPC() {
             <div className="row align-items-center mb-5">
               <div className="col-md-5">
                 <img
-                  src="EPC/EPC4.webp"
+                  src="EPC/EPC4.jpg"
                   alt="Reduced Intermittency"
                   className="img-fluid"
                   data-aos="zoom-in"

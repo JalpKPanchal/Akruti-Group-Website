@@ -1,146 +1,103 @@
-/* ===== Homepage Hero Carousel Theme (Impressive Like Career) ===== */
+/* ===== Homepage Hero Carousel Theme ===== */
 /* Wrapper Layout */
 .homepage-wrapper {
   display: flex;
   justify-content: center;
-  padding: 0 15px; /* Equal spacing on both sides */
-  /* border-radius: 10px; */
+  padding: 0 15px;
 }
 
 .homepage-inner {
   width: 100%;
-  /* max-width: 1400px; Center content within this width */
   margin: 0 auto;
-  /* border-radius: 20px; */
-  overflow: hidden; /* Ensures the video/images also get rounded corners */
-  box-shadow: 0 8px 30px rgba(0,0,0,0.15); /* Optional: soft shadow */
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
   border-radius: 30px;
 }
+
+/* Carousel Fullscreen Always */
 .carousel,
 .carousel-inner,
 .carousel-item {
-  height: 100vh;
-  min-height: 600px;
+  height: 100vh !important;
+  min-height: 100vh !important;
   position: relative;
 }
 
-.carousel-item > .position-relative,
 .carousel-item > img,
 .carousel-item > video {
-  height: 100vh;
-  min-height: 600px;
-}
-
-.carousel-item img,
-.carousel-item video {
+  height: 100vh !important;
+  min-height: 100vh !important;
   width: 100%;
-  height: 100%;
   object-fit: cover;
   object-position: center;
 }
 
 .carousel-fade .carousel-item {
-  transition-property: opacity;
-  transition-duration: 1.1s;
-  transition-timing-function: cubic-bezier(.55,0,.1,1);
+  transition: opacity 1.1s cubic-bezier(.55,0,.1,1);
   opacity: 0;
 }
-.carousel-fade .carousel-item.active,
-.carousel-fade .carousel-item-next.carousel-item-left,
-.carousel-fade .carousel-item-prev.carousel-item-right {
+.carousel-fade .carousel-item.active {
   opacity: 1;
   z-index: 2;
 }
-
 .carousel-fade .carousel-item-next,
-.carousel-fade .carousel-item-prev,
-.carousel-fade .carousel-item.active.carousel-item-left,
-.carousel-fade .carousel-item.active.carousel-item-right {
+.carousel-fade .carousel-item-prev {
   opacity: 0;
   z-index: 1;
 }
 
+/* Left Panel */
 .left-panel {
   position: absolute;
-  top: 0;
+  top: 50%; /* center vertically */
   left: 0;
-  height: 100%;
+  transform: translateY(-50%);
+  height: auto;
   width: 48vw;
   min-width: 300px;
   max-width: 650px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   z-index: 5;
-  /* Gradient overlay for left side */
-  /* background: linear-gradient(90deg, rgba(0,0,0,0.74) 70%, rgba(0,0,0,0.09) 100%); */
   padding: 0 0 0 7vw;
   box-sizing: border-box;
 }
 
-.heading-style-h1{
+/* Headline */
+.heading-style-h1 {
   color: #fff;
-    font-size: 56px;
-    /* font-weight: 700; */
-    line-height: 1.2;
-    text-align: left;
-    margin-bottom: 1.5rem;
-    /* I need shadow back side */
-    text-shadow: 0 0 10px rgba(0, 0, 0, 2.5), 0 0 20px rgba(0, 0, 0, 2.5), 0 0 30px rgba(0, 0, 0, 2.5);
-    animation: slideInLeft 0.8s ease-out forwards;  
-    /* Animation for the heading */
-    animation-delay: 0.2s;
-
-}
-
-/* Impressive Heading */
-.left-panel h1 {
-  font-size: 2.85rem;
-  font-weight: 900;
-  color: #fff;
-  line-height: 1.13;
-  letter-spacing: -1.5px;
-  margin-bottom: 1.1rem;
-  text-shadow: 0 4px 28px rgba(46,188,255,0.17), 0 2px 8px rgba(0,0,0,0.21);
-  /* Optional: blue accent on a keyword */
-}
-#textsld{
-  color: #fff;
-  font-size: 1.22rem;
-  margin-bottom: 2.2rem;
-  font-weight: 400;
-  max-width: 520px;
-  /* animation */
+  font-size: clamp(1.4rem, 4vw, 3.5rem);
+  font-weight: 900; /* Bold headline */
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 10px rgba(0,0,0,2.5),
+               0 0 20px rgba(0,0,0,2.5),
+               0 0 30px rgba(0,0,0,2.5);
   animation: slideInLeft 0.8s ease-out forwards;
-  animation-delay: 0.4s;/ 
-
-  /* text-shadow: 0 1px 6px rgba(125, 171, 228, 0.13) , 0 0 2px rgba(8, 56, 78, 0.12); */
-}
-/* hover effect in  #textsld*/
-.left-panel h1:hover, #textsld:hover {
-  /* color: #000000;
-  text-shadow: 0 4px 28px rgba(46,188,255,0.17), 0 2px 8px rgba(0,0,0,0.21); */
-  transform: translateY(-2px) scale(1.02);  
-  transition: color 0.3s, text-shadow 0.3s, transform 0.3s;
-  font-weight: 900;
-  font-size: 1.5rem;
-  cursor: pointer;
-  /* Optional: add a subtle shadow effect on hover */
-  box-shadow: 0 4px 16px rgba(46,188,255,0.16);
-  /* Optional: add a slight scale effect on hover */
-  /* transform: scale(1.02); */
-  /* Optional: add a transition effect */
-  transition: color 0.3s, text-shadow 0.3s, transform 0.3s, box-shadow 0.3s;
-
+  animation-delay: 0.2s;
 }
 
-.left-panel .lead {
-  color: #ffffff;
-  font-size: 1.22rem;
-  margin-bottom: 2.2rem;
+/* Body Text */
+#textsld {
+  color: #fff;
   font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 2.2rem;
   max-width: 520px;
-  /* text-shadow: 0 1px 6px rgba(32,47,65,0.13) , 0 0 2px rgba(46,188,255,0.12); */
-  font-style: oblique;
+  font-size: clamp(0.9rem, 2.2vw, 1.25rem);
+  animation: slideInLeft 0.8s ease-out forwards;
+  animation-delay: 0.4s;
+}
+
+/* Hover effect */
+.left-panel h1:hover,
+#textsld:hover {
+  transform: translateY(-2px) scale(1.02);
+  transition: color 0.3s, text-shadow 0.3s, transform 0.3s;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(46,188,255,0.16);
 }
 
 /* Buttons */
@@ -150,16 +107,16 @@
   font-weight: 700;
   border: none;
   border-radius: 30px;
-  font-size: 1.1rem;
-  padding: 12px 36px;
+  font-size: clamp(0.85rem, 1.8vw, 1.1rem);
+  padding: clamp(8px, 1.5vw, 12px) clamp(20px, 3vw, 36px);
   letter-spacing: 0.01em;
-  box-shadow: 0 2px 8px 0 rgba(46,188,255,0.12);
+  box-shadow: 0 2px 8px rgba(46,188,255,0.12);
   transition: background 0.18s, box-shadow 0.18s, color 0.18s;
 }
-.left-panel .btn-primary:hover, .left-panel .btn-primary:focus {
+.left-panel .btn-primary:hover,
+.left-panel .btn-primary:focus {
   background: linear-gradient(90deg, #1b9b65 0%, #2ebcff 90%);
-  color: #fff;
-  box-shadow: 0 8px 24px 0 rgba(46,188,255,0.19);
+  box-shadow: 0 8px 24px rgba(46,188,255,0.19);
   transform: translateY(-1px) scale(1.03);
 }
 
@@ -169,16 +126,17 @@
   background: transparent;
   font-weight: 700;
   border-radius: 30px;
-  font-size: 1.1rem;
-  padding: 12px 36px;
+  font-size: clamp(0.85rem, 1.8vw, 1.1rem);
+  padding: clamp(8px, 1.5vw, 12px) clamp(20px, 3vw, 36px);
   margin-left: 10px;
   transition: background 0.18s, color 0.18s, box-shadow 0.18s;
 }
-.left-panel .btn-outline-light:hover, .left-panel .btn-outline-light:focus {
+.left-panel .btn-outline-light:hover,
+.left-panel .btn-outline-light:focus {
   background: #2ebcff !important;
   color: #111 !important;
   border: 2px solid #2ebcff;
-  box-shadow: 0 4px 16px 0 rgba(46,188,255,0.16);
+  box-shadow: 0 4px 16px rgba(46,188,255,0.16);
   transform: translateY(-2px) scale(1.03);
 }
 
@@ -201,68 +159,56 @@
 
 /* Animations */
 @keyframes slideInLeft {
-  0% { opacity: 0; transform: translateX(-90px) scale(.98);}
-  100% { opacity: 1; transform: translateX(0) scale(1);}
+  0% { opacity: 0; transform: translateX(-90px) scale(.98); }
+  100% { opacity: 1; transform: translateX(0) scale(1); }
 }
 
 /* Responsive Design */
 @media (max-width: 991.98px) {
-  .carousel,
-  .carousel-inner,
-  .carousel-item,
-  .carousel-item > .position-relative,
-  .carousel-item > img,
-  .carousel-item > video {
-    min-height: 420px;
-    height: 80vh;
-  }
   .left-panel {
     width: 80vw;
-    min-width: 220px;
     max-width: 100vw;
-    padding: 0 0 0 3vw;
+    padding-left: 3vw;
   }
-  .left-panel .text-white {
-    padding: 24px;
-  }
-  .left-panel h1 { font-size: 2rem; }
-  .left-panel .lead { font-size: 1rem; }
+  .heading-style-h1 { font-size: clamp(1.2rem, 3vw, 2rem); }
+  #textsld { font-size: clamp(0.85rem, 2vw, 1rem); }
 }
+
 @media (max-width: 767.98px) {
-  .carousel,
-  .carousel-inner,
-  .carousel-item,
-  .carousel-item > .position-relative,
-  .carousel-item > img,
-  .carousel-item > video {
-    min-height: 350px;
-    height: 56vh;
-  }
   .left-panel {
     width: 100vw;
-    min-width: 0;
-    max-width: 100vw;
-    padding: 0 0 0 0;
-    justify-content: flex-end;
-    /* background: linear-gradient(90deg, rgba(0,0,0,0.78) 94%, rgba(0,0,0,0.01) 100%); */
+    padding: 15px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
   }
-  .left-panel .text-white {
-    padding: 11px;
-    border-radius: 14px;
+  #textsld { max-width: 90%; margin-top: 20px ; }
+  .left-panel .btn-primary,
+  .left-panel .btn-outline-light {
+    margin: 5px;
   }
-  .left-panel h1 { font-size: 1.15rem; }
 }
 
 @media (max-width: 575.98px) {
-  .carousel,
-  .carousel-inner,
-  .carousel-item,
-  .carousel-item > .position-relative,
-  .carousel-item > img,
-  .carousel-item > video {
-    min-height: 260px;
-    height: 44vh;
+  .left-panel {
+    padding: 10px;
+    width: 100%;
+    max-width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    align-items: center;
   }
-  .left-panel .text-white { padding: 6px; }
-  .left-panel h1 { font-size: 0.98rem; }
+  .heading-style-h1 { font-size: clamp(1rem, 5vw, 1.4rem); }
+  #textsld { font-size: clamp(0.8rem, 4vw, 1rem); }
+  .left-panel .btn-primary,
+  .left-panel .btn-outline-light {
+    /* width: 100%; */
+    margin: 6px auto;
+    /* display: block; */
+  }
 }

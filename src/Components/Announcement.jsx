@@ -2,10 +2,9 @@ import React, { useEffect, useState, useRef } from "react";
 import "../announcement-bar.css";
 
 const messages = [
-  "🌞 India's leading EPC company in Solar, EV & Automation!",
-  "⚡ 24x7 support for all sustainable energy solutions.",
-  "🚀 Connect with us for customized solar setups.",
-  "📞 Call now to get a free energy audit!",
+  "Akruti Group secured 50 MW project from Bondada Engineering Ltd., Maharashtra",
+  "Akruti Group 56 MW ground-mount solar project from Prozeal Green Energy Client GSECL, Gujarat",
+
 ];
 
 export default function AnnouncementBar() {

@@ -198,6 +198,9 @@
 
 /* Responsive Timeline */
 @media (max-width: 768px) {
+  *{
+    overflow-x: hidden;
+  }
   .timeline {
     flex-direction: column;
     align-items: center;
@@ -214,4 +217,44 @@
     margin-bottom: 30px;
     text-align: center;
   }
+  .who-img{
+    /* center */
+    display: block;
+    margin-bottom: 20px;
+    margin-right: 70px;
+  }
+}
+
+/* ===========================
+   MESSAGE FROM LEADERSHIP TEAM
+=========================== */
+.au-leader-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.au-leader-card:hover {
+  transform: translateY(-5px);
+}
+
+.au-leader-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #1b9b65;
+}
+
+.au-leader-role {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.au-leader-bio {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
 }

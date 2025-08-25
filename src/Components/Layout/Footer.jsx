@@ -95,7 +95,10 @@ const Footer = () => {
           <Col xxl={3} xl={3} lg={3} md={6} sm={12} xs={12}>
             <div className="mb-3">
               <h6 className="fw-bold mb-3">Corporate Office</h6>
-              <p className="small mb-1">Himmatnagar, Gujarat, India</p>
+              <p className="small mb-1">
+                110,111, Jeevan Dhara Complex, Hadiyol Rd, opposite Nayra
+                Petroleum, Himatnagar, Gujarat 383001
+              </p>
               <p className="small mb-0">Ph: +91 83202 92904</p>
             </div>
           </Col>

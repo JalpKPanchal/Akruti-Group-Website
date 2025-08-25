@@ -46,7 +46,7 @@ export default function WindSolarHybrid() {
               </div>
               <div className="col-md-6">
                 <img
-                  src="WSY/WSY1.jpg"
+                  src="WSY/WSY1.avif"
                   alt="Wind Solar Hybrid System"
                   className="img-fluid rounded-3 shadow"
                   data-aos="fade-left"
@@ -106,7 +106,7 @@ export default function WindSolarHybrid() {
         <div className="process-section py-5" data-aos="fade-up">
           <div className="container">
             <h1 className="process-title">Process for Hybrid System</h1>
-          
+
             <div className="row mt-4">
               <div className="col-md-4 mb-4">
                 <h3 className="process-subtitle">Site Analysis & Planning</h3>
@@ -191,7 +191,7 @@ export default function WindSolarHybrid() {
               </div>
               <div className="col-md-5">
                 <img
-                  src="WSY/WSY4.webp"
+                  src="WSY/ESY4.jpeg"
                   alt="Cost-Effective"
                   className="img-fluid"
                   data-aos="zoom-in"

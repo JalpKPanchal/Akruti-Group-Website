@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 
 import { useState } from "react";
 
-import "./App.css";
+// import "./App.css";
 
 import AnnouncementBar from "./Components/Announcement";
 import Navbar from "./Components/Layout/Navbar";

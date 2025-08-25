@@ -221,8 +221,9 @@ const ContactUs = () => {
                 >
                   <h4 className="fw-bold mb-4">Our Office</h4>
                   <p>
-                    <strong>Address:</strong> B-1201, Titanium City Center,
-                    Satellite, Ahmedabad, Gujarat, India
+                    <strong>Address:</strong>110,111, Jeevan Dhara Complex,
+                    Hadiyol Rd, opposite Nayra Petroleum, Himatnagar, Gujarat
+                    383001
                   </p>
                   <p>
                     <strong>Phone:</strong> +91 8320292904
@@ -237,13 +238,13 @@ const ContactUs = () => {
                     </a>
                   </p>
                   <iframe
-                    title="map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.128121388862!2d72.50802421545412!3d23.085084720397735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b5ef7bb7b0f%3A0xf0f51b8c6e5f9e52!2sTitanium%20City%20Center!5e0!3m2!1sen!2sin!4v1662726457861!5m2!1sen!2sin"
-                    width="100%"
-                    height="250"
-                    style={{ border: "0", borderRadius: "12px" }}
-                    allowFullScreen=""
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.991!2d72.9864002!3d23.5635342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395db95f1031f371%3A0x8767ebd1073f15ac!2sAkruti+Group!5e0!3m2!1sen!2sin!4v1724660000!5m2!1sen!2sin"
+                    width="600"
+                    height="450"
+                    style={{ border: 0 }}
+                    allowFullScreen
                     loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
                   ></iframe>
                 </div>
               </Col>
