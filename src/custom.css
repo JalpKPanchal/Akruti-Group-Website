@@ -257,9 +257,11 @@
 
 .feature__desc {
   font-size: 0.95rem;
-  color: #555;
+  color: #000000;
   margin-top: 0.5rem;
   line-height: 1.5;
+  text-align: left;
+  margin-left: 15px;
 }
 
 /* Responsive Design */

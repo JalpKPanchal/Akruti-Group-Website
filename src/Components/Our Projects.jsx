@@ -41,7 +41,7 @@ const projects = [
     client: "Ayaana Power",
     capacity: "185 MW",
     location: "Bhuj(Village: Nirona), Gujarat",
-    imgSrc: "/projects/3.png",
+    imgSrc: "/projects/ayaana.webp",
     details: `
       <p>Torrent Solar Power Project – A 200 MW solar installation at Babra, Gujarat, developed for Torrent Power. This large-scale project demonstrates our commitment to delivering clean, reliable, and sustainable energy solutions for India’s growing power needs.</p>
     `,
@@ -51,7 +51,7 @@ const projects = [
     client: "Gujarat State Electricity Corporation Limited (GSECL)",
     capacity: "67 MW",
     location: "Wankaner, Gujarat",
-    imgSrc: "/projects/3.png",
+    imgSrc: "/projects/gujrat.jpeg",
     details: `
       <p>Torrent Solar Power Project – A 200 MW solar installation at Babra, Gujarat, developed for Torrent Power. This large-scale project demonstrates our commitment to delivering clean, reliable, and sustainable energy solutions for India’s growing power needs.</p>
     `,
@@ -61,7 +61,7 @@ const projects = [
     client: "ReNew Power",
     capacity: "40 MW",
     location: "Telangana",
-    imgSrc: "/projects/3.png",
+    imgSrc: "/projects/renew.jpg",
     details: `
       <p>Torrent Solar Power Project – A 200 MW solar installation at Babra, Gujarat, developed for Torrent Power. This large-scale project demonstrates our commitment to delivering clean, reliable, and sustainable energy solutions for India’s growing power needs.</p>
     `,
@@ -71,7 +71,7 @@ const projects = [
     client: "Belectric Photovoltaic",
     capacity: "52 MW",
     location: "Nataram, Madhya Pradesh",
-    imgSrc: "/projects/3.png",
+    imgSrc: "/projects/MP.jpg",
     details: `
       <p>Torrent Solar Power Project – A 200 MW solar installation at Babra, Gujarat, developed for Torrent Power. This large-scale project demonstrates our commitment to delivering clean, reliable, and sustainable energy solutions for India’s growing power needs.</p>
     `,
@@ -114,12 +114,14 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="project-card-container mb-5 fade-up"
+              className={`project-card-container mb-5 fade-up ${
+                index % 2 === 1 ? "reverse" : ""
+              }`}
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="row g-0 align-items-center">
                 {/* Left - Text */}
-                <div className="col-md-6 p-5 d-flex flex-column justify-content-center">
+                <div className="col-md-6 p-5 d-flex flex-column justify-content-center text-col">
                   <h3 className="project-title">{project.title}</h3>
                   <hr />
                   <p>
@@ -148,7 +150,7 @@ const Projects = () => {
                 </div>
 
                 {/* Right - Image */}
-                <div className="col-md-6 img-container">
+                <div className="col-md-6 img-container img-col">
                   <img
                     src={project.imgSrc}
                     alt={project.title}

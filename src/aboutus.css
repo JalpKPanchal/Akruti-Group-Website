@@ -198,9 +198,10 @@
 
 /* Responsive Timeline */
 @media (max-width: 768px) {
-  *{
-    overflow-x: hidden;
-  }
+
+.aboutus-page{
+    overflow-x:hidden;
+}
   .timeline {
     flex-direction: column;
     align-items: center;

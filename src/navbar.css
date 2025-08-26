@@ -1,6 +1,4 @@
-/* ===== Homepage Hero Carousel Theme ===== */
-
-/* Navbar glass style */
+/* ===== Navbar Glass Style ===== */
 .solar-navbar {
   background: #ffffffb0;
   border-radius: 20px;
@@ -19,7 +17,7 @@
   font-weight: 500;
   transition: color 0.3s ease;
   text-transform: capitalize !important;
-  font-variant: small-caps; /* match navbarnew.css */
+  font-variant: small-caps;
 }
 
 /* Center nav links */
@@ -56,14 +54,14 @@
 /* Nav links + dropdown toggle font */
 .custom-nav .nav-link,
 .custom-nav .dropdown-toggle {
-  font-size: 1rem;   /* same as navbarnew.css */
+  font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.5px;
   text-transform: capitalize !important;
-  font-variant: small-caps; /* match navbarnew.css */
+  font-variant: small-caps;
 }
 
-/* Dropdown menu with fade + slide animation */
+/* Dropdown menu animation */
 .solar-navbar .dropdown-menu {
   opacity: 0;
   visibility: hidden;
@@ -74,7 +72,6 @@
   background: rgba(0, 0, 0, 0.7);
 }
 
-/* Show dropdown on hover */
 .solar-navbar .dropdown:hover .dropdown-menu,
 .solar-navbar .dropdown.show .dropdown-menu {
   opacity: 1;
@@ -85,21 +82,19 @@
 /* Dropdown items */
 .solar-navbar .dropdown-item {
   color: white !important;
-  font-size: 0.85rem;  /* match navbarnew.css */
+  font-size: 0.85rem;
   font-weight: 400;
   transition: all 0.2s ease;
   text-transform: capitalize !important;
-  font-variant: small-caps; /* match navbarnew.css */
+  font-variant: small-caps;
 }
-
-/* Dropdown item hover */
 .solar-navbar .dropdown-item:hover {
   background: #ff6600 !important;
   color: white !important;
   transform: translateX(5px);
 }
 
-/* Contact Us Button (Right Side desktop) */
+/* Contact Us Button */
 .navbar-contact-btn {
   background: white;
   color: #111 !important;
@@ -109,7 +104,7 @@
   border: 1.5px solid #ddd;
   transition: all 0.3s ease;
   text-transform: capitalize; 
-  font-variant: small-caps; /* keep consistency */
+  font-variant: small-caps;
 }
 .navbar-contact-btn:hover {
   background: white;
@@ -118,9 +113,59 @@
   transform: translateY(-1px);
 }
 
-/* Enhanced media queries for better responsiveness across devices */
+/* ===== Custom Hamburger Button ===== */
+.navbar-toggler {
+  border: none;
+  outline: none !important;
+  box-shadow: none !important;
+  padding: 0.25rem 0.5rem;
+}
 
-/* Extra small devices (small phones, less than 576px) */
+.navbar-toggler-icon {
+  background: none !important; /* remove Bootstrap icon */
+  width: 24px;
+  height: 2px;
+  background-color: black;
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler-icon::before {
+  top: -7px;
+}
+.navbar-toggler-icon::after {
+  top: 7px;
+}
+
+/* ===== Animate to X when opened ===== */
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  background-color: transparent; /* hide middle line */
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+/* ===== Responsive Media Queries ===== */
+
+/* Extra small devices (<576px) */
 @media (max-width: 575.98px) {
   .solar-navbar {
     width: 100%;
@@ -128,119 +173,103 @@
     margin-top: 0;
     padding: 0.5rem 1rem;
   }
-
   .solar-navbar .navbar-brand img {
     height: 40px;
   }
-
   .custom-nav .nav-link {
     font-size: 0.9rem;
     padding: 0.75rem 1rem;
     text-align: center;
   }
-
   .navbar-contact-btn {
     width: 100%;
     text-align: center;
     padding: 10px;
     font-size: 1rem;
   }
-
   .solar-navbar .dropdown-menu {
     text-align: center;
     width: 100%;
   }
-
   .nav-item.dropdown {
     position: static;
   }
 }
 
-/* Small devices (landscape phones, 576px and up) */
+/* Small devices (576px–767.98px) */
 @media (min-width: 576px) and (max-width: 767.98px) {
   .solar-navbar {
     padding: 0.75rem 1.5rem;
   }
-
   .solar-navbar .navbar-brand img {
     height: 45px;
   }
-
   .custom-nav .nav-link {
     font-size: 1rem;
     padding: 1rem;
   }
 }
 
-/* Medium devices (tablets, 768px and up) */
+/* Medium devices (768px–991.98px) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .solar-navbar {
     width: 95%;
     border-radius: 40px;
     padding: 1rem 2rem;
   }
-
   .custom-nav .nav-link {
     margin: 0 10px;
     font-size: 1.1rem;
   }
-
   .navbar-contact-btn {
     padding: 10px 25px;
   }
 }
 
-/* Large devices (desktops, 992px and up) */
+/* Large devices (992px–1199.98px) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .solar-navbar {
     padding: 1rem 2.5rem;
   }
-
   .custom-nav .nav-link {
     margin: 0 15px;
     font-size: 1.1rem;
   }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
+/* Extra large (1200px–1399.98px) */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   .solar-navbar {
     width: 90%;
     padding: 1.25rem 3rem;
   }
-
   .custom-nav .nav-link {
     margin: 0 20px;
     font-size: 1.2rem;
   }
-
   .solar-navbar .navbar-brand img {
     height: 60px;
   }
 }
 
-/* Extra extra large devices (TVs, very large screens, 1400px and up) */
+/* Extra extra large (≥1400px) */
 @media (min-width: 1400px) {
   .solar-navbar {
     width: 85%;
     border-radius: 60px;
     padding: 1.5rem 4rem;
   }
-
   .custom-nav .nav-link {
     margin: 0 25px;
     font-size: 1.3rem;
   }
-
   .solar-navbar .navbar-brand img {
     height: 70px;
   }
-
   .navbar-contact-btn {
     padding: 12px 30px;
     font-size: 1.2rem;
   }
-
   .solar-navbar .dropdown-menu {
     font-size: 1.2rem;
   }

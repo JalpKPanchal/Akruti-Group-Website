@@ -1,3 +1,7 @@
+html, body {
+  overflow-x: hidden;
+}
+
 /* ===== Hero Section ===== */
 .projects-hero {
   position: relative;
@@ -79,7 +83,12 @@
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 60px;
+  transform: translateY(40px);
+  opacity: 0;
+  animation: fadeUpCard 0.8s ease forwards;
 }
+
 .project-card-container:hover {
   transform: translateY(-6px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
@@ -126,12 +135,222 @@
   color: #0077b6;
 }
 
-/* ===== Responsive ===== */
-@media (max-width: 992px) {
-  .projects-hero { height: 70vh; }
+/* ===== Zig-Zag Pattern ===== */
+.project-card-container.reverse .row {
+  flex-direction: row-reverse;
 }
 
-@media (max-width: 768px) {
-  .projects-hero h1 { font-size: 2rem; }
-  .projects-hero p { font-size: 1rem; }
+/* ===== Scroll Animations for Zig-Zag ===== */
+@keyframes fadeUpCard {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.project-card-container .text-col {
+  animation: slideInLeft 0.8s ease forwards;
+  opacity: 0;
+}
+.project-card-container.reverse .text-col {
+  animation: slideInRight 0.8s ease forwards;
+  opacity: 0;
+}
+
+.project-card-container .img-col {
+  animation: slideInRight 0.8s ease forwards;
+  opacity: 0;
+}
+.project-card-container.reverse .img-col {
+  animation: slideInLeft 0.8s ease forwards;
+  opacity: 0;
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* ===== Responsive ===== */
+/* Large devices (desktops, 992px and up) - already handled by base styles */
+
+/* Medium devices (tablets, 768px to 991px) */
+@media (max-width: 991px) {
+  .projects-hero {
+    height: 70vh;
+  }
+
+  .projects-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .projects-hero p {
+    font-size: 1.2rem;
+  }
+
+  .project-card-container .row {
+    flex-direction: column !important; /* Stack always on medium and below */
+  }
+
+  .project-card-container.reverse .row {
+    flex-direction: column !important;
+  }
+
+  .project-card-container .text-col,
+  .project-card-container .img-col,
+  .project-card-container.reverse .text-col,
+  .project-card-container.reverse .img-col {
+    animation: none; /* Disable slide animations on smaller screens for simplicity */
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .col-md-6 {
+    padding: 1rem !important; /* Reduce padding */
+  }
+
+  .project-title {
+    font-size: 1.6rem;
+  }
+
+  .btn-primary {
+    padding: 10px 24px;
+    font-size: 1rem;
+  }
+
+  .read-more-btn {
+    padding: 7px 16px;
+    font-size: 0.85rem;
+  }
+
+  .project-card-container {
+    margin-bottom: 40px;
+  }
+}
+
+/* Small devices (landscape phones, 576px to 767px) */
+@media (max-width: 767px) {
+  .projects-hero {
+    height: 60vh;
+  }
+
+  .projects-hero h1 {
+    font-size: 2rem;
+  }
+
+  .projects-hero p {
+    font-size: 1.1rem;
+  }
+
+  .projects-hero .hero-text {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .project-title {
+    font-size: 1.4rem;
+  }
+
+  .projects-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .col-md-6.p-5 {
+    padding: 1.5rem !important; /* Further reduce padding */
+  }
+
+  .btn-primary {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+
+  .read-more-btn {
+    padding: 6px 14px;
+    font-size: 0.8rem;
+  }
+
+  .project-card-container {
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  }
+
+  .expandable-content.expanded {
+    max-height: 400px; /* Adjust for smaller screens */
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+  .projects-hero {
+    height: 50vh;
+  }
+
+  .projects-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .projects-hero p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .projects-hero .hero-text {
+    padding: 10px;
+  }
+
+  .project-title {
+    font-size: 1.3rem;
+  }
+
+  .projects-section.container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .col-md-6.p-5 {
+    padding: 1rem !important;
+  }
+
+  .btn-primary {
+    padding: 8px 18px;
+    font-size: 0.85rem;
+  }
+
+  .read-more-btn {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+  }
+
+  .project-card-container {
+    margin-bottom: 25px;
+  }
+
+  .project-card-container:hover {
+    transform: none; /* Disable hover effects on touch devices */
+  }
+
+  .project-card-img {
+    max-height: 200px; /* Limit image height on very small screens */
+    object-fit: cover;
+  }
+}
+
+/* Adjust for very large screens if needed (optional) */
+@media (min-width: 1200px) {
+  .projects-hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .projects-hero p {
+    font-size: 1.4rem;
+  }
+
+  .project-title {
+    font-size: 2rem;
+  }
 }
