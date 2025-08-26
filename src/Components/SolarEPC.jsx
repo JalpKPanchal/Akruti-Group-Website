@@ -48,17 +48,14 @@ export default function SolarEPC() {
                   <div className="row justify-content-between">
                     <div className="col-md-5">
                       <div className="service-item">
-                
                         <span style={{ fontSize: "20px" }}>Solar Parks</span>
                       </div>
                       <div className="service-item">
-            
                         <span style={{ fontSize: "20px" }}>
                           Commercial & Industrial (C&I) Installations
                         </span>
                       </div>
                       <div className="service-item">
-        
                         <span style={{ fontSize: "20px" }}>
                           Wind & Solar Hybrid Systems
                         </span>
@@ -66,13 +63,11 @@ export default function SolarEPC() {
                     </div>
                     <div className="col-md-5">
                       <div className="service-item">
-            
                         <span style={{ fontSize: "20px" }}>
                           Turnkey Projects
                         </span>
                       </div>
                       <div className="service-item">
-                    
                         <span style={{ fontSize: "20px" }}>
                           Captive and Group Captive Models
                         </span>
@@ -89,7 +84,7 @@ export default function SolarEPC() {
             <h1 className="process-title">Key Steps to Solar Energy Success</h1>
 
             <div className="row mt-4">
-              <div className="col-md-4 mb-4">
+              <div className="col-md-3 mb-4">
                 <h3 className="process-subtitle">Project Evaluation</h3>
                 <p className="process-description">
                   Analyzing economic and engineering feasibility with precise
@@ -97,7 +92,7 @@ export default function SolarEPC() {
                   equipment choices.
                 </p>
               </div>
-              <div className="col-md-4 mb-4">
+              <div className="col-md-3 mb-4">
                 <h3 className="process-subtitle">Technical Design</h3>
                 <p className="process-description">
                   Comprehensive plant modeling and simulation, including
@@ -105,7 +100,7 @@ export default function SolarEPC() {
                   optimized parameter selection.
                 </p>
               </div>
-              <div className="col-md-4 mb-4">
+              <div className="col-md-3 mb-4">
                 <h3 className="process-subtitle">
                   Construction & Installation
                 </h3>
@@ -114,7 +109,7 @@ export default function SolarEPC() {
                   electrical integration, with a focus on quality and safety.
                 </p>
               </div>
-              <div className="col-md-4 mb-4" id="testing">
+              <div className="col-md-3 mb-4">
                 <h3 className="process-subtitle">Testing & Commissioning</h3>
                 <p className="process-description">
                   Continuous validation and commissioning processes to achieve
@@ -124,6 +119,7 @@ export default function SolarEPC() {
             </div>
           </div>
         </div>
+
         <div className="why-hybrid-section py-5" data-aos="fade-up">
           <div className="container">
             <h2 className="why-title">EPC Approach</h2>

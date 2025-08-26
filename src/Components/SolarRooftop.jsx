@@ -14,18 +14,39 @@ export default function SolarRooftop() {
   }, []);
 
   const projects = [
-    // {
-    //   image: "path/to/asahi-glass.jpg", // Replace with your actual image path
-    //   caption: "Asahi Glass - 4.26 MW",
-    // },
-    // {
-    //   image: "path/to/supreme-petrochem.jpg", // Replace with your actual image path
-    //   caption: "Supreme Petrochem - 1.3 MW",
-    // },
-    // {
-    //   image: "path/to/reliance.jpg", // Replace with your actual image path
-    //   caption: "Reliance - 700 KW Flexible module",
-    // },
+    {
+      image: "SR/SR1.jpeg", // Replace with your actual image path
+      caption: "Asahi Glass - 4.26 MW",
+    },
+    {
+      image: "SR/SR2.webp", // Replace with your actual image path
+      caption: "Supreme Petrochem - 1.3 MW",
+    },
+    {
+      image: "SR/SR3.avif", // Replace with your actual image path
+      caption: "Reliance - 700 KW Flexible module",
+    },
+    {
+      image: "SR/SR4.jpg", // Replace with your actual image path
+      caption: "Adani Wilmar - 1.2 MW",
+    },
+    {
+      image: "SR/SR5.jpeg", // Replace with your actual image path
+      caption: "Tata Power - 1 MW",
+    },
+    {
+      image: "SR/SR6.avif", // Replace with your actual image path
+      caption: "Hindustan Unilever - 1.5 MW",
+    },
+    {
+      image: "SR/SR7.webp", // Replace with your actual image path
+      caption: "JSW Steel - 2 MW",
+    },
+    {
+      image: "SR/SR8.jpg", // Replace with your actual image path
+      caption: "ITC Limited - 1.8 MW",
+    },
+   
   ];
 
   return (
