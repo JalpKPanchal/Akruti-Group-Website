@@ -35,7 +35,7 @@ const servicesData = [
     category: "Solar Rooftop",
     title: "Solar Rooftop",
     desc: "Complete Solar Rooftop Solutions — From Design to Installation",
-    link: "/solareooftop",
+    link: "/solarrooftop",
   },
 ];
 
