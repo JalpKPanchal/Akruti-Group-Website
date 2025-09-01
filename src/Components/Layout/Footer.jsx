@@ -3,6 +3,7 @@ import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { Container, Row, Col } from "react-bootstrap";
 import logo from "/img/logo.png";
 import "../../footer.css"; // Updated CSS file for footer styles
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -41,35 +42,38 @@ const Footer = () => {
             <h6 className="fw-bold mb-3">Visit</h6>
             <ul className="list-unstyled small">
               <li>
-                <a href="/about" className="text-light text-decoration-none">
+                <Link to="/about" className="text-light text-decoration-none">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/solarepc" className="text-light text-decoration-none">
+                <Link
+                  to="/solarepc"
+                  className="text-light text-decoration-none"
+                >
                   Solar EPC And C & I
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/windsolarhybrid"
+                <Link
+                  to="/windsolarhybrid"
                   className="text-light text-decoration-none"
                 >
                   Wind Solar Hybrid
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/solarrooftop"
+                <Link
+                  to="/solarrooftop"
                   className="text-light text-decoration-none"
                 >
                   Solar Rooftop
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/career" className="text-light text-decoration-none">
+                <Link to="/career" className="text-light text-decoration-none">
                   Careers
-                </a>
+                </Link>
               </li>
             </ul>
           </Col>
@@ -79,14 +83,17 @@ const Footer = () => {
             <h6 className="fw-bold mb-3">Quick Links</h6>
             <ul className="list-unstyled small">
               <li>
-                <a href="/projects" className="text-light text-decoration-none">
+                <Link
+                  to="/projects"
+                  className="text-light text-decoration-none"
+                >
                   Our Projects
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/contact" className="text-light text-decoration-none">
+                <Link to="/contact" className="text-light text-decoration-none">
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </Col>
