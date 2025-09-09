@@ -16,29 +16,28 @@ export default function SolarRooftop() {
   const projects = [
     {
       image: "SR/SR1.jpeg", // Replace with your actual image path
-      caption: "Asahi Glass - 4.26 MW",
+      caption: "TULSI PARK, HIMMATNAGAR – 3.3 KW (ADANI SOLAR)",
     },
     {
       image: "SR/SR2.webp", // Replace with your actual image path
-      caption: "Supreme Petrochem - 1.3 MW",
+      caption: "JANAKPURI SOCIETY, HIMMATNAGAR – 6.6 KW (WAREE SOLAR)",
     },
     {
       image: "SR/SR3.avif", // Replace with your actual image path
-      caption: "Reliance - 700 KW Flexible module",
+      caption: "ASTHA BANGLOWS, HIMMATNAGAR – 4 KW (ADANI SOLAR)",
     },
     {
       image: "SR/SR5.jpeg", // Replace with your actual image path
-      caption: "Tata Power - 1 MW",
+      caption: "NAVRANGPURA, AHMEDABAD – 6.6 KW (APS)",
     },
     {
       image: "SR/SR6.avif", // Replace with your actual image path
-      caption: "Hindustan Unilever - 1.5 MW",
+      caption: "PRAMUKH BANGLOWS, GANDHINAGAR – 6.6 KW (APS)",
     },
     {
       image: "SR/SR8.jpg", // Replace with your actual image path
-      caption: "ITC Limited - 1.8 MW",
+      caption: "KUNAL RESIDENCY, MEHSANA – 7 KW (ADANI SOLAR)",
     },
-   
   ];
 
   return (

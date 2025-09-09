@@ -93,6 +93,14 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
+   /*I need bold font  */
+  font-weight: bold;
+  text-align: center;
+  color: #02305e;
+  font-size: 1.1rem;
+  padding: 10px;
+  margin-bottom: 20px;
+  height: 100%;
 }
 
 .projects-section .project-card:hover {
