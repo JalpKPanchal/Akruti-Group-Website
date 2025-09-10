@@ -80,12 +80,12 @@ const Careers = () => {
 
   const mailtoLink =
     openIndex !== null
-      ? `mailto:akrutiengineering72@gmail.com?subject=Application for ${encodeURIComponent(
+      ? `mailto:akrutigroupacc@gmail.com?subject=Application for ${encodeURIComponent(
           jobOpenings[openIndex].title
         )}&body=Dear Akruti Team,%0D%0A%0D%0AI am writing to express my interest in the position of ${encodeURIComponent(
           jobOpenings[openIndex].title
         )} at Akruti Engineering.%0D%0A%0D%0APlease find my resume attached.%0D%0A%0D%0AThank you for your consideration.%0D%0A%0D%0ABest regards,%0D%0A[Your Name]`
-      : "mailto:akrutiengineering72@gmail.com?subject=Application for Open Position at Akruti Engineering&body=Dear Akruti Team,%0D%0A%0D%0AI am writing to express my interest in an open position at Akruti Engineering.%0D%0A%0D%0APlease find my resume attached.%0D%0A%0D%0AThank you for your consideration.%0D%0A%0D%0ABest regards,%0D%0A[Your Name]";
+      : "mailto:akrutigroupacc@gmail.com?subject=Application for Open Position at Akruti Engineering&body=Dear Akruti Team,%0D%0A%0D%0AI am writing to express my interest in an open position at Akruti Engineering.%0D%0A%0D%0APlease find my resume attached.%0D%0A%0D%0AThank you for your consideration.%0D%0A%0D%0ABest regards,%0D%0A[Your Name]";
 
   // Scroll to job section
   const handleExploreClick = () => {

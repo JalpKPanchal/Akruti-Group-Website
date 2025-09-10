@@ -41,7 +41,7 @@ function App() {
               <FeatureSection />
               {/* <GallerySection /> */}
               <PartnersSection />
-              <ContactMapSection />
+              <ContactMapSection/>
               <Footer />
             </>
           }

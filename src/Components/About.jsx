@@ -30,8 +30,8 @@ export default function About() {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <div className="row align-items-center">
-              <div className="col-lg-6">
+            <div className="row justify-content-center align-items-center">
+              <div className="col-lg-6 text-center">
                 <h2 className="au-heading">Who We Are?</h2>
                 <p className="au-desc">
                   Akruti Green Energy Limited is a global leader in renewable
@@ -41,21 +41,6 @@ export default function About() {
                   and governments to achieve a clean, reliable, and
                   cost-efficient energy future.
                 </p>
-              </div>
-              <div className="col-lg-6">
-                <div
-                // className="who-img-container"
-                // data-aos="zoom-in"
-                // data-aos-delay="200"
-                >
-                  <img
-                    src="/img/logo_short.png"
-                    alt="Akruti Green Energy"
-                    className="who-img"
-                    style={{ width: "150px", marginLeft: "200px" }}
-                  />
-                  {/* <div className="who-img-overlay"></div> */}
-                </div>
               </div>
             </div>
           </section>

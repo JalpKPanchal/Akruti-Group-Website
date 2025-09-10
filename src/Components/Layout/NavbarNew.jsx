@@ -7,11 +7,14 @@ import "../../navbarnew.css";
 function NavbarNew() {
   const [showServices, setShowServices] = useState(false);
 
+  const handleToggle = () => setShowServices(!showServices);
+  const handleClose = () => setShowServices(false);
+
   return (
     <Navbar
       expand="lg"
       className="solar-navbar1 position-absolute top-0 start-50 translate-middle-x"
-      style={{ width: "100%", zIndex: 999,}}
+      style={{ width: "100%", zIndex: 999 }}
     >
       <Container
         fluid
@@ -26,22 +29,25 @@ function NavbarNew() {
           />
         </Link>
 
-        <Navbar.Toggle aria-controls="main-navbar" />
+        {/* Toggler (hamburger) */}
+        <Navbar.Toggle
+          aria-controls="main-navbar"
+          className="shadow-none border-0 bg-transparent"
+        />
+
         <Navbar.Collapse id="main-navbar" className="justify-content-center">
           {/* Center: Nav Links */}
           <Nav className="custom-nav text-uppercase fw-semibold align-items-center">
-            {/* <Nav.Link as={Link} to="/" className="px-3">
-              Home
-            </Nav.Link> */}
             <Nav.Link as={Link} to="/about" className="px-3">
               About Us
             </Nav.Link>
 
-            {/* Dropdown */}
+            {/* Dropdown with hover + click */}
             <div
               className="nav-item dropdown"
               onMouseEnter={() => setShowServices(true)}
               onMouseLeave={() => setShowServices(false)}
+              onClick={handleToggle}
             >
               <NavDropdown
                 title="Our Services"
@@ -51,13 +57,25 @@ function NavbarNew() {
                 show={showServices}
                 renderMenuOnMount={true}
               >
-                <NavDropdown.Item as={Link} to="/solarepc">
+                <NavDropdown.Item
+                  as={Link}
+                  to="/solarepc"
+                  onClick={handleClose}
+                >
                   Solar EPC And C&I
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/windsolarhybrid">
+                <NavDropdown.Item
+                  as={Link}
+                  to="/windsolarhybrid"
+                  onClick={handleClose}
+                >
                   Wind Solar Hybrid
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/solarrooftop">
+                <NavDropdown.Item
+                  as={Link}
+                  to="/solarrooftop"
+                  onClick={handleClose}
+                >
                   Solar Rooftop
                 </NavDropdown.Item>
               </NavDropdown>
@@ -73,16 +91,16 @@ function NavbarNew() {
               Career
             </Nav.Link>
 
-            {/* Contact Us button (always visible, inside collapse for mobile) */}
+            {/* Contact Us button (mobile) */}
             <div className="d-lg-none mt-2">
-              <Link to="/contact" className="navbar-contact-btn" style={{}}>
+              <Link to="/contact" className="navbar-contact-btn">
                 Contact Us
               </Link>
             </div>
           </Nav>
         </Navbar.Collapse>
 
-        {/* Right: Contact Us button (desktop only) */}
+        {/* Right: Contact Us (desktop) */}
         <div className="d-none d-lg-block">
           <Link to="/contact" className="btn contact-btn">
             Contact Us

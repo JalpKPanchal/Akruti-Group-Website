@@ -11,6 +11,7 @@
   text-align: center;
 }
 
+
 .au-title {
   font-size: 3rem;
   font-weight: 800;
@@ -218,12 +219,7 @@
     margin-bottom: 30px;
     text-align: center;
   }
-  .who-img{
-    /* center */
-    display: block;
-    margin-bottom: 20px;
-    margin-right: 70px;
-  }
+
 }
 
 /* ===========================

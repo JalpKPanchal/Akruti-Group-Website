@@ -554,7 +554,7 @@ footer .fw-semibold {
 }
 
 .hero-section {
-  min-height: 80vh;
+  /* min-height: 80vh; */
   padding-top: 100px;
   padding-bottom: 60px;
   background-color: #000;

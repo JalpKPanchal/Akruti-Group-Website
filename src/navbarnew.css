@@ -1,10 +1,6 @@
-/* ===== Homepage Hero Carousel Theme ===== */
-
-/* Navbar glass style */
+/* ===== Navbar Glass Style ===== */
 .solar-navbar1 {
-  /* background: rgba(255, 255, 255, 0.588); */
   background: #ffffffda;
-
   backdrop-filter: blur(6px);
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
   position: fixed !important;
@@ -13,19 +9,25 @@
   transition: all 0.3s ease;
   font-family: 'Roboto', sans-serif;
 }
-/* Remove dropdown arrow for nav links */
+
+/* Remove dropdown arrow */
 .solar-navbar1 .dropdown-toggle::after {
   display: none;
 }
+
+/* Navbar links */
 .custom-nav .nav-link,
 .custom-nav .dropdown-toggle,
 .solar-navbar1 .dropdown-item {
   text-transform: capitalize !important;
-  font-variant: small-caps; /* optional for a classy look */
+  font-variant: small-caps;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  position: relative;
 }
 
-
-/* Navbar brand + links */
+/* Navbar brand + link color */
 .solar-navbar1 .navbar-brand,
 .solar-navbar1 .nav-link {
   color: rgb(0, 0, 0) !important;
@@ -33,18 +35,7 @@
   transition: color 0.3s ease;
 }
 
-/* Hover color for nav links */
-.custom-nav .nav-link:hover {
-  color: #ff6600 !important;
-}
-
-/* Center nav links spacing */
-.custom-nav .nav-link {
-  margin: 0 5px;
-  position: relative;
-}
-
-/* Nav link underline animation */
+/* Hover underline */
 .custom-nav .nav-link::after {
   content: "";
   position: absolute;
@@ -58,20 +49,11 @@
 .custom-nav .nav-link:hover::after {
   width: 100%;
 }
-/* Nav links smaller font */
-.custom-nav .nav-link,
-.custom-nav .dropdown-toggle {
-  font-size: 1rem;   /* smaller than default */
-  font-weight: 500;
-  letter-spacing: 0.5px;
+.custom-nav .nav-link:hover {
+  color: #ff6600 !important;
 }
 
-/* Dropdown items smaller too */
-.solar-navbar1 .dropdown-item {
-  font-size: 0.85rem;
-  font-weight: 400;
-}
-/* Dropdown menu with fade + slide animation */
+/* Dropdown menu with animation */
 .solar-navbar1 .dropdown-menu {
   opacity: 0;
   visibility: hidden;
@@ -81,9 +63,6 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   background: rgba(0, 0, 0, 0.7);
 }
-
-/* Show dropdown on hover */
-.solar-navbar1 .dropdown:hover .dropdown-menu,
 .solar-navbar1 .dropdown.show .dropdown-menu {
   opacity: 1;
   visibility: visible;
@@ -93,34 +72,18 @@
 /* Dropdown items */
 .solar-navbar1 .dropdown-item {
   color: white !important;
+  font-size: 0.85rem;
   font-weight: 400;
   transition: all 0.2s ease;
 }
-
-/* Dropdown item hover */
 .solar-navbar1 .dropdown-item:hover {
   background: #ff6600 !important;
   color: white !important;
   transform: translateX(5px);
 }
 
-/* Contact Us Button (Right Side desktop) */
-.btn.contact-btn {
-  background: #ff6600;
-  color: white !important;
-  font-weight: 600;
-  border-radius: 30px;
-  padding: 8px 22px;
-  border: none;
-  transition: all 0.3s ease;
-}
-.btn.contact-btn:hover {
-  background: white;
-  color: #ff6600 !important;
-  transform: translateY(-2px);
-}
-
-/* Contact Us Button (Mobile inside collapse) */
+/* Contact Us Buttons */
+.btn.contact-btn,
 .navbar-contact-btn {
   background: #ff6600;
   color: white !important;
@@ -130,16 +93,26 @@
   border: none;
   transition: all 0.3s ease;
 }
+.btn.contact-btn:hover,
 .navbar-contact-btn:hover {
   background: white;
   color: #ff6600 !important;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
-/* Optional: navbar toggle icon color */
+/* Hamburger button - remove square */
 .navbar-toggler {
-  border-color: rgba(255, 255, 255, 0.5);
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0.25rem 0.5rem;
+  outline: none !important;
 }
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+/* Custom hamburger icon (black lines) */
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280,0,0,0.8%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }

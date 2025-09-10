@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from "/img/logo.png";
@@ -6,6 +6,15 @@ import "../../navbar.css";
 
 function CustomNavbar() {
   const [showServices, setShowServices] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detect screen size (mobile vs desktop)
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 992);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <Navbar
@@ -32,7 +41,14 @@ function CustomNavbar() {
           />
         </Link>
 
-        <Navbar.Toggle aria-controls="main-navbar" />
+        {/* Hamburger (no square background) */}
+        <Navbar.Toggle
+          aria-controls="main-navbar"
+          className="shadow-none border-0 bg-transparent"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </Navbar.Toggle>
+
         <Navbar.Collapse id="main-navbar" className="justify-content-center">
           {/* Center: Nav Links */}
           <Nav className="custom-nav fw-semibold align-items-center">
@@ -43,8 +59,9 @@ function CustomNavbar() {
             {/* Dropdown */}
             <div
               className="nav-item dropdown"
-              onMouseEnter={() => setShowServices(true)}
-              onMouseLeave={() => setShowServices(false)}
+              onMouseEnter={() => !isMobile && setShowServices(true)}
+              onMouseLeave={() => !isMobile && setShowServices(false)}
+              onClick={() => isMobile && setShowServices(!showServices)}
             >
               <NavDropdown
                 title="Our Services"
@@ -76,7 +93,7 @@ function CustomNavbar() {
               Career
             </Nav.Link>
 
-            {/* Contact Us button (always visible, inside collapse for mobile) */}
+            {/* Contact Us button (mobile only) */}
             <div className="d-lg-none mt-2">
               <Link to="/contact" className="navbar-contact-btn">
                 Contact Us

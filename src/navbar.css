@@ -115,14 +115,21 @@
 
 /* ===== Custom Hamburger Button ===== */
 .navbar-toggler {
-  border: none;
+  border: none !important;
   outline: none !important;
+  background: transparent !important;
   box-shadow: none !important;
   padding: 0.25rem 0.5rem;
 }
 
+/* Remove focus outline */
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+/* Hamburger lines */
 .navbar-toggler-icon {
-  background: none !important; /* remove Bootstrap icon */
+  background: none !important;
   width: 24px;
   height: 2px;
   background-color: black;
@@ -149,11 +156,10 @@
   top: 7px;
 }
 
-/* ===== Animate to X when opened ===== */
+/* Animate to X when opened */
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
-  background-color: transparent; /* hide middle line */
+  background-color: transparent;
 }
-
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon::before {
   transform: rotate(45deg);
   top: 0;
