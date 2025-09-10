@@ -31,7 +31,7 @@ const servicesData = [
   },
   {
     id: 4,
-    img: "/img/SR/SR1.jpg",
+    img: "/SR/SR1.jpg",
     category: "Solar Rooftop",
     title: "Solar Rooftop",
     desc: "Complete Solar Rooftop Solutions — From Design to Installation",

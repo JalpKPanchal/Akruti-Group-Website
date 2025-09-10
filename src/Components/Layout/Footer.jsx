@@ -23,18 +23,25 @@ const Footer = () => {
             <img
               src={logo}
               alt="Akruti Group"
-              className="mb-3 img-fluid" // Added img-fluid for responsive image scaling
+              className="mb-3 img-fluid"
               style={{ maxWidth: "180px" }}
             />
             <p className="small mb-1">
               <a
-                href="mailto:akrutiengineering72@gmail.com"
+                href="mailto:akrutigroupacc@gmail.com"
                 className="text-light text-decoration-none"
               >
-                akrutiengineering72@gmail.com
+                akrutigroupacc@gmail.com
               </a>
             </p>
-            <p className="small mb-0">+91 83202 92904</p>
+            <p className="small mb-0">
+              <a
+                href="tel:+918320292904"
+                className="text-light text-decoration-none"
+              >
+                +91 83202 92904
+              </a>
+            </p>
           </Col>
 
           {/* Visit Links */}
@@ -103,10 +110,26 @@ const Footer = () => {
             <div className="mb-3">
               <h6 className="fw-bold mb-3">Corporate Office</h6>
               <p className="small mb-1">
-                110,111, Jeevan Dhara Complex, Hadiyol Rd, opposite Nayra
-                Petroleum, Himatnagar, Gujarat 383001
+                <a
+                  href="https://maps.app.goo.gl/tMPbgKPtiKNo47Te9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-light text-decoration-none"
+                >
+                  110,111, Jeevan Dhara Complex, Hadiyol Rd, opposite Nayra
+                  Petroleum, Himatnagar, Gujarat 383001
+                </a>
               </p>
-              <p className="small mb-0">Ph: +91 83202 92904</p>
+
+              <p className="small mb-0">
+                Ph:{" "}
+                <a
+                  href="tel:+918320292904"
+                  className="text-light text-decoration-none"
+                >
+                  +91 83202 92904
+                </a>
+              </p>
             </div>
           </Col>
         </Row>
@@ -115,9 +138,29 @@ const Footer = () => {
 
         <Row className="align-items-center">
           <Col xxl={6} xl={6} lg={6} md={6} sm={12} xs={12}>
-            <p className="small mb-0">
+            <p className="small mb-1">
               Copyright © {new Date().getFullYear()} Akruti Group Pvt. Ltd. All
               rights reserved.
+            </p>
+            <p className="small mb-0">
+              Website Developed by{" "}
+              <a
+                href="https://www.linkedin.com/in/jalp-panchal-8b619631a/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-light text-decoration-none fw-bold"
+              >
+                Jalp Panchal
+              </a>{" "}
+              &{" "}
+              <a
+                href="https://www.linkedin.com/in/ruchit-patel-0206ar/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-light text-decoration-none fw-bold"
+              >
+                Ruchit Patel
+              </a>
             </p>
           </Col>
           <Col

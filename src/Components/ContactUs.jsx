@@ -236,8 +236,15 @@ const ContactUs = () => {
                   383001
                 </p>
                 <p>
-                  <strong>Phone:</strong> +91 8320292904
+                  <strong>Phone:</strong>{" "}
+                  <a
+                    href="tel:+918320292904"
+                    className="text-decoration-underline text-dark"
+                  >
+                    +91 83202 92904
+                  </a>
                 </p>
+
                 <p>
                   <strong>Email:</strong>{" "}
                   <a

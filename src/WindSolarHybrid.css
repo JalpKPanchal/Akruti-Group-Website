@@ -39,7 +39,9 @@
   max-width: 800px;
   /* margin: 0 auto; */
 }
-
+.section-text{
+  font-size: 1.3rem;
+}
 /* ================= EPC SECTION ================= */
 .epc-title {
   font-size: 3rem;
