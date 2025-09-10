@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../services.css";
-
 
 const servicesData = [
   {
@@ -31,7 +31,7 @@ const servicesData = [
   },
   {
     id: 4,
-    img: "/SR/SR1.jpg",
+    img: "/img/SR/SR1.jpg",
     category: "Solar Rooftop",
     title: "Solar Rooftop",
     desc: "Complete Solar Rooftop Solutions — From Design to Installation",
@@ -57,24 +57,13 @@ export default function ServicesSection() {
   };
 
   return (
-    <>
     <section className="services-section">
       <div className="container">
-        {/* Header */}
         <div className="row align-items-center mb-5 services-header">
           <div className="col-lg-7 d-flex align-items-center">
             <div className="me-md-4">
               <h1 className="h1 mb-3">Our Services</h1>
-              {/* <p>
-                Welcome to Great <br /> Akruti Group
-              </p> */}
             </div>
-            {/* <img
-              src="/img/logo_short.png"
-              alt="Akruti Logo"
-              className="ms-3"
-              style={{ maxWidth: "130px", height: "90px" }}
-            /> */}
           </div>
           <div className="col-lg-4 text-lg-end">
             <p>
@@ -93,13 +82,11 @@ export default function ServicesSection() {
           </div>
         </div>
 
-        {/* Subtitle */}
         <div className="services-subtitle">
           World-Class Renewable Energy Solutions for Businesses and Homes
           Worldwide
         </div>
 
-        {/* Cards */}
         <div className="services-grid" ref={servicesRef}>
           {servicesData.map((service, index) => (
             <div
@@ -118,27 +105,25 @@ export default function ServicesSection() {
               </div>
               <div className="p-4 d-flex flex-column">
                 <h4>
-                  <a
-                    href={service.link}
+                  <Link
+                    to={service.link}
                     className="text-dark text-decoration-none"
                   >
                     {service.title} <i className="bi bi-arrow-right"></i>
-                  </a>
+                  </Link>
                 </h4>
                 <p>{service.desc}</p>
-                <a
-                  href={service.link}
+                <Link
+                  to={service.link}
                   className="btn btn-primary mt-3 align-self-start"
                 >
                   Explore More
-                </a>
+                </Link>
               </div>
             </div>
           ))}
         </div>
       </div>
     </section>
-    
-    </>
   );
 }
