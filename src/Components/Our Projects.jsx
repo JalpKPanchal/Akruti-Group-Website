@@ -43,7 +43,7 @@ const projects = [
     location: "Bhuj(Village: Nirona), Gujarat",
     imgSrc: "/projects/ayaana.webp",
     details: `
-      <p>Torrent Solar Power Project – A 200 MW solar installation at Babra, Gujarat, developed for Torrent Power. This large-scale project demonstrates our commitment to delivering clean, reliable, and sustainable energy solutions for India’s growing power needs.</p>
+      <p>The Ayaana Solar Power Project by Ayaana Power is a large-scale renewable energy initiative with a capacity of 185 MW, located at Nirona village, Bhuj, Gujarat. This project harnesses the region’s high solar potential to deliver clean, sustainable electricity, contributing to India’s green energy transition and reducing carbon emissions.</p>
     `,
   },
   {
@@ -53,7 +53,7 @@ const projects = [
     location: "Wankaner, Gujarat",
     imgSrc: "/projects/gujrat.jpeg",
     details: `
-      <p>Torrent Solar Power Project – A 200 MW solar installation at Babra, Gujarat, developed for Torrent Power. This large-scale project demonstrates our commitment to delivering clean, reliable, and sustainable energy solutions for India’s growing power needs.</p>
+      <p>The GSECL Solar Power Project by Gujarat State Electricity Corporation Limited has a capacity of 67 MW, situated in Wankaner, Gujarat. This project strengthens the state’s renewable energy infrastructure by generating clean power and supporting Gujarat’s commitment to sustainable energy development.</p>
     `,
   },
   {
@@ -63,7 +63,7 @@ const projects = [
     location: "Telangana",
     imgSrc: "/projects/renew.jpg",
     details: `
-      <p>Torrent Solar Power Project – A 200 MW solar installation at Babra, Gujarat, developed for Torrent Power. This large-scale project demonstrates our commitment to delivering clean, reliable, and sustainable energy solutions for India’s growing power needs.</p>
+      <p>The ReNew Solar Power Project by ReNew Power is a 40 MW solar facility located in Telangana. It contributes to meeting the region’s growing energy demand through clean electricity generation while advancing India’s renewable energy goals.</p>
     `,
   },
   {
@@ -73,7 +73,8 @@ const projects = [
     location: "Nataram, Madhya Pradesh",
     imgSrc: "/projects/MP.jpg",
     details: `
-      <p>Torrent Solar Power Project – A 200 MW solar installation at Babra, Gujarat, developed for Torrent Power. This large-scale project demonstrates our commitment to delivering clean, reliable, and sustainable energy solutions for India’s growing power needs.</p>
+      <p>The Belectric Photovoltaic Solar Power Project by Belectric Photovoltaic has a capacity of 52 MW, located in Nataram, Madhya Pradesh. This project harnesses solar energy to deliver sustainable power, supporting regional development and India’s clean energy transition.
+</p>
     `,
   },
 ];
