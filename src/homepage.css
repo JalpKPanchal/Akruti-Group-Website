@@ -71,7 +71,8 @@
   font-weight: 900; /* Bold headline */
   line-height: 1.2;
   text-align: left;
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem; */
+  margin-top: 1rem;
   text-shadow: 0 0 10px rgba(0,0,0,2.5),
                0 0 20px rgba(0,0,0,2.5),
                0 0 30px rgba(0,0,0,2.5);
