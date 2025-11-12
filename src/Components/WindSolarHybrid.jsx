@@ -18,11 +18,12 @@ export default function WindSolarHybrid() {
       <PageLayout>
         <div className="hero-section" data-aos="fade-up">
           <div className="container">
-            <h1 className="hero-title">Wind Solar Hybrid Services</h1>
-            <h2 className="hero-subtitle">for Enhancing</h2>
+            <h1 className="hero-title">Wind Hybrid Solar Projects</h1>
+            <h2 className="hero-subtitle">for Enhancing in State Level and Country Projects</h2>
             <h2 className="hero-highlight">Renewable Energy Capability</h2>
             <p className="hero-description">
               Innovating together to build next-generation hybrid solutions.
+              Created by Jalp Panchal 
             </p>
           </div>
         </div>
@@ -32,6 +33,8 @@ export default function WindSolarHybrid() {
               <div className="col-md-6">
                 <h2 className="section-title">
                   What is Wind Solar Hybrid System?
+                  What is the Importance of Wind Solar Hybrid System?
+                
                 </h2>
                 <p className="section-text">
                   A Wind–Solar Hybrid System integrates wind and solar power

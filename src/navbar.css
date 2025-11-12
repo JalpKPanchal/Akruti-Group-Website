@@ -24,6 +24,7 @@
 .custom-nav .nav-link {
   margin: 0 5px;
   position: relative;
+  white-space: nowrap;
 }
 
 /* Hover color for nav links */
@@ -95,7 +96,8 @@
 }
 
 /* Contact Us Button */
-.navbar-contact-btn {
+.navbar-contact-btn,
+.contact-btn {
   background: white;
   color: #111 !important;
   font-weight: 600;
@@ -105,8 +107,12 @@
   transition: all 0.3s ease;
   text-transform: capitalize; 
   font-variant: small-caps;
+  white-space: nowrap;
+  text-decoration: none;
+  display: inline-block;
 }
-.navbar-contact-btn:hover {
+.navbar-contact-btn:hover,
+.contact-btn:hover {
   background: white;
   color: #fff !important;
   border-color: #2ebcff;
@@ -187,7 +193,8 @@
     padding: 0.75rem 1rem;
     text-align: center;
   }
-  .navbar-contact-btn {
+  .navbar-contact-btn,
+  .contact-btn {
     width: 100%;
     text-align: center;
     padding: 10px;
@@ -227,7 +234,8 @@
     margin: 0 10px;
     font-size: 1.1rem;
   }
-  .navbar-contact-btn {
+  .navbar-contact-btn,
+  .contact-btn {
     padding: 10px 25px;
   }
 }
@@ -243,18 +251,28 @@
   }
 }
 
-/* Extra large (1200px–1399.98px) */
+/* Extra large (1200px–1399.98px) - CRITICAL FOR 1366x768 */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   .solar-navbar {
-    width: 90%;
-    padding: 1.25rem 3rem;
+    width: 96%;
+    padding: 0.75rem 1.5rem;
   }
-  .custom-nav .nav-link {
-    margin: 0 20px;
-    font-size: 1.2rem;
+  .custom-nav .nav-link,
+  .custom-nav .dropdown-toggle {
+    margin: 0 8px;
+    font-size: 0.9rem;
+    letter-spacing: 0.3px;
   }
   .solar-navbar .navbar-brand img {
-    height: 60px;
+    height: 48px;
+  }
+  .navbar-contact-btn,
+  .contact-btn {
+    padding: 7px 18px;
+    font-size: 0.9rem;
+  }
+  .solar-navbar .dropdown-item {
+    font-size: 0.8rem;
   }
 }
 
@@ -272,7 +290,8 @@
   .solar-navbar .navbar-brand img {
     height: 70px;
   }
-  .navbar-contact-btn {
+  .navbar-contact-btn,
+  .contact-btn {
     padding: 12px 30px;
     font-size: 1.2rem;
   }

@@ -51,8 +51,8 @@ const ContactUs = () => {
     if (Object.keys(validationErrors).length === 0) {
       emailjs
         .send(
-          "service_7dy56rd", // Service ID
-          "template_233p0tc", // Template ID
+          "service_7dy56rd", 
+          "template_233p0tc", 
           {
             name: formData.name,
             email: formData.email,

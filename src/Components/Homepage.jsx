@@ -4,7 +4,7 @@ import StickyButtons from "./Sticky";
 import "../homepage.css";
 import AnnouncementBar from "./Announcement";
 import CustomNavbar from "./Layout/Navbar";
-import { Helmet } from "react-helmet-async"; // ✅ SEO Import
+import { Helmet } from "react-helmet-async"; 
 
 const Homepage = () => {
   const [showServices, setShowServices] = useState(false);

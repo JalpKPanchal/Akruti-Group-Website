@@ -8,9 +8,9 @@ function CustomNavbar() {
   const [showServices, setShowServices] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
-  // Detect screen size (mobile vs desktop)
+  // Detect screen size - changed breakpoint to 1200px
   useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth < 992);
+    const handleResize = () => setIsMobile(window.innerWidth < 1200);
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -18,10 +18,11 @@ function CustomNavbar() {
 
   return (
     <Navbar
-      expand="lg"
+      expand="xl" // Changed from "lg" to "xl" for 1200px breakpoint
       className="solar-navbar position-absolute top-2 start-50 translate-middle-x"
       style={{
         width: "95%",
+        maxWidth: "1400px", // Added max-width for very large screens
         zIndex: 999,
         borderRadius: "50px",
         marginTop: "9px",
@@ -29,19 +30,19 @@ function CustomNavbar() {
     >
       <Container
         fluid
-        className="d-flex align-items-center justify-content-between"
+        className="d-flex align-items-center justify-content-between px-3 px-xl-4"
       >
         {/* Left: Logo */}
-        <Link to="/" className="navbar-brand">
+        <Link to="/" className="navbar-brand mb-0">
           <img
             src={logo}
             alt="Logo"
             className="img-fluid"
-            style={{ height: "55px", objectFit: "contain" }}
+            style={{ height: "50px", objectFit: "contain" }}
           />
         </Link>
 
-        {/* Hamburger (no square background) */}
+        {/* Hamburger */}
         <Navbar.Toggle
           aria-controls="main-navbar"
           className="shadow-none border-0 bg-transparent"
@@ -52,7 +53,7 @@ function CustomNavbar() {
         <Navbar.Collapse id="main-navbar" className="justify-content-center">
           {/* Center: Nav Links */}
           <Nav className="custom-nav fw-semibold align-items-center">
-            <Nav.Link as={Link} to="/about" className="px-3">
+            <Nav.Link as={Link} to="/about" className="px-2 px-xl-3">
               About Us
             </Nav.Link>
 
@@ -66,7 +67,7 @@ function CustomNavbar() {
               <NavDropdown
                 title="Our Services"
                 id="services-dropdown"
-                className="px-3"
+                className="px-2 px-xl-3"
                 menuVariant="light"
                 show={showServices}
                 renderMenuOnMount={true}
@@ -83,18 +84,18 @@ function CustomNavbar() {
               </NavDropdown>
             </div>
 
-            <Nav.Link as={Link} to="/projects" className="px-3">
+            <Nav.Link as={Link} to="/projects" className="px-2 px-xl-3">
               Projects
             </Nav.Link>
-            <Nav.Link as={Link} to="/gallerypage" className="px-3">
+            <Nav.Link as={Link} to="/gallerypage" className="px-2 px-xl-3">
               Gallery
             </Nav.Link>
-            <Nav.Link as={Link} to="/career" className="px-3">
+            <Nav.Link as={Link} to="/career" className="px-2 px-xl-3">
               Career
             </Nav.Link>
 
             {/* Contact Us button (mobile only) */}
-            <div className="d-lg-none mt-2">
+            <div className="d-xl-none mt-2">
               <Link to="/contact" className="navbar-contact-btn">
                 Contact Us
               </Link>
@@ -103,7 +104,7 @@ function CustomNavbar() {
         </Navbar.Collapse>
 
         {/* Right: Contact Us button (desktop only) */}
-        <div className="d-none d-lg-block">
+        <div className="d-none d-xl-block ms-2">
           <Link to="/contact" className="btn contact-btn">
             Contact Us
           </Link>
