@@ -43,6 +43,7 @@
   background-color: #ff6600;
   transition: width 0.3s;
 }
+
 .custom-nav .nav-link:hover::after {
   width: 100%;
 }
@@ -89,6 +90,7 @@
   text-transform: capitalize !important;
   font-variant: small-caps;
 }
+
 .solar-navbar .dropdown-item:hover {
   background: #ff6600 !important;
   color: white !important;
@@ -105,12 +107,13 @@
   padding: 8px 22px;
   border: 1.5px solid #ddd;
   transition: all 0.3s ease;
-  text-transform: capitalize; 
+  text-transform: capitalize;
   font-variant: small-caps;
   white-space: nowrap;
   text-decoration: none;
   display: inline-block;
 }
+
 .navbar-contact-btn:hover,
 .contact-btn:hover {
   background: white;
@@ -158,6 +161,7 @@
 .navbar-toggler-icon::before {
   top: -7px;
 }
+
 .navbar-toggler-icon::after {
   top: 7px;
 }
@@ -166,10 +170,12 @@
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
   background-color: transparent;
 }
+
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon::before {
   transform: rotate(45deg);
   top: 0;
 }
+
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon::after {
   transform: rotate(-45deg);
   top: 0;
@@ -185,14 +191,17 @@
     margin-top: 0;
     padding: 0.5rem 1rem;
   }
+
   .solar-navbar .navbar-brand img {
     height: 40px;
   }
+
   .custom-nav .nav-link {
     font-size: 0.9rem;
     padding: 0.75rem 1rem;
     text-align: center;
   }
+
   .navbar-contact-btn,
   .contact-btn {
     width: 100%;
@@ -200,10 +209,12 @@
     padding: 10px;
     font-size: 1rem;
   }
+
   .solar-navbar .dropdown-menu {
     text-align: center;
     width: 100%;
   }
+
   .nav-item.dropdown {
     position: static;
   }
@@ -214,9 +225,11 @@
   .solar-navbar {
     padding: 0.75rem 1.5rem;
   }
+
   .solar-navbar .navbar-brand img {
     height: 45px;
   }
+
   .custom-nav .nav-link {
     font-size: 1rem;
     padding: 1rem;
@@ -230,10 +243,12 @@
     border-radius: 40px;
     padding: 1rem 2rem;
   }
+
   .custom-nav .nav-link {
     margin: 0 10px;
     font-size: 1.1rem;
   }
+
   .navbar-contact-btn,
   .contact-btn {
     padding: 10px 25px;
@@ -245,6 +260,7 @@
   .solar-navbar {
     padding: 1rem 2.5rem;
   }
+
   .custom-nav .nav-link {
     margin: 0 15px;
     font-size: 1.1rem;
@@ -257,20 +273,24 @@
     width: 96%;
     padding: 0.75rem 1.5rem;
   }
+
   .custom-nav .nav-link,
   .custom-nav .dropdown-toggle {
     margin: 0 8px;
     font-size: 0.9rem;
     letter-spacing: 0.3px;
   }
+
   .solar-navbar .navbar-brand img {
     height: 48px;
   }
+
   .navbar-contact-btn,
   .contact-btn {
     padding: 7px 18px;
     font-size: 0.9rem;
   }
+
   .solar-navbar .dropdown-item {
     font-size: 0.8rem;
   }
@@ -283,18 +303,22 @@
     border-radius: 60px;
     padding: 1.5rem 4rem;
   }
+
   .custom-nav .nav-link {
     margin: 0 25px;
     font-size: 1.3rem;
   }
+
   .solar-navbar .navbar-brand img {
     height: 70px;
   }
+
   .navbar-contact-btn,
   .contact-btn {
     padding: 12px 30px;
     font-size: 1.2rem;
   }
+
   .solar-navbar .dropdown-menu {
     font-size: 1.2rem;
   }

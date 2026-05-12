@@ -76,11 +76,13 @@ footer .footer-logo-section p {
   }
 
   footer .social-icon {
-    font-size: 1.5rem; /* Slightly larger for touch targets on small phones */
+    font-size: 1.5rem;
+    /* Slightly larger for touch targets on small phones */
   }
 
   footer .img-fluid {
-    max-width: 150px; /* Scale down logo for very small screens */
+    max-width: 150px;
+    /* Scale down logo for very small screens */
   }
 
   footer .text-center {
@@ -145,11 +147,13 @@ footer .footer-logo-section p {
   }
 
   footer .social-icon {
-    font-size: 1.8rem; /* Larger icons for bigger screens */
+    font-size: 1.8rem;
+    /* Larger icons for bigger screens */
   }
 
   footer .img-fluid {
-    max-width: 200px; /* Slightly larger logo for TVs/large screens */
+    max-width: 200px;
+    /* Slightly larger logo for TVs/large screens */
   }
 
   footer .text-xxl-end {

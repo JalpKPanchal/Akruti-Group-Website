@@ -2,8 +2,9 @@ import React, { useEffect, useState, useRef } from "react";
 import "../announcement-bar.css";
 
 const messages = [
-  "Akruti Group secured 50 MW project from Bondada Engineering Ltd., Maharashtra",
-  "Akruti Group 56 MW ground-mount solar project from Prozeal Green Energy Client GSECL, Gujarat",
+  "Awarded Africa’s 40MW + 10MW BESS Project — Stay Tuned!",
+  "Secured 50 MW project from Bondada Engineering Ltd., Maharashtra",
+  "56 MW ground-mount solar project from Prozeal Green Energy Client GSECL, Gujarat",
 
 ];
 

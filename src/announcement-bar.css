@@ -3,7 +3,8 @@
   background: linear-gradient(90deg, #a64ce4, #0044ff);
   color: white;
   text-align: center;
-  padding: 30px 10px; /* reduced padding for small screens */
+  padding: 30px 10px;
+  /* reduced padding for small screens */
   font-size: 19px;
   font-weight: 500;
   overflow: hidden;
@@ -44,7 +45,8 @@
   .announcement-bar {
     font-size: 15px;
     line-height: 1.4;
-    white-space: normal; /* allow wrapping */
+    white-space: normal;
+    /* allow wrapping */
   }
 }
 

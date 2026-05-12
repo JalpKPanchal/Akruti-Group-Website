@@ -30,7 +30,8 @@
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 cards in a row */
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 cards in a row */
   gap: 20px;
 }
 
@@ -45,15 +46,23 @@
   animation: fadeInUp 0.8s ease forwards;
   opacity: 0;
 }
+
 .service-card p {
-  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* clean modern font */
-  font-size: 16px;   /* slightly larger for readability */
-  line-height: 1.6;  /* better spacing */
-  color: #000000;    /* darker, easier to read */
-  font-weight: 400;  /* normal, not too light */
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  /* clean modern font */
+  font-size: 16px;
+  /* slightly larger for readability */
+  line-height: 1.6;
+  /* better spacing */
+  color: #000000;
+  /* darker, easier to read */
+  font-weight: 400;
+  /* normal, not too light */
   margin-top: 8px;
-  text-align: left; /* right-aligned text */
+  text-align: left;
+  /* right-aligned text */
 }
+
 .service-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -111,6 +120,7 @@
     transform: translateY(40px);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
@@ -123,11 +133,13 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 @media (max-width: 992px) {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media (max-width: 576px) {
   .services-grid {
     grid-template-columns: 1fr;

@@ -1,0 +1,103 @@
+/* ===== Premium Features Section ===== */
+
+.features-section {
+  padding: 100px 0;
+  background-color: var(--white);
+}
+
+.features-header {
+  margin-bottom: 60px;
+}
+
+.features-header .title {
+  font-size: 1rem;
+  color: var(--primary);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.features-header .subtitle {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  color: var(--dark);
+  font-weight: 800;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.feature-item {
+  background: var(--light);
+  border-radius: 24px;
+  padding: 40px !important;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.feature-item:hover {
+  background: var(--white);
+  border-color: var(--primary-glow);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+  transform: translateY(-8px);
+}
+
+.feature-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  background: var(--white);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.feature-item:hover .feature-icon-wrapper {
+  background: var(--grad-primary);
+  transform: rotate(-5deg) scale(1.1);
+}
+
+.feature-icon-wrapper img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.feature-item:hover .feature-icon-wrapper img {
+  filter: brightness(0) invert(1);
+}
+
+.feature__title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 15px;
+}
+
+.feature__desc {
+  color: #64748b;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  text-align: center !important; /* Overriding previous text-align: left */
+}
+
+@media (max-width: 768px) {
+  .features-section {
+    padding: 60px 0;
+  }
+  .feature-item {
+    padding: 30px !important;
+  }
+}

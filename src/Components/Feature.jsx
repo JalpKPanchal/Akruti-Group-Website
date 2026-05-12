@@ -1,86 +1,79 @@
 import React from 'react';
-// import '../styles.min.css'; // Your uploaded global CSS
-import '../custom.css'; // Your custom CSS
+import '../features.css';
 
 const features = [
   {
     id: 1,
     icon: '/img/icon-hydro-power3.png',
     title: 'Save Your Money',
-    desc: 'Save money on utilities or elevate your home\'s value by investing in solar panels.',
+    desc: "Save money on utilities or elevate your home's value by investing in solar panels.",
   },
   {
     id: 2,
     icon: '/img/icon-biosphere.png',
-    title: '5Stars Customer Service',
+    title: '5-Star Service',
     desc: 'Embrace the commitment to consistently outperforming customer expectations during every interaction.',
   },
   {
     id: 3,
     icon: '/img/icon-eco-house.png',
     title: 'Your Home Is Energy',
-    desc: 'Every single day, the sun delivers to us an endless stream of free energy, ready for exploitation through solar innovations.',
+    desc: 'Every single day, the sun delivers to us an endless stream of free energy, ready for exploitation.',
   },
   {
     id: 4,
     icon: '/img/icon-energy2.png',
     title: 'Consult & Planning',
-    desc: 'Our remote industrial solar systems are crafted to provide dependable power solutions for our clients.',
+    desc: 'Our remote industrial solar systems are crafted to provide dependable power solutions.',
   },
   {
     id: 5,
     icon: '/img/icon-electric-car.png',
     title: 'Certified Engineers',
-    desc: 'Our sales engineers, equipped with extensive experience, possess the expertise to design any comprehensive solution.',
+    desc: 'Our sales engineers possess the expertise to design any comprehensive solution.',
   },
   {
     id: 6,
-    icon: '/img/icon-electric-car.png',
-    title: 'Awards & \nMilestones',
-    desc: 'Benefiting from nearly 20 years experience.',
+    icon: '/img/icon-electric-car.png', 
+    title: 'Awards & Milestones',
+    desc: 'Benefiting from nearly 20 years of excellence in the renewable energy sector.',
   },
 ];
 
 export default function FeatureSection() {
   return (
-    <>
-    <section className="py-5 features section bg-white">
+    <section className="features-section">
       <div className="container">
         {/* Header */}
-        <div className="row mb-4">
-          <div className="col-12">
-            <div className="heading primary-heading text-center">
-              <h2 className="title">Features</h2>
-              <h5 className="subtitle">
-                <span>Explore Our </span>
-                <span>Features</span>
-              </h5>
+        <div className="row mb-5">
+          <div className="col-12 text-center">
+            <div className="features-header">
+              <h2 className="title">Why Choose Us</h2>
+              <h3 className="subtitle">
+                Explore Our Core Features
+              </h3>
             </div>
           </div>
         </div>
 
         {/* Feature Grid */}
-        <div className="feature_container d-flex flex-wrap justify-content-center gap-4">
+        <div className="feature-grid">
           {features.map((item) => (
             <div
               key={item.id}
-              className={`feature-item text-center p-3 ${item.iconClass ? 'feature-item-custom' : ''}`}
-              style={{ maxWidth: '300px', flex: '1 1 250px' }}
+              className="feature-item"
+              data-aos="fade-up"
+              data-aos-delay={item.id * 100}
             >
-              <div className="feature__icon mb-3">
-                {item.icon ? (
-                  <img src={item.icon} alt={item.title} style={{ width: 60, height: 60 }} />
-                ) : (
-                  <i className={item.iconClass} style={{ fontSize: '3rem', color: '#007bff' }}></i>
-                )}
+              <div className="feature-icon-wrapper">
+                <img src={item.icon} alt={item.title} />
               </div>
-              <h4 className="feature__title mb-2">{item.title}</h4>
+              <h4 className="feature__title">{item.title}</h4>
               <p className="feature__desc">{item.desc}</p>
             </div>
           ))}
         </div>
       </div>
     </section>
-    </>
   );
 }
